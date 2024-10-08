@@ -41,6 +41,7 @@ text-decoration: none;
 font-size: 18px;
 font-weight:300;
 transition: all ease .3s;
+color: white;
 &:hover{
     cursor: pointer;
     transition: all ease 0.3s;
@@ -60,6 +61,7 @@ gap: 20px;
 
 export const IconCartStyled = styled.div`
 font-size: 35px;
+color: white;
 &:hover{
     cursor: pointer;
     transition: all ease 0.5s;

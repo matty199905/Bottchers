@@ -36,6 +36,7 @@ export const YaEstoyRegistrado = styled(Link)`
 text-decoration: underline;
 font-size: 15px;
 margin-top: 60px;
+color: white;
 &:visited{
     color: #ff8f1f;
 }
