@@ -3,13 +3,15 @@ import styled from "styled-components"
 
 export const FiltersContainer = styled(motion.div)`
 position: absolute;
-top: 785px;
+top: 78px;
 left: 0;
 width: 300px;
-height: 1000px;
-background-color: black;
-border-right: 1px solid white;
+height: 94.9%;
+background-color:rgb(23, 23, 23);
+border-right: 2px solid grey;
+border-bottom: 2px solid grey;
 padding: 0px;
+z-index: 100;
 `
 
 
@@ -20,9 +22,9 @@ align-items: flex-start;
 justify-content: center;
 h3{
    font-weight:600px ;
-   font-size: 16px;
-   margin-left: 40px;
-   margin-bottom: 0px;
+   font-size: 17px;
+   margin: 50px 0 0 40px;
+   color: white
 }
 ul{
     display: flex;
@@ -31,8 +33,8 @@ ul{
     justify-content: center;
     gap: 5px;
     li{
-        font-weight: 100;
-        font-size: 14px;
+        font-weight: 400;
+        font-size: 15px;
         border: none;
         background-color: transparent;
         color: white;
@@ -40,6 +42,7 @@ ul{
         transition: all ease .2s;
         &:hover{
             color: orange;
+            font-weight: 500;
             transform: scale(1.1);
             transition: all ease .2s;
         }
@@ -54,7 +57,8 @@ align-items: center;
 gap: 10px;
 flex-flow: row wrap;
 width: 87%;
-height: 40px;
+height: 60px;
 padding: 20px;
-
+border-bottom: 1px solid grey;
+/* display: none; */
 `

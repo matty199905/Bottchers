@@ -38,7 +38,7 @@ export const registerValidationSchema = Yup.object({
         .required('Campo Requerido')
         .matches(regEmail, 'Mail no válido'),
 
-        password: Yup
+    password: Yup
         .string()
         .required('Campo Requerido')
         .max(12, 'Maximo 12 caracteres')
@@ -53,9 +53,27 @@ export const loginValidationSchema = Yup.object({
         .required('Campo Requerido')
         .matches(regEmail, 'Mail no válido'),
 
-        password: Yup
+    password: Yup
         .string()
         .required('Campo Requerido')
         .max(12, 'Maximo 12 caracteres')
         .min(6, 'Mínimo 6 caracteres')
+})
+
+export const checkoutValidationSchema = Yup.object({
+    name: Yup
+        .string()
+        .required('Campo Requerido'),
+
+    cellphone: Yup
+        .number()
+        .required(),
+
+    location: Yup
+        .string()
+        .required(),
+
+    address: Yup
+        .string()
+        .required()
 })

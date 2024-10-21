@@ -35,22 +35,6 @@ gap: 30px;
 `
 
 
-export const NavLinkStyled = styled(NavLink)`
-background-color: transparent;
-text-decoration: none;
-font-size: 18px;
-font-weight:300;
-transition: all ease .3s;
-color: white;
-&:hover{
-    cursor: pointer;
-    transition: all ease 0.3s;
-    color: #ff7b00;
-    transform: scale(1.05);
-    font-weight: 400;
-}
-`
-
 export const IconsContainer = styled.div`
 margin-right: 50px;
 display: flex;
@@ -59,27 +43,18 @@ align-items: baseline;
 gap: 20px;
 `
 
-export const IconCartStyled = styled.div`
-font-size: 35px;
+
+export const NavLinkStyled = styled(NavLink)`
+background-color: transparent;
+text-decoration: none;
+font-size: 18px;
+font-weight:400;
+transition: all ease .3s;
 color: white;
 &:hover{
     cursor: pointer;
-    transition: all ease 0.5s;
+    transition: all ease 0.3s;
     color: #ff7b00;
+   
 }
-
 `
-
-
-export const UserStyled = styled(IconCartStyled)`
-display:flex;
-align-items: center;
-
-`
-
-export const IniciaSesion = styled.span`
-font-size: 16px;
-font-weight: 300;
-padding: 10px;
-`
-

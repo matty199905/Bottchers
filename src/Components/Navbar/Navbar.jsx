@@ -1,9 +1,10 @@
 import React from 'react'
-import { IconsContainer, IconCartStyled, LinksContainer, Logo, NavbarContainer, NavLinkStyled, UserStyled, IniciaSesion } from './NavbarStyled'
-import { NavLink } from 'react-router-dom'
+import { IconsContainer, LinksContainer, Logo, NavbarContainer, NavLinkStyled } from './NavbarStyled';
+import { NavLink } from 'react-router-dom';
 
-import { PiShoppingCartLight } from "react-icons/pi";
-import { CiUser } from "react-icons/ci";
+
+import UserIcon from './User/UserIcon/UserIcon';
+import CartIcon from './Cart/CartIcon/CartIcon';
 
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
 
             <LinksContainer>
                 <NavLinkStyled to='/products'>Productos</NavLinkStyled>
-                <NavLinkStyled to='/'>Inspiraciones</NavLinkStyled>
+                <NavLinkStyled to='/Contacto'>Contactanos</NavLinkStyled>
                 <NavLinkStyled to='/'>Servicios</NavLinkStyled>
                 <NavLinkStyled to='/aboutus'>Sobre Nosotros</NavLinkStyled>
             </LinksContainer>
@@ -30,16 +31,9 @@ const Navbar = () => {
 
             <IconsContainer>
 
-                <IconCartStyled>
-                    <PiShoppingCartLight />
-                </IconCartStyled>
+                <CartIcon />
+                <UserIcon />
 
-                <NavLinkStyled to='/register'>
-                    <UserStyled>
-                        <CiUser />
-                        <IniciaSesion>Inicia Sesión</IniciaSesion>
-                    </UserStyled>
-                </NavLinkStyled>
             </IconsContainer>
 
         </NavbarContainer>

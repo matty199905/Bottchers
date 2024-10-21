@@ -1,5 +1,5 @@
 import React from 'react'
-import { LoginWrapper, NoTengoCuenta } from './LoginStyled';
+import { Body, LoginWrapper, NoTengoCuenta } from './LoginStyled';
 import { Formik } from 'formik';
 import Input from '../../UI/Input/Input';
 import { LoginFormContainer } from './LoginStyled';
@@ -9,6 +9,8 @@ import { loginValidationSchema } from '../../Formik/ValidationSchema';
 
 const Login = () => {
   return (
+<Body>
+
     <LoginWrapper>
     <h1>Inicia Sesion.</h1>
     <span>Completa los datos para ingresar</span>
@@ -34,7 +36,7 @@ const Login = () => {
     placeholder='Ingrese su Email aqui...'
     label='Email'
     type='email'
-    register='true'/>
+    login='true'/>
     
     <Input
     name='password'
@@ -43,7 +45,7 @@ const Login = () => {
     placeholder='Ingrese su Contraseña aqui...'
     label='Contraseña'
     type='password'
-    register='true'/>
+    login='true'/>
     
     
     <Submit register='true'
@@ -61,6 +63,8 @@ const Login = () => {
     
     
        </LoginWrapper>
+
+       </Body>
   )
 }
 

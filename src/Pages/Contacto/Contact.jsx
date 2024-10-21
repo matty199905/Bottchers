@@ -7,6 +7,7 @@ import { contactInitialValues } from '../../Formik/InitialValues';
 import Input from '../../UI/Input/Input';
 import Submit from '../../UI/Submit/Submit';
 import { contactValidationSchema } from '../../Formik/ValidationSchema';
+import Textarea from '../../UI/Input/Textarea';
 
 
 
@@ -70,14 +71,13 @@ const Contact = () => {
                 placeholder="Ingrese su Email"
                 label="Email" />
 
-              <Input
+              <Textarea
                 name="asunto"
                 id="asunto"
                 htmlFor="asunto"
-                type="text"
                 placeholder="Ingrese su asunto"
                 label="Asunto"
-                asunto="true" />
+                asunto={true} />
 
 
               <Submit contacto={true}

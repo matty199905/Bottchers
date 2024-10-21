@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
-width: ${(props)=>(props.page ? '50px' : '150px')};
-height: ${(props)=>(props.page ? '50px' : '40px')};
+width: ${(props)=>(props.page ? '50px' : '150px' && props.ProductoDinamico === true ? '100%' : '150px')};
+height: ${(props)=>(props.page ? '50px' : '40px' && props.ProductoDinamico === true ? '70px' : '40px')};
 padding: 10px;
+margin-top:  ${(props)=>(props.ProductoDinamico === true ? '80px' : '0px')};
 background-color: darkblue;
 opacity: 0.8;
 color: white;

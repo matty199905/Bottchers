@@ -28,8 +28,8 @@ align-items: flex-start;
 gap:20px;
 width: 300px;
 h3{
-    color: #ff7b00;
-    text-shadow: 0px 0px 25px white;
+    color: orange;
+    
 font-size: 17px;
 font-weight: 400;
 font-style: italic;
@@ -69,7 +69,8 @@ font-size: ${(props)=>(props.icon ? '40px' : '14px')};
 transition: all ease 0.3s;
 &:hover{
     cursor: pointer;
-    color: #ff7b00;
+    color: white;
+    font-weight: 500;
      transition: all ease 0.3s;
      transform: scale(1.05);
 }`
@@ -85,8 +86,7 @@ span{
     padding-bottom: 15px;
     width: 200px;
     text-align: center;
-    color: #ff7b00;
-    text-shadow: 0px 0px 25px white;
+    color: orange;
     font-style:oblique;
     font-size: 17px;
     font-weight: 400;
@@ -114,8 +114,6 @@ transition: all ease 0.3s;
 color: rgba(255, 255, 255, 0.85);
 &:hover{
     cursor: pointer;
-    color: #ff7b00;
-    filter: drop-shadow(0px 0px 20px white);
     transition: all ease 0.3s;
     transform: scale(1.1);
 }

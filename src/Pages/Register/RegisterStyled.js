@@ -7,7 +7,7 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 flex-direction: column;
-margin-top: 120px;
+margin-top: 100px;
 width: 100vw;
 height: 1150px;
 h1{
@@ -35,7 +35,7 @@ margin-left: 60px;
 export const YaEstoyRegistrado = styled(Link)`
 text-decoration: underline;
 font-size: 15px;
-margin-top: 60px;
+margin-top: 80px;
 color: white;
 &:visited{
     color: #ff8f1f;

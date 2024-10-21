@@ -18,3 +18,10 @@ export const loginInitialValues = {
     email: "",
     password: "",
 }
+
+export const checkoutInitialValues = {
+    name:"",
+    cellphone:"",
+    location:"",
+    address:"",
+}

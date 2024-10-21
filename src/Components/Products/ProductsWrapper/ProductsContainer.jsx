@@ -1,40 +1,53 @@
 import React from 'react'
-import { PagesContainer, AllProductsContainer, ProductsWrapper } from './ProductsContainerStyled'
+import { PagesContainer, AllProductsContainer, ProductsWrapper, MostrarFiltros, ArrowStyled, Separator } from './ProductsContainerStyled'
 import ProductCard from '../ProductCard/ProductCard'
 import Button from '../../../UI/Button/Button'
+import ModalCategories from '../ModalCategories/ModalCategories'
+import { MdOutlineArrowForwardIos } from 'react-icons/md'
 
 
 const ProductsContainer = () => {
   return (
 
 
- <AllProductsContainer>
+    <ProductsWrapper>
 
-  <ProductsWrapper>
-    
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
-<ProductCard/>
+      <MostrarFiltros>
+        Mostrar Filtros
+        <ArrowStyled>
+          <MdOutlineArrowForwardIos />
+        </ArrowStyled>
+      </MostrarFiltros>
 
-</ProductsWrapper>
+      <Separator />
 
-<PagesContainer>
-<Button page='true'>1</Button>
-<Button page='true'>2</Button>
-</PagesContainer>
-  
+      <AllProductsContainer>
 
-  </AllProductsContainer>
+        <ModalCategories />
+
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+
+      </AllProductsContainer>
+
+      <PagesContainer>
+        <Button page='true'>1</Button>
+        <Button page='true'>2</Button>
+      </PagesContainer>
+
+
+    </ProductsWrapper>
   )
 }
 

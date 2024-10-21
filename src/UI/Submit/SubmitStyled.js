@@ -5,12 +5,17 @@ display: flex;
 justify-content: center;
 align-items: center;
 align-self: ${(props)=>(props.contacto === true ? 'last baseline' : 'center')};
-width: 180px;
-height: 60px;
-border-radius: 10px;
+width: ${(props)=>(props.cart === true ? '100% ': '180px')};
+height: ${(props)=>(props.cart === true ? '45px ': '60px')};
+
 background-color: 
-${(props)=>(props.enviado ? '#00af00' : props.contacto ? '#00009499' : 'orangered')};
+${(props)=>(
+    props.enviado === true ? '#00af00' : 'orangered' && props.contacto ? 'darkblue' : 'orangered' && props.cart === true ? 'darkblue': 'orangered')};
+
+margin-top: ${(props)=>(props.cart === true ? '20px ': '0px')};
+margin-bottom: ${(props)=>(props.cart === true ? '-12px ': '0px')};
 border: none;
+border-radius: ${(props)=>(props.cart === true ? '5px': '10px')};
 color: white;
 cursor: pointer;
 transition: all ease .1s;

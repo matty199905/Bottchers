@@ -8,7 +8,7 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 width: 100vw;
-height: 3000px;
+height: 2550px;
 `
 
 export const HeroContainer = styled.div`
@@ -18,7 +18,7 @@ justify-content: center;
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
-    height: 700px;
+    height: 100vh;
     width: 100%;
     padding-right: 140px;
 `
@@ -33,12 +33,11 @@ margin: 80px 0px 0px 205px;
 width: 590px;
 padding: 0px 0px;
 h1{
-    font-size: 52px;
-    font-style: oblique;
+    font-size: 55px;
     font-weight: 400;
     letter-spacing: 2px;
     text-align: center;
-    background: linear-gradient(to right, white, #adadad);
+    background: linear-gradient(to right, #ffffff, #adadad);
     color: transparent;
     background-clip: text;
 }
@@ -66,4 +65,29 @@ export const ProductsLink = styled(Link)`
         &:hover{ color: white;
             transition: all ease .1s;}}
 
+`
+
+
+export const CategoriesSection = styled.section`
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+width: 100vw;
+margin-top: 50px;
+h2{
+    color: black;
+    font-size: 49px;
+    font-weight: 500;
+    margin-bottom: 0px;
+   
+}
+h3{
+    width: 690px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.6;
+    line-height: 28px;
+    text-align: center;
+}
 `

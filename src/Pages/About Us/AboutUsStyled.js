@@ -90,7 +90,7 @@ h2{ margin: 50px 0px 0px ;
     font-style: oblique;
     letter-spacing: 2px;
     opacity: 0.9;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     padding-bottom: 30px;
     }
 `
@@ -132,13 +132,10 @@ justify-content: center;
 align-items: center;
 h3{margin: 0px;
     }
-span{
-
-    }
 
 `
 
 export const AboutIconStyled = styled.div`
 font-size: 50px;
-color: ${( props => props.orange ? "orangered" : "white")};
+color: ${( props => props.orange ? "orange" : "black")};
 `
