@@ -1,22 +1,30 @@
 import React from 'react'
 import { CardProductStyled, HandlerAndPriceCardContainer, HandlerIconStyled, HandlerQuantityContainer, ImgTitleCardContainer, Price, TrashIcon } from './ModalCartStyled'
-import ProductoImg from '../../../../img/LivingPage.png'
 import { FaCirclePlus } from "react-icons/fa6";
 import { FaCircleMinus } from "react-icons/fa6";
 import { GoTrash } from "react-icons/go";
+import { useDispatch } from 'react-redux';
+import { minusBtn, plusBtn, removeFromCart } from '../../../../Redux/Cart/CartSlice';
 
-const CardCartProduct = () => {
+
+const CardCartProduct = ({name, img, price, quantity, id}) => {
+
+const dispatch = useDispatch()
+
+
+
+
     return (
         <CardProductStyled>
 
-            <TrashIcon card={true}>
+            <TrashIcon card={true}  onClick={() => dispatch(removeFromCart(id)) }>
                 <GoTrash />
             </TrashIcon>
 
             <ImgTitleCardContainer>
 
-                <img src={ProductoImg} alt="producto" />
-                <h2>Titulo del producto</h2>
+                <img src={img} alt="producto" />
+                <h2>{name}</h2>
 
             </ImgTitleCardContainer>
 
@@ -26,12 +34,12 @@ const CardCartProduct = () => {
             <HandlerAndPriceCardContainer>
 
                 <HandlerQuantityContainer>
-                    <HandlerIconStyled><FaCircleMinus /></HandlerIconStyled>
-                    <span>0</span>
-                    <HandlerIconStyled><FaCirclePlus /></HandlerIconStyled>
+                    <HandlerIconStyled onClick={()=> dispatch(minusBtn(id))}><FaCircleMinus /></HandlerIconStyled>
+                    <span>{quantity}</span>
+                    <HandlerIconStyled onClick={()=> dispatch(plusBtn(id))}><FaCirclePlus /></HandlerIconStyled>
                 </HandlerQuantityContainer>
 
-                <Price>Price: $20,000</Price>
+                <Price>Price: {price}</Price>
             </HandlerAndPriceCardContainer>
 
         </CardProductStyled>

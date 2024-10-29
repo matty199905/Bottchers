@@ -6,6 +6,7 @@ justify-content: center;
 align-items: flex-start;
 width: 100vw;
 height: 1300px;
+background-color: #292929; ;
 `
 
 export const ProductCardContainer = styled.div`
@@ -16,8 +17,8 @@ align-items: center;
 margin: 130px 0px;
 width: 90%;
 height: 70vh;
-background-color: #e3e3e3;
-box-shadow: 1px 2px 20px grey;
+background: linear-gradient(to bottom,#c3c3c3 , #dadada, #efefef, white);
+box-shadow: 1px 2px 20px black;
 `
 
 export const ProductImgContainer = styled.div`
@@ -27,6 +28,7 @@ left: 30px;
 width: 55%;
 height: 91%;
 background-size: cover;  
+background-position: center;
 ` 
 
 export const ProductDetailsContainer = styled.div`
@@ -89,7 +91,7 @@ export const PriceOFF = styled(Price)`
 .orange{
     font-weight: 700;
     font-size: 20px;
-    color: orange;
+    color: black;
     opacity: 1;
 
 }

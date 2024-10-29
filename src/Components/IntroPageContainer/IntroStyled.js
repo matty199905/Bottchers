@@ -46,10 +46,10 @@ gap: 20px;
 
 export const NumeroCuotas = styled.div`
 margin-left:40px;
+
 font-size: 130px;
-font-weight: 600;
-font-style: oblique;
-transform: scaleY(1.2);
+font-weight: 500;
+transform: scale(1.1, 1.2);
 `
 
 export const CuotasSinInteresContainer = styled.div`

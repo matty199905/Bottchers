@@ -85,7 +85,7 @@ align-items: flex-start;
 width: 70%;
 
 h2{ margin: 50px 0px 0px ;
-    font-size: 46px;
+    font-size: 43px;
     font-weight: 400;
     font-style: oblique;
     letter-spacing: 2px;
@@ -97,7 +97,7 @@ h2{ margin: 50px 0px 0px ;
 
 export const Subtitle = styled.p`
 text-align: left;
-font-size: 24px;
+font-size: 20px;
 font-style:oblique;
 font-weight: 300;
 width: 94%;
@@ -110,9 +110,10 @@ align-items: flex-start;
 gap: 50px;
 width: 92%;
 p{
-    font-size:18px;
+    font-size:16px;
     font-style: oblique;
     font-weight: 500;
+    
     width: 50%;
 }
 `

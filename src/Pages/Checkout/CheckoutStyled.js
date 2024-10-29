@@ -6,4 +6,6 @@ export const ContainerCheckoutStyled = styled.div`
   flex-wrap: wrap;
 width: 100vw;
 height: 1250px;
+background-color: #292929;
+color: white;
 `;

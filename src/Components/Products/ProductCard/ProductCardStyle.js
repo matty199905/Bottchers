@@ -5,36 +5,47 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
-width: 400px;
+width: 350px;
 height: 300px;
+padding: 10px;
+background: linear-gradient(to bottom,#c3c3c3 , #dadada, #efefef) ;
+box-shadow: 1px 2px 10px grey;
 img{
-    width: 100%;
+    width: 99%;
+    margin: auto;
     height: 70%;
 }
-h2{
-    font-weight:500 ;
-   font-size: 17px;
-   margin-left: 20px;
-}
-span{
-    font-weight:300 ;
-   font-size: 17px;
-   margin-left: 20px; 
-   margin-top: -5px;
-   opacity: .8;
-}
+
 `
 
 export const TitlePriceContainer = styled.div`
 display: flex;
-flex-flow: row wrap;
-justify-content:space-between;
 align-items: center;
+justify-content: space-between;
+width: 100%;
+`
+
+export const ColumnContainer = styled.div`
+display: flex;
+flex-direction: column;
+padding:0px  10px;
+h2{
+    font-weight:500 ;
+   font-size: 17px;
+}
+span{
+    font-weight:300 ;
+   font-size: 17px;
+   margin-top: -5px;
+   opacity: .8;
+   margin-bottom: 10px;
+}
 `
 
 export const Price = styled.div`
    font-weight: 400;
    font-size: 17px;
-padding-right: 20px;
+align-self: flex-end;
+margin: 10px;
 `
 

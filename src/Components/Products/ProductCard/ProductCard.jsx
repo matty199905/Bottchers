@@ -1,23 +1,39 @@
 import React from 'react'
-import { Price, ProductCardContainer, TitlePriceContainer } from './ProductCardStyle'
-import ProductoImg from '../../../img/LivingPage.png'
+import { Price, ProductCardContainer, ColumnContainer, TitlePriceContainer } from './ProductCardStyle'
+
 import Button from '../../../UI/Button/Button'
 import { Link } from 'react-router-dom'
+import { formatPrice } from '../../../Utils/formatPrice'
 
 
-const ProductCard = () => {
+
+
+
+const ProductCard = ({ img, name, price, desc, id }) => {
+
+
+  const selectedProduct = { img, name, price, desc, id }
+
+
   return (
     <ProductCardContainer>
-        <img src={ProductoImg} alt="Producto" />
-        <TitlePriceContainer>
-        <h2>Titulo del producto</h2>
-        <Price>$2.000.000</Price>
-        <span>Descripcion del...</span>
+      <img src={img} alt={desc} />
 
-        {/* EN LA LOGICA HACER UN MAP AL PRODUCTSLIST PARA EN EL LINK PODER ACCEDER AL PRODUCT.NAME DEL PRODCUTO SELECCIONADO */}
 
-        <Link to='product'><Button>Ver Más</Button></Link>
-        </TitlePriceContainer>
+      <TitlePriceContainer>
+
+
+        <ColumnContainer>
+          <h2>{name}</h2>
+          <span>{desc}</span>
+        </ColumnContainer>
+
+<ColumnContainer>
+        <Price>{formatPrice(price)}</Price>
+        <Link to={name} state={{selectedProduct}}><Button>Ver Más</Button></Link>
+</ColumnContainer>
+
+      </TitlePriceContainer>
     </ProductCardContainer>
   )
 }

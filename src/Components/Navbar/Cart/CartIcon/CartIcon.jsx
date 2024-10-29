@@ -1,15 +1,26 @@
 import React from 'react'
-import { CartIconStyled } from './CartIconStyled'
+import { Bubble, CartIconStyled } from './CartIconStyled'
 import { PiShoppingCartLight } from 'react-icons/pi'
+import { useSelector } from 'react-redux'
 
 
 
+const CartIcon = ({onClick = e => e.preventDefault()}) => {
 
-const CartIcon = () => {
+  const { cartProducts } = useSelector(state => state.cart)
+
+
+  const quantityBubble = cartProducts.map((item)=> item.quantity).reduce((acc, cur)=>{return acc + cur},0)
+
+console.log(quantityBubble);
+
 
   return (
 
-<CartIconStyled>
+<CartIconStyled
+onClick={onClick}
+>
+  <Bubble><span>{quantityBubble}</span></Bubble>
 <PiShoppingCartLight />
 </CartIconStyled>
 

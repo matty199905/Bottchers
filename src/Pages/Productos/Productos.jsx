@@ -11,17 +11,17 @@ const Productos = () => {
     return (
         <ProductsWrapperPage>
 
-<IntroPageContainer
-background={ProductosImg}
-title={'Nuestros Productos'}
-/>
+            <IntroPageContainer
+                background={ProductosImg}
+                title={'Nuestros Productos'}
+            />
 
 
-            <ProductsContainer/>
+            <ProductsContainer />
 
-         
 
-    
+
+
 
 
 

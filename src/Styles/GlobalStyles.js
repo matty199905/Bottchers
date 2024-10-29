@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 
   html{
     scroll-behavior: smooth;
+    width: 100vw;
   
   }
 

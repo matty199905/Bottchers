@@ -10,7 +10,7 @@ height: ${(props)=>(props.cart === true ? '45px ': '60px')};
 
 background-color: 
 ${(props)=>(
-    props.enviado === true ? '#00af00' : 'orangered' && props.contacto ? 'darkblue' : 'orangered' && props.cart === true ? 'darkblue': 'orangered')};
+    (props.enviado === true ? '#00af00' : 'orangered') && (props.contacto || props.cart ? 'darkblue' : 'orange'))};
 
 margin-top: ${(props)=>(props.cart === true ? '20px ': '0px')};
 margin-bottom: ${(props)=>(props.cart === true ? '-12px ': '0px')};
@@ -28,6 +28,10 @@ transition: all ease .1s;
     color: ${(props)=>(props.register || props.login ? 'white' : 'black')};
     transform: scale(0.9);
     transition: all ease .1s;
+}
+&:disabled {
+    background-color: grey;
+    cursor: not-allowed;
 }
 
 `

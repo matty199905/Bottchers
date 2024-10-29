@@ -33,7 +33,7 @@ const Footer = () => {
 
                         <LinkStyled to="/contacto">Contacto</LinkStyled>
                         <LinkStyled to=''>Encuentranos</LinkStyled>
-                        <LinkStyled to=''>Böttchers Circle Stores</LinkStyled>
+                        <LinkStyled to=''>Mas Info</LinkStyled>
 
                     </ul>
                 </FooterColumn>
@@ -64,19 +64,19 @@ const Footer = () => {
                 <IconsContainer>
 
                     <IconStyled>
-                        <LinkStyled to='https://www.facebook.com/' icon="true"><FaFacebookF/></LinkStyled>
+                        <LinkStyled to='https://www.facebook.com/' target='_blank' icon="true"><FaFacebookF/></LinkStyled>
                     </IconStyled>
 
                     <IconStyled>
-                        <LinkStyled to='https://www.instagram.com/' icon="true"><IoLogoInstagram/></LinkStyled>   
+                        <LinkStyled to='https://www.instagram.com/' target='_blank' icon="true"><IoLogoInstagram/></LinkStyled>   
                     </IconStyled>
 
                     <IconStyled>
-                        <LinkStyled to='https://www.youtube.com/' icon="true"> <ImYoutube2/></LinkStyled>
+                        <LinkStyled to='https://www.youtube.com/' target='_blank' icon="true"> <ImYoutube2/></LinkStyled>
                     </IconStyled>
 
                     <IconStyled>
-                        <LinkStyled to='https://x.com/?lang=es' icon><BsTwitterX/></LinkStyled>
+                        <LinkStyled to='https://x.com/?lang=es' target='_blank' icon><BsTwitterX/></LinkStyled>
                     </IconStyled>
 
                 </IconsContainer>

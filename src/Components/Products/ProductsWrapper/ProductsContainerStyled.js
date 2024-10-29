@@ -9,15 +9,14 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-height: 100%;
 margin-bottom: 520px;
 `
 
 export const MostrarFiltros = styled(motion.button)`
-display: flex;
+display: ${(props)=>(props.hideFilters === 'true' ? 'none' : 'flex')};
 justify-content: center;
 align-items: center;
-align-self:flex-start ;
+align-self: flex-start ;
 height: 50px;
 width: 200px;
 gap: 20px;
@@ -39,6 +38,7 @@ transition: all ease .2s;
 `
 
 export const Separator = styled.hr`
+display: ${(props)=>(props.hideFilters === 'true' ? 'none' : 'flex')};
 width: 97vw;
 height: 1px;
 background-color: grey;
@@ -52,8 +52,6 @@ margin: 5px 0px 0px -10px;
 `
 
 
-
-
 export const AllProductsContainer = styled.div`
 display: flex;
 justify-content: center;
@@ -61,8 +59,7 @@ align-items: center;
 gap: 60px;
 flex-flow: row wrap;
 width: 100vw;
-height: 1000px;
-overflow-y: scroll;
+height: auto;
 padding: 50px 0px;
 `
 

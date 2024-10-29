@@ -11,7 +11,7 @@ background-color: white;
 padding: 0px 40px ;
 height: 100vh;
 width: 360px;
-z-index: 100;
+z-index: 400;
 `
 
 export const CartHeader = styled.div`
@@ -82,8 +82,8 @@ h3{
     color: black;  
 }
 span{
-    font-size: 19px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 500;
     color:black;
     
 }
@@ -97,14 +97,21 @@ align-items: center;
 gap: 20px;
 padding: 10px 20px;
 width: 100%;
-height: 400px;
-
+height: 410px;
 margin: 15px 0px 0px -10px;
 overflow-y: scroll;
 overflow-x: hidden;
 &::-webkit-scrollbar {
     background: transparent;
     width: 6px;
+  }
+  p{
+    margin-top: 80px;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: oblique;
+    letter-spacing: 1px;
+    opacity: 0.2;
   }
 
 `
@@ -116,7 +123,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 width: 100%;
-height: 120px;
+height: 110px;
 border: 1px solid #b5b5b5;
 border-radius: 5px;
 background-color: #eaeaea;
@@ -129,6 +136,7 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: center;
 img{width: 150px;
+    height: 90px;
 margin-bottom:-5px;
 border-radius:10px;}
 h2{color: black;
@@ -180,6 +188,13 @@ transition: all ease .05s;
 }
 `
 
+
+export const ProductInfoContainer = styled.div`
+display: flex;
+flex-direction: column;
+padding: 10px 0px;
+`
+
 export const Price = styled.div`
 font-size: 16px;
 font-weight: 500;
@@ -190,6 +205,9 @@ margin-right: -29px;
 padding: 15px;
 border-radius: 40px;
 `
+
+
+
 
 
 export const SubmitsContainer = styled.div`

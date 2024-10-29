@@ -2,7 +2,7 @@ import React from 'react'
 import { ErrorMessageStyled, InputContainer, InputStyled, LabelStyled } from './InputStyled'
 import { ErrorMessage, Field } from 'formik'
 
-const Input = ({asunto, htmlFor, type, name, placeholder, id, isError, label, register, login }) => {
+const Input = ({asunto, htmlFor, type, name, placeholder, id, isError, label, register, login, checkout }) => {
   return (
  <InputContainer>
  
@@ -20,6 +20,7 @@ const Input = ({asunto, htmlFor, type, name, placeholder, id, isError, label, re
  asunto={asunto}
  register={register}
  login={login}
+ checkout={checkout}
  />
  
  <ErrorMessage name={name} component={ErrorMessageStyled}/>

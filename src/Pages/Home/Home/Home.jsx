@@ -4,6 +4,7 @@ import HeroImg from '../../../../src/img/Hero.png'
 import CategoriesGrid from '../../../Components/Home/CategoriesGrid/CategoriesGrid'
 
 
+
 const Home = () => {
 
 
@@ -29,7 +30,8 @@ const Home = () => {
 <CategoriesGrid/>
 
 </CategoriesSection>
-
+ 
+ 
 
 </HomeWrapper>
 

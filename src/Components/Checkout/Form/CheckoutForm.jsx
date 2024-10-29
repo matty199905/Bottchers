@@ -1,9 +1,7 @@
 import React from 'react'
 import { CheckoutContainer, FormContainer, FormikContainer } from './CheckoutFormStyled';
-import { Formik } from 'formik';
 import Submit from '../../../UI/Submit/Submit';
 import Input from '../../../UI/Input/Input';
-import { Form } from 'react-router-dom';
 import { checkoutInitialValues } from '../../../Formik/InitialValues';
 import { checkoutValidationSchema } from '../../../Formik/ValidationSchema';
 
@@ -30,6 +28,7 @@ onSubmit={""}>
             htmlFor='nombre'
             placeholder='Tu nombre'
             label="Nombre"
+            checkout='true'
             >
             
           </Input>
@@ -41,6 +40,7 @@ onSubmit={""}>
             htmlFor='celular'
             placeholder='Tu celular'
             label="Celular"
+            checkout='true'
             >
             
           </Input>
@@ -52,6 +52,7 @@ onSubmit={""}>
             htmlFor='localidad'
             placeholder='Tu localidad'
             label="Localidad"
+            checkout='true'
           >
             
           </Input>
@@ -63,6 +64,7 @@ onSubmit={""}>
             htmlFor='direccion'
             placeholder='Tu dirección'
             label="Dirección"
+            checkout='true'
           >
             
           </Input>

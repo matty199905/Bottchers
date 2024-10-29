@@ -22,7 +22,7 @@ width: 300px;
 height: 20px;
 padding: 10px;
 border: none;
-border-bottom: ${(props)=>(props.register || props.login === 'true' ? '1px solid #c3c3c3' : '1px solid black')}; 
+border-bottom: ${(props)=>(props.register || props.login || props.checkout === 'true' ? '1px solid #c3c3c3' : '1px solid black')}; 
 background-color: transparent;
 color: ${(props)=>(props.register || props.login ? 'white' : 'black')};
 &::placeholder{

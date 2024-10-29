@@ -13,14 +13,14 @@ height: 2550px;
 
 export const HeroContainer = styled.div`
 display: flex;
-align-items: flex-start;
 justify-content: center;
+align-items: flex-start;
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
     height: 100vh;
-    width: 100%;
-    padding-right: 140px;
+    width: 100vw;
+    
 `
 
 
@@ -29,7 +29,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-margin: 80px 0px 0px 205px;
+margin: 80px 0px 0px 0px;
 width: 590px;
 padding: 0px 0px;
 h1{
@@ -37,7 +37,7 @@ h1{
     font-weight: 400;
     letter-spacing: 2px;
     text-align: center;
-    background: linear-gradient(to right, #ffffff, #adadad);
+    background: linear-gradient(to left, #ffffff, #adadad);
     color: transparent;
     background-clip: text;
 }

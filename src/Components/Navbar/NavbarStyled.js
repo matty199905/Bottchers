@@ -5,14 +5,13 @@ import { NavLink } from 'react-router-dom'
 export const NavbarContainer = styled.header`
 display: flex;
 justify-content: space-between;
-align-items: center;
+align-items: flex-end;
 position: fixed;
 top: 0;
-padding: 30px 30px 15px 30px;
-background-color: transparent;
+padding-bottom: 10px;
 width: 100vw;
-height: 40px;
-z-index: 100;
+height: 70px;
+z-index: 200;
 `
 
 export const Logo = styled.button`
@@ -21,6 +20,7 @@ font-size: 35px;
 font-weight: 800;
 background-color: transparent;
 border: none;
+margin-left: 30px;
  transition: all ease 0.3s;
 &:hover{
     cursor: pointer;
@@ -31,7 +31,9 @@ border: none;
 
 export const LinksContainer = styled.ul`
 display: flex;
+justify-content: center;
 gap: 30px;
+margin-right: 30px;
 `
 
 
@@ -41,6 +43,7 @@ display: flex;
 justify-content: center;
 align-items: baseline;
 gap: 20px;
+
 `
 
 
@@ -48,7 +51,7 @@ export const NavLinkStyled = styled(NavLink)`
 background-color: transparent;
 text-decoration: none;
 font-size: 18px;
-font-weight:400;
+font-weight:300;
 transition: all ease .3s;
 color: white;
 &:hover{

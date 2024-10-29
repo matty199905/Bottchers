@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const FooterContainer = styled.footer`
 position: absolute;
 bottom: 0;
-width: 100%;
+width: 100vw;
 height: 510px;
 background-color: rgb(23, 23, 23);
 `
@@ -69,7 +69,7 @@ font-size: ${(props)=>(props.icon ? '40px' : '14px')};
 transition: all ease 0.3s;
 &:hover{
     cursor: pointer;
-    color: white;
+    color: orange;
     font-weight: 500;
      transition: all ease 0.3s;
      transform: scale(1.05);

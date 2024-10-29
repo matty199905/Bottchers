@@ -67,13 +67,13 @@ export const checkoutValidationSchema = Yup.object({
 
     cellphone: Yup
         .number()
-        .required(),
+        .required('Campo Requerido'),
 
     location: Yup
         .string()
-        .required(),
+        .required('Campo Requerido'),
 
     address: Yup
         .string()
-        .required()
+        .required('Campo Requerido')
 })
