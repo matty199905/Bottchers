@@ -4,8 +4,11 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 
   html{
+    position: relative;
     scroll-behavior: smooth;
     width: 100vw;
+   
+    background-color: red;
   
   }
 

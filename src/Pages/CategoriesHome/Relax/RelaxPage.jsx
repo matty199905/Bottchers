@@ -2,21 +2,24 @@ import React from 'react'
 import { RelaxWrapper } from './RelaxPageStyled'
 import RelaxIntroImg from '../../../img/RelaxIntroPage.jpg'
 import IntroPageContainer from '../../../Components/IntroPageContainer/IntroPageContainer'
-import ProductsContainer from '../../../Components/Products/ProductsWrapper/ProductsContainer'
+import ProductsWrapper from '../../../Components/Products/ProductsWrapper/ProductsWrapper'
 
 const RelaxPage = () => {
 
   return (
- <RelaxWrapper>
+    <RelaxWrapper>
 
-<IntroPageContainer
-background={RelaxIntroImg}
-title={'Productos Relax'}
-/>
- <ProductsContainer
- hideFilters='true'/>
+      <IntroPageContainer
+        background={RelaxIntroImg}
+        title={'Productos Relax'}
+      />
 
- </RelaxWrapper>
+
+      <ProductsWrapper
+        hideFilters='true'
+        page='relax' />
+
+    </RelaxWrapper>
   )
 }
 

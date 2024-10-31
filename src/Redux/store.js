@@ -4,12 +4,14 @@ import persistReducer from 'redux-persist/es/persistReducer';
 import persistStore from 'redux-persist/es/persistStore'
 import { productosSlice } from './Productos/productosSlice';
 import { CartSlice } from './Cart/CartSlice';
+import { filtersSlice } from './Filters/filtersSlice';
 
 
 
 const reducers = combineReducers({
 productos: productosSlice.reducer,
 cart: CartSlice.reducer,
+filters: filtersSlice.reducer,
 })
 
 

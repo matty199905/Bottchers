@@ -509,7 +509,7 @@ export const productsData = [
         name: 'Extense 1',
         desc: 'Mesa de comedor extensible',
         img: ImgId50,
-        price: 570000,
+        price: 230000,
         category: 'Comedores',
     },
     {
@@ -517,7 +517,7 @@ export const productsData = [
         name: 'Extense 2',
         desc: 'Mesa de comedor extensible',
         img: ImgId51,
-        price: 570000,
+        price: 240000,
         category: 'Comedores',
     },
     {
@@ -525,10 +525,35 @@ export const productsData = [
         name: 'Extense 3',
         desc: 'Mesa de comedor extensible',
         img: ImgId52,
-        price: 570000,
+        price: 260000,
         category: 'Comedores',
     },
+    {
+        id: 50,
+        name: 'Extense 1',
+        desc: 'Mesa de comedor extensible',
+        img: ImgId50,
+        price: 230000,
+        category: 'mesas extensibles',
+    },
+    {
+        id: 51,
+        name: 'Extense 2',
+        desc: 'Mesa de comedor extensible',
+        img: ImgId51,
+        price: 240000,
+        category: 'mesas extensibles',
+    },
+    {
+        id: 52,
+        name: 'Extense 3',
+        desc: 'Mesa de comedor extensible',
+        img: ImgId52,
+        price: 260000,
+        category: 'mesas extensibles',
+    },
 ]
+
 
 
 export const TotalProducts = productsData.length

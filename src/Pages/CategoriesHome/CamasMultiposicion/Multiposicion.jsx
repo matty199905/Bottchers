@@ -3,7 +3,7 @@ import { CamasMultiposicionWrapper } from './MultiposicionStyled'
 
 import MultiposicionPageImg from '../../../img/MultiposicionPage.jpg'
 import IntroPageContainer from '../../../Components/IntroPageContainer/IntroPageContainer'
-import ProductsContainer from '../../../Components/Products/ProductsWrapper/ProductsContainer'
+import ProductsWrapper from '../../../Components/Products/ProductsWrapper/ProductsWrapper'
 
 
 
@@ -19,8 +19,9 @@ const Multiposicion = () => {
         title={'Camas Multiposicion'}
       />
 
-      <ProductsContainer
-      hideFilters='true'/>
+      <ProductsWrapper 
+      hideFilters='true'
+      page='camas multiposicion'/>
 
 
     </CamasMultiposicionWrapper>

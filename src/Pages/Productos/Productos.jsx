@@ -2,8 +2,9 @@ import React from 'react'
 import { ProductsWrapperPage } from './ProductosStyled'
 
 import ProductosImg from '../../img/ProductosImg.jpg'
-import ProductsContainer from '../../Components/Products/ProductsWrapper/ProductsContainer'
+
 import IntroPageContainer from '../../Components/IntroPageContainer/IntroPageContainer'
+import ProductsWrapper from '../../Components/Products/ProductsWrapper/ProductsWrapper'
 
 
 
@@ -17,7 +18,8 @@ const Productos = () => {
             />
 
 
-            <ProductsContainer />
+            <ProductsWrapper 
+            page='todosLosProductos' />
 
 
 

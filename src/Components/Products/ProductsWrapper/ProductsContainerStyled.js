@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 
-export const ProductsWrapper = styled.div`
+export const ProductsWrapperContainer = styled.div`
 position: relative;
 display: flex;
 flex-direction: column;
@@ -52,7 +52,7 @@ margin: 5px 0px 0px -10px;
 `
 
 
-export const AllProductsContainer = styled.div`
+export const ProductsContainerStyled = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
@@ -68,7 +68,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 20px;
-margin: 50px;
+margin: 40px 0 -40px 0 ;
 `
 
 

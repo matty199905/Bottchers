@@ -2,7 +2,7 @@ import React from 'react'
 import { LivingWrapper } from './LivingStyled'
 import LivingImg from '../../../img/LivingPage.png'
 import IntroPageContainer from '../../../Components/IntroPageContainer/IntroPageContainer'
-import ProductsContainer from '../../../Components/Products/ProductsWrapper/ProductsContainer'
+import ProductsWrapper from '../../../Components/Products/ProductsWrapper/ProductsWrapper'
 
 const Living = () => {
   return (
@@ -14,8 +14,9 @@ background={LivingImg}
 title={'Productos Living'}
 />
 
- <ProductsContainer
- hideFilters='true'/>
+<ProductsWrapper 
+      hideFilters='true'
+      page='living'/>
 
     </LivingWrapper>
   )

@@ -3,7 +3,8 @@ import { ComedoresWrapper } from './ComedoresStyled'
 
 import IntroPageContainer from '../../../Components/IntroPageContainer/IntroPageContainer'
 import ComedoresPageImg from '../../../img/comedoresPage.jpeg'
- import ProductsContainer from '../../../Components/Products/ProductsWrapper/ProductsContainer'
+
+import ProductsWrapper from '../../../Components/Products/ProductsWrapper/ProductsWrapper'
 
 const Comedores = () => {
   return (
@@ -15,8 +16,9 @@ background={ComedoresPageImg}
 title={'Comedores'}
 />
 
- <ProductsContainer
- hideFilters='true'/>
+<ProductsWrapper
+      hideFilters='true'
+      page='Comedores'/>
 
 </ComedoresWrapper>
   )

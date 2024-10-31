@@ -1,15 +1,23 @@
 import React from 'react'
 import { ActiveFiltersContainer, FilterContainer, FiltersContainer } from './ModalCategoriesStyled'
+import { useSelector } from 'react-redux'
+import { AnimatePresence } from 'framer-motion'
 
 const ModalCategories = () => {
+
+    const { showFilters } = useSelector(state => state.filters)
+
+
   return (
- 
+ <AnimatePresence>
+{ showFilters &&
+
 
     <FiltersContainer
     initial={{ translateX: -600 }}
-    animate={{ translateX: -600}}
+    animate={{ translateX: 0}}
     exit={{ translateX: -600}}
-    transition={{ type: 'spring', damping: 27 }}
+    transition={{ type: 'spring', damping: 20 }}
     key='cart-modal'>
 
 
@@ -66,6 +74,9 @@ const ModalCategories = () => {
 
 
   </FiltersContainer>
+
+ }
+   </AnimatePresence>
 
   )
 }

@@ -6,7 +6,7 @@ position: absolute;
 top: 78px;
 left: 0;
 width: 300px;
-height: 94.9%;
+height: 100.4%;
 background-color:rgb(23, 23, 23);
 border-right: 2px solid grey;
 border-bottom: 2px solid grey;

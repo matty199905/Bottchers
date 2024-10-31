@@ -3,7 +3,7 @@ import { MesasExtensiblesWrapper } from './MesasExtensiblesStyled'
 import IntroPageContainer from '../../../Components/IntroPageContainer/IntroPageContainer'
 
 import MesasExtensiblesImg from '../../../img/Mesaextensible.jpg'
-import ProductsContainer from '../../../Components/Products/ProductsWrapper/ProductsContainer'
+import ProductsWrapper from '../../../Components/Products/ProductsWrapper/ProductsWrapper'
 const MesasExtensibles = () => {
   return (
 <MesasExtensiblesWrapper>
@@ -13,8 +13,9 @@ background={MesasExtensiblesImg}
 title={'Mesas Extensibles'}
 />
 
- <ProductsContainer
- hideFilters='true'/>
+<ProductsWrapper
+      hideFilters='true'
+      page="mesas extensibles"/>
 
 </MesasExtensiblesWrapper>
   )

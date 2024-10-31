@@ -2,7 +2,7 @@ import React from 'react'
 import { SofasCamaWrapper } from './SofasCamaStyled'
 import IntroPageContainer from '../../../Components/IntroPageContainer/IntroPageContainer'
 import SofasCamaImg from '../../../img/sofacamaPage.jpg'
-import ProductsContainer from '../../../Components/Products/ProductsWrapper/ProductsContainer'
+import ProductsWrapper from '../../../Components/Products/ProductsWrapper/ProductsWrapper'
 
 const SofasCama = () => {
   return (
@@ -13,8 +13,11 @@ background={SofasCamaImg}
 title={'Sofás Cama'}
 />
 
- <ProductsContainer
- hideFilters='true'/>
+
+<ProductsWrapper 
+      hideFilters='true'
+      page='sofa cama'/>
+
 
 </SofasCamaWrapper>
   )

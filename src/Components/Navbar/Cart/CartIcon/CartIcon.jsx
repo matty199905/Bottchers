@@ -12,7 +12,6 @@ const CartIcon = ({onClick = e => e.preventDefault()}) => {
 
   const quantityBubble = cartProducts.map((item)=> item.quantity).reduce((acc, cur)=>{return acc + cur},0)
 
-console.log(quantityBubble);
 
 
   return (

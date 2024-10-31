@@ -7,7 +7,7 @@ import { SHIPPINGCOST } from "../../Utils/constants";
 
 
 
-export const cartInitialState = {
+ const cartInitialState = {
     cartProducts: [],
     showCart: false,
     shippingCost: 0,
