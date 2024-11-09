@@ -9,6 +9,7 @@ justify-content: center;
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
+    z-index: 100 ;
 `
 
 export const ProductsTitleContainer = styled.div`

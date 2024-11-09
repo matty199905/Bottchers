@@ -8,6 +8,7 @@ import ProductsWrapper from '../../Components/Products/ProductsWrapper/ProductsW
 
 
 
+
 const Productos = () => {
     return (
         <ProductsWrapperPage>
@@ -20,10 +21,6 @@ const Productos = () => {
 
             <ProductsWrapper 
             page='todosLosProductos' />
-
-
-
-
 
 
 

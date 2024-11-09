@@ -6,8 +6,13 @@ import { registerInitialValues } from '../../Formik/InitialValues'
 import Submit from '../../UI/Submit/Submit'
 import { registerValidationSchema } from '../../Formik/ValidationSchema'
 import { Body } from '../Login/LoginStyled'
+import { createUser} from '../../Axios/axiosUser'
+import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
+
+const navigate = useNavigate()
+
   return (
     <Body>
    <RegisterWrapper>
@@ -18,8 +23,15 @@ const Register = () => {
 <Formik
 initialValues={registerInitialValues}
 validationSchema={registerValidationSchema}
-onSubmit={(values)=> {
-  console.log(values);
+onSubmit={async(values, {resetForm})=> {
+
+  const user = await createUser(values.name, values.email, values.password)
+
+if(user) {
+navigate('/login')
+}
+
+return resetForm
   
 }}>
 
@@ -36,14 +48,6 @@ label='Nombre'
 type='text'
 register='true'/>
 
-<Input
-name='surname'
-id='apellido'
-htmlFor='apellido'
-placeholder='Ingrese su Apellido aqui...'
-label='Apellido'
-type='text'
-register='true'/>
 
 <Input
 name='email'
@@ -54,14 +58,28 @@ label='Email'
 type='email'
 register='true'/>
 
-<Input
+<Input 
 name='password'
 id='contraseña'
 htmlFor='contraseña'
 placeholder='Ingrese su Contraseña aqui...'
 label='Contraseña'
 type='password'
-register='true'/>
+register='true'
+onCopy={(e)=> e.preventDefault()}
+/>
+
+
+<Input 
+name='password2'
+id='contraseña2'
+htmlFor='contraseña2'
+placeholder='Ingrese su Contraseña aqui...'
+label='Repita su Contraseña'
+type='password'
+register='true'
+onCopy={(e)=> e.preventDefault()}
+/>
 
 
 <Submit register='true'

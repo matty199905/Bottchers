@@ -1,16 +1,17 @@
 import React from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { CuotasContainer, Price, PriceOFF, ProductCardContainer, ProductDetailsContainer, ProductImgContainer, ProductWrapper } from './ProductoDinamicoStyled'
 import Visa from '../../img/Visa.png'
 import Button from '../../UI/Button/Button'
 import { formatPrice } from '../../Utils/formatPrice'
 import { useDispatch } from 'react-redux'
-import { addToCart } from '../../Redux/Cart/CartSlice'
-import { addItemToCart } from '../../Redux/Cart/cartUtils'
+import { addToCart, showCartToggle } from '../../Redux/Cart/CartSlice'
 
 
 
 const ProductoDinamico = () => {
+
+    const navigate = useNavigate()
 
     const dispatch = useDispatch()
 
@@ -56,7 +57,12 @@ console.log(productData);
                         <img src={Visa} alt="LogoVisa" />
                     </CuotasContainer>
 
-                    <Button ProductoDinamico={true} onClick={()=> dispatch(addToCart(productData))
+                    <Button ProductoDinamico={true} onClick={()=>{ 
+                        dispatch(addToCart(productData));
+                        navigate('/products');
+                        dispatch(showCartToggle())
+
+                    }
                     }>
                         Agregar al Carrito
                     </Button>

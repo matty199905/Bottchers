@@ -65,6 +65,7 @@ export const productsData = [
         img: ImgId1,
         price: 120000,
         category: 'relax',
+        filters: ['eco cuero','entrega inmediata']
     },
     {
         id: 2,
@@ -73,6 +74,7 @@ export const productsData = [
         img: ImgId2,
         price: 400000,
         category: 'relax',
+        filters: ['eco cuero', '3 cuerpos','40 dias']
     },
     {
         id: 3,
@@ -81,6 +83,7 @@ export const productsData = [
         img: ImgId3,
         price: 350000,
         category: 'relax',
+        filters: ['tela', 'sillones masajeadores','entrega inmediata']
     },
     {
         id: 4,
@@ -89,6 +92,7 @@ export const productsData = [
         img: ImgId4,
         price: 320000,
         category: 'relax',
+        filters: ['eco cuero', '2 cuerpos','35 dias']
     },
     {
         id: 5,
@@ -97,6 +101,7 @@ export const productsData = [
         img: ImgId5,
         price: 150000,
         category: 'relax',
+        filters: ['tela','entrega inmediata']
     },
     {
         id: 6,
@@ -105,6 +110,7 @@ export const productsData = [
         img: ImgId6,
         price: 200000,
         category: 'relax',
+        filters: ['tela','entrega inmediata']
     },
     {
         id: 7,
@@ -113,6 +119,7 @@ export const productsData = [
         img: ImgId7,
         price: 170000,
         category: 'relax',
+        filters: ['cuero','entrega inmediata']
     },
     {
         id: 8,
@@ -121,6 +128,7 @@ export const productsData = [
         img: ImgId8,
         price: 165000,
         category: 'relax',
+        filters: ['eco cuero','entrega inmediata']
     },
     {
         id: 9,
@@ -129,6 +137,7 @@ export const productsData = [
         img: ImgId9,
         price: 180000,
         category: 'relax',
+        filters: ['eco cuero','entrega inmediata']
     },
     {
         id: 10,
@@ -137,6 +146,7 @@ export const productsData = [
         img: ImgId10,
         price: 220000,
         category: 'relax',
+        filters: ['tela', '2 cuerpos','35 dias']
     },
     {
         id: 11,
@@ -145,6 +155,7 @@ export const productsData = [
         img: ImgId11,
         price: 150000,
         category: 'relax',
+        filters: ['tela','entrega inmediata']
     },
     {
         id: 12,
@@ -153,6 +164,7 @@ export const productsData = [
         img: ImgId12,
         price: 240000,
         category: 'relax',
+        filters: ['cuero', '2 cuerpos','35 dias']
     },
     {
         id: 13,
@@ -161,6 +173,7 @@ export const productsData = [
         img: ImgId13,
         price: 120000,
         category: 'relax',
+        filters: ['cuero','entrega inmediata']
     },
     {
         id: 14,
@@ -169,6 +182,7 @@ export const productsData = [
         img: ImgId14,
         price: 190000,
         category: 'relax',
+        filters: ['cuero', '2 cuerpos','35 dias']
     },
     {
         id: 15,
@@ -177,6 +191,7 @@ export const productsData = [
         img: ImgId15,
         price: 230000,
         category: 'relax',
+        filters: ['tela', '3 cuerpos','40 dias']
     },
     {
         id: 16,
@@ -185,13 +200,16 @@ export const productsData = [
         img: ImgId16,
         price: 130000,
         category: 'relax',
+        filters: ['tela', 'madera','entrega inmediata']
     },
     {
         id: 17,
-        name: 'Silla de Relax',
+        name: 'Purple T' ,
+        desc: 'Silla de Relax',
         img: ImgId17,
         price: 140000,
         category: 'relax',
+        filters: ['eco cuero', 'madera','entrega inmediata']
     },
     {
         id: 18,
@@ -200,6 +218,7 @@ export const productsData = [
         img: ImgId18,
         price: 170000,
         category: 'relax',
+        filters: ['tela','entrega inmediata']
     },
     {
         id: 19,
@@ -208,6 +227,7 @@ export const productsData = [
         img: ImgId19,
         price: 140000,
         category: 'relax',
+        filters: ['eco cuero','madera','entrega inmediata']
     },
     {
         id: 20,
@@ -215,7 +235,8 @@ export const productsData = [
         desc: 'Sofá cama 2 plazas',
         img: ImgId20,
         price: 320000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '2 plazas','40 dias']
     },
     {
         id: 21,
@@ -223,7 +244,8 @@ export const productsData = [
         desc: 'Sofá cama 2 plazas',
         img: ImgId21,
         price: 350000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '2 plazas','40 dias']
     },
     {
         id: 22,
@@ -231,7 +253,8 @@ export const productsData = [
         desc: 'Sofá cama 2 y 1/2 plazas',
         img: ImgId22,
         price: 370000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '2 plazas','40 dias']
     },
     {
         id: 23,
@@ -239,7 +262,8 @@ export const productsData = [
         desc: 'Sofá cama 1 y 1/2 plazas',
         img: ImgId23,
         price: 300000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '1 plaza','40 dias']
     },
     {
         id: 24,
@@ -247,7 +271,8 @@ export const productsData = [
         desc: 'Sofá cama 2 y 1/2 plazas',
         img: ImgId24,
         price: 330000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['cuero', '2 plazas','40 dias']
     },
     {
         id: 25,
@@ -255,7 +280,8 @@ export const productsData = [
         desc: 'Sofá cama 2 y 1/2 plazas',
         img: ImgId25,
         price: 370000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '2 plazas','40 dias']
     },
     {
         id: 26,
@@ -263,7 +289,8 @@ export const productsData = [
         desc: 'Sofá cama 1 plaza',
         img: ImgId26,
         price: 380000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '1 plaza','35 dias']
     },
     {
         id: 27,
@@ -271,7 +298,8 @@ export const productsData = [
         desc: 'Sofá cama 2 plazas',
         img: ImgId27,
         price: 315000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '2 plazas','40 dias']
     },
     {
         id: 28,
@@ -279,7 +307,8 @@ export const productsData = [
         desc: 'Sofá cama 1 y 1/2 plazas',
         img: ImgId28,
         price: 330000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '1 plaza','35 dias']
     },
     {
         id: 29,
@@ -287,7 +316,8 @@ export const productsData = [
         desc: 'Silla de Relax',
         img: ImgId29,
         price: 340000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela','35 dias']
     },
     {
         id: 30,
@@ -295,7 +325,8 @@ export const productsData = [
         desc: 'Sofá cama 2 plazas',
         img: ImgId30,
         price: 370000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '2 plazas','40 dias']
     },
     {
         id: 31,
@@ -303,7 +334,8 @@ export const productsData = [
         desc: 'Sofá cama 2 plazas',
         img: ImgId31,
         price: 350000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '2 plazas','40 dias']
     },
     {
         id: 32,
@@ -311,7 +343,8 @@ export const productsData = [
         desc: 'Sofá cama 2 plazas',
         img: ImgId32,
         price: 315000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela', '2 plazas','40 dias']
     },
     {
         id: 33,
@@ -319,7 +352,8 @@ export const productsData = [
         desc: 'Sofá cama 1 plaza',
         img: ImgId33,
         price: 290000,
-        category: 'sofa cama',
+        category: 'sofas cama',
+        filters: ['tela','1 plaza','35 dias']
     },
     {
         id: 34,
@@ -328,6 +362,7 @@ export const productsData = [
         img: ImgId34,
         price: 320000,
         category: 'living',
+        filters: ['tela', '2 cuerpos modulares','35 dias']
     },
     {
         id: 35,
@@ -336,6 +371,7 @@ export const productsData = [
         img: ImgId35,
         price: 330000,
         category: 'living',
+        filters: ['tela', '3 cuerpos modulares','40 dias']
     },
     {
         id: 36,
@@ -344,6 +380,7 @@ export const productsData = [
         img: ImgId36,
         price: 380000,
         category: 'living',
+        filters: ['tela', '3 cuerpos', 'esquinero','40 dias']
     },
     {
         id: 37,
@@ -352,6 +389,7 @@ export const productsData = [
         img: ImgId37,
         price: 120000,
         category: 'living',
+        filters: ['entrega inmediata']
     },
     {
         id: 38,
@@ -360,6 +398,7 @@ export const productsData = [
         img: ImgId38,
         price: 420000,
         category: 'living',
+        filters: ['tela','40 dias']
     },
     {
         id: 39,
@@ -368,6 +407,7 @@ export const productsData = [
         img: ImgId39,
         price: 120000,
         category: 'living',
+        filters: ['entrega inmediata']
     },
     {
         id: 40,
@@ -376,6 +416,7 @@ export const productsData = [
         img: ImgId40,
         price: 100000,
         category: 'living',
+        filters: ['entrega inmediata']
     },
     {
         id: 41,
@@ -384,6 +425,7 @@ export const productsData = [
         img: ImgId41,
         price: 110000,
         category: 'living',
+        filters: ['madera','entrega inmediata']
     },
     {
         id: 42,
@@ -392,6 +434,7 @@ export const productsData = [
         img: ImgId42,
         price: 150000,
         category: 'living',
+        filters: ['madera','entrega inmediata']
     },
     {
         id: 43,
@@ -400,6 +443,7 @@ export const productsData = [
         img: ImgId43,
         price: 115000,
         category: 'living',
+        filters: ['entrega inmediata']
     },
     {
         id: 44,
@@ -408,6 +452,7 @@ export const productsData = [
         img: ImgId44,
         price: 370000,
         category: 'living',
+        filters: ['tela', '3 cuerpos', 'esquinero','40 dias']
     },
     {
         id: 45,
@@ -416,6 +461,7 @@ export const productsData = [
         img: ImgId45,
         price: 130000,
         category: 'living',
+        filters: ['40 dias']
     },
     {
         id: 46,
@@ -424,6 +470,7 @@ export const productsData = [
         img: ImgId46,
         price: 190000,
         category: 'living',
+        filters: ['tela','entrega inmediata']
     },
     {
         id: 47,
@@ -432,6 +479,7 @@ export const productsData = [
         img: ImgId47,
         price: 430000,
         category: 'living',
+        filters: ['tela', '4 cuerpos', 'esquinero','40 dias']
     },   
     {
         id: 48,
@@ -439,7 +487,8 @@ export const productsData = [
         desc: 'Cama articulada',
         img: ImgId48,
         price: 500000,
-        category: 'camas multiposicion',
+        category: 'camas multiposiciones',
+        filters: ['35 dias']
     },
     {
         id: 49,
@@ -447,7 +496,8 @@ export const productsData = [
         desc: 'Cama articulada',
         img: ImgId49,
         price: 570000,
-        category: 'camas multiposicion',
+        category: 'camas multiposiciones',
+        filters: ['35 dias']
     },
     {
         id: 50,
@@ -455,7 +505,8 @@ export const productsData = [
         desc: 'Mesa de comedor extensible',
         img: ImgId50,
         price: 230000,
-        category: 'Comedores',
+        category: 'comedores',
+        filters: ['entrega inmediata']
     },
     {
         id: 51,
@@ -463,7 +514,8 @@ export const productsData = [
         desc: 'Mesa de comedor extensible',
         img: ImgId51,
         price: 240000,
-        category: 'Comedores',
+        category: 'comedores',
+        filters: ['entrega inmediata']
     },
     {
         id: 52,
@@ -471,7 +523,8 @@ export const productsData = [
         desc: 'Mesa de comedor extensible',
         img: ImgId52,
         price: 260000,
-        category: 'Comedores',
+        category: 'comedores',
+        filters: ['entrega inmediata']
     },
     {
         id: 53,
@@ -479,7 +532,8 @@ export const productsData = [
         desc: 'Silla de comedor',
         img: ImgId53,
         price: 80000,
-        category: 'Comedores',
+        category: 'comedores',
+        filters: ['entrega inmediata']
     },
     {
         id: 54,
@@ -487,7 +541,8 @@ export const productsData = [
         desc: 'Silla de comedor',
         img: ImgId54,
         price: 70000,
-        category: 'Comedores',
+        category: 'comedores',
+        filters: ['tela','entrega inmediata']
     },
     {
         id: 55,
@@ -495,39 +550,18 @@ export const productsData = [
         desc: 'Silla de comedor',
         img: ImgId55,
         price: 57000,
-        category: 'Comedores',
+        category: 'comedores',
+        filters: ['entrega inmediata']
     },{
         id: 56,
         name: 'Lena',
         desc: 'Silla de comedor',
         img: ImgId56,
         price: 60000,
-        category: 'Comedores',
+        category: 'comedores',
+        filters: ['entrega inmediata']
     },
-    {
-        id: 57,
-        name: 'Extense 1',
-        desc: 'Mesa de comedor extensible',
-        img: ImgId50,
-        price: 230000,
-        category: 'Comedores',
-    },
-    {
-        id: 58,
-        name: 'Extense 2',
-        desc: 'Mesa de comedor extensible',
-        img: ImgId51,
-        price: 240000,
-        category: 'Comedores',
-    },
-    {
-        id: 59,
-        name: 'Extense 3',
-        desc: 'Mesa de comedor extensible',
-        img: ImgId52,
-        price: 260000,
-        category: 'Comedores',
-    },
+    
     {
         id: 50,
         name: 'Extense 1',
@@ -535,6 +569,7 @@ export const productsData = [
         img: ImgId50,
         price: 230000,
         category: 'mesas extensibles',
+        filters: []
     },
     {
         id: 51,
@@ -543,6 +578,7 @@ export const productsData = [
         img: ImgId51,
         price: 240000,
         category: 'mesas extensibles',
+        filters: []
     },
     {
         id: 52,
@@ -551,6 +587,7 @@ export const productsData = [
         img: ImgId52,
         price: 260000,
         category: 'mesas extensibles',
+        filters: []
     },
 ]
 
@@ -558,7 +595,9 @@ export const productsData = [
 
 export const TotalProducts = productsData.length
 
-export const productosXCategorias = productsData.reduce((acc, product)=>{
+
+
+export const productosXCategorias = Object.entries(productsData.reduce((acc, product)=>{
 
 if(!acc[product.category]) {
     acc[product.category] = []
@@ -569,5 +608,6 @@ acc[product.category] = [...acc[product.category], product]
 return acc
      
 },{})
+)
 
 

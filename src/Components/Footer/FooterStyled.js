@@ -6,7 +6,7 @@ position: absolute;
 bottom: -100px;
 width: 100vw;
 height: 510px;
-background-color: rgb(23, 23, 23);
+background-color:#2c2c2c;
 `
 
 export const ColumnsContainer = styled.div`

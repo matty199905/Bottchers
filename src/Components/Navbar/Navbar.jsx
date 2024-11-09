@@ -5,11 +5,19 @@ import { NavLink } from 'react-router-dom';
 
 import UserIcon from './User/UserIcon/UserIcon';
 import CartIcon from './Cart/CartIcon/CartIcon';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { showCartToggle } from '../../Redux/Cart/CartSlice';
+import { show } from '../../Redux/Filters/filtersSlice'
+
+
+
+
+
 
 
 const Navbar = () => {
+
+
 
 
 const [changeColor, setchangeColor] = useState("transparent")
@@ -30,7 +38,23 @@ useEffect(()=> {
 
 },[])
 
+
+
+
+
 const dispatch = useDispatch()
+
+const {showFilters} = useSelector(state => state.filters)
+
+ const closeCategoryOnCart = () => {
+        if(showFilters === true) {
+            return dispatch(show())
+        }
+        else {return null}
+    }
+
+
+
 
     return (
         <NavbarContainer
@@ -57,7 +81,7 @@ const dispatch = useDispatch()
 
             <IconsContainer>
 
-                <CartIcon onClick={() => dispatch(showCartToggle())}/>
+                <CartIcon onClick={() => {dispatch(showCartToggle()); closeCategoryOnCart()}}/>
                     
                 <UserIcon />
 

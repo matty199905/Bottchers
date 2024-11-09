@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardProductStyled, HandlerAndPriceCardContainer, HandlerIconStyled, HandlerQuantityContainer, ImgTitleCardContainer, Price, TrashIcon } from './ModalCartStyled'
+import { CardProductStyled, HandlerAndPriceCardContainer, HandlerIconStyled, HandlerQuantityContainer, ImgTitleCardContainer, Price, TrashIcon } from './CardCartProductStyled'
 import { FaCirclePlus } from "react-icons/fa6";
 import { FaCircleMinus } from "react-icons/fa6";
 import { GoTrash } from "react-icons/go";

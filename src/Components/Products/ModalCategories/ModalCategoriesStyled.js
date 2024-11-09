@@ -3,62 +3,62 @@ import styled from "styled-components"
 
 export const FiltersContainer = styled(motion.div)`
 position: absolute;
-top: 78px;
+top: 80px;
 left: 0;
-width: 300px;
-height: 100.4%;
-background-color:rgb(23, 23, 23);
-border-right: 2px solid grey;
-border-bottom: 2px solid grey;
-padding: 0px;
-z-index: 100;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+width: 100%;
+height: 180px;
+background-color: whitesmoke;
+border-bottom: 0.5px solid black;
+padding: 20px 0px;
+z-index: 90;
 `
 
 
 export const FilterContainer = styled.div`
 display: flex;
-flex-direction: column;
 align-items: flex-start;
 justify-content: center;
+margin-left: -10px;
 h3{
    font-weight:600px ;
    font-size: 17px;
-   margin: 50px 0 0 40px;
-   color: white
+   margin: 15px -15px 0 80px;
 }
 ul{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 5px;
+    gap: 7px;
     li{
-        font-weight: 400;
-        font-size: 15px;
+        font-size: 16px;
         border: none;
         background-color: transparent;
-        color: white;
         cursor: pointer;
         transition: all ease .2s;
-        &:hover{
-            color: orange;
-            font-weight: 500;
-            transform: scale(1.1);
-            transition: all ease .2s;
-        }
+
+     
     }
 }
 `
 
-export const ActiveFiltersContainer = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-flow: row wrap;
-width: 87%;
-height: 60px;
-padding: 20px;
-border-bottom: 1px solid grey;
-/* display: none; */
+export const LiContainer = styled.div`
+ //selectedfilter
+ color: ${(props)=>(props.activeFilter === true ? 'orange': 'black') } ;
+ font-weight: ${(props)=>(props.activeFilter === true ? '500': '400' )} ;
+ transform: ${(props)=>(props.activeFilter  === true ? 'scale(1.05)': 'scale(1)')} ;
+ transition: all ease .2s;
+ &:hover{
+            color: orange;
+            font-weight: 500;
+            transform: ${(props)=>(props.activeFilter === true ? 'scale(1.05)': 'scale(1.15)')} ;
+            transition: all ease .2s;
+          
+        }
 `
+
+
+

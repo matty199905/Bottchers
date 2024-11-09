@@ -2,8 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 
+
  const filtersInitialState = {
     showFilters: false,
+    selectedFilter: null,
 }
 
 
@@ -15,13 +17,20 @@ export const filtersSlice = createSlice({
         show: (state) => {
             return {
                 ...state,
-                showFilters: (!state.showFilters)
+                showFilters: !state.showFilters
             }
+        },
+        filterSelection: (state, action) => {
+         return {
+            ...state,
+            selectedFilter: state.selectedFilter !== action.payload ? action.payload : null ,
+            payload: action.payload,
+         }
         }
     }
 })
 
 
-export const {show} = filtersSlice.actions
+export const {show, filterSelection} = filtersSlice.actions
 
 export default filtersSlice.reducer

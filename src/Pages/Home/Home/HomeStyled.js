@@ -8,7 +8,7 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 width: 100vw;
-height: 2550px;
+height: 2450px;
 `
 
 export const HeroContainer = styled.div`

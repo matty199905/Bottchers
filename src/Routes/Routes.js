@@ -16,6 +16,8 @@ import MesasExtensibles from '../Pages/CategoriesHome/MesasExtensibles/MesasExte
 import SofasCama from '../Pages/CategoriesHome/SofasCamas/SofasCama.jsx'
 import Living from '../Pages/CategoriesHome/Living/Living.jsx'
 import ProductoDinamico from '../Pages/ProductoDinamico/ProductoDinamico.jsx'
+import ProtectedRoute from './ProtectedRoute/ProtectedRoute.js'
+
 
 
 const RoutesApp = () => {
@@ -63,14 +65,23 @@ const RoutesApp = () => {
       <Route path='/contacto' element={<Contact />} />
       <Route path='/register' element={<Register />} />
       <Route path='/login' element={<Login />} />
-      <Route path='/checkout' element={<Checkout />} />
+
+
+
+      
 
       <Route path='/products'>
         <Route index element={<Productos />} />
         <Route path=':product' element={<ProductoDinamico />} />
       </Route>
 
-
+    
+      <Route path='/checkout' 
+      element={
+      <ProtectedRoute redirectTo='/login'>
+        <Checkout/>
+        </ProtectedRoute>
+      } />
 
 
 

@@ -21,7 +21,7 @@ const Multiposicion = () => {
 
       <ProductsWrapper 
       hideFilters='true'
-      page='camas multiposicion'/>
+      page='camas multiposiciones'/>
 
 
     </CamasMultiposicionWrapper>

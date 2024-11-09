@@ -2,7 +2,19 @@ import React from 'react'
 import { ErrorMessageStyled, InputContainer, InputStyled, LabelStyled } from './InputStyled'
 import { ErrorMessage, Field } from 'formik'
 
-const Input = ({asunto, htmlFor, type, name, placeholder, id, isError, label, register, login, checkout }) => {
+const Input = ({
+  asunto, 
+  htmlFor, 
+  type, 
+  name, 
+  placeholder, 
+  id, 
+  isError, 
+  label,
+  register, 
+  login, 
+  checkout, 
+  onCopy, }) => {
   return (
  <InputContainer>
  
@@ -11,6 +23,7 @@ const Input = ({asunto, htmlFor, type, name, placeholder, id, isError, label, re
  </LabelStyled>
  
  <Field
+ onCopy={onCopy}
  as={InputStyled}
  name={name}
  type={type}

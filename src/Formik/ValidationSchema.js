@@ -29,9 +29,6 @@ export const registerValidationSchema = Yup.object({
         .string()
         .required('Campo Requerido'),
 
-    surname: Yup
-        .string()
-        .required('Campo Requerido'),
 
     email: Yup
         .string()
@@ -42,7 +39,14 @@ export const registerValidationSchema = Yup.object({
         .string()
         .required('Campo Requerido')
         .max(12, 'Maximo 12 caracteres')
-        .min(6, 'Mínimo 6 caracteres')
+        .min(6, 'Mínimo 6 caracteres'),
+
+    password2: Yup
+        .string()
+        .required('Campo Requerido')
+        .oneOf([Yup.ref('password'), null ], 'La contraseña no coincide')
+        .max(12, 'Maximo 12 caracteres')
+        .min(6, 'Mínimo 6 caracteres'),
 })
 
 

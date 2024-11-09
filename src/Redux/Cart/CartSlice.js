@@ -51,10 +51,14 @@ export const CartSlice = createSlice({
             }
         },
         plusBtn: (state, action) => {
+            console.log(action);
+            
             return {
                 ...state,
                 cartProducts: increaseProductCart(state.cartProducts, action.payload),
                 shippingCost: SHIPPINGCOST,
+                
+                
             }
 
         },

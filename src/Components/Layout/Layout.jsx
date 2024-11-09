@@ -2,6 +2,10 @@ import React, { useEffect } from 'react'
 import { LayoutWrapper, UpBtn } from './LayoutStyled'
 import { useLocation } from 'react-router-dom'
 import { IoArrowUpCircle } from "react-icons/io5";
+
+
+
+
 const Layout = ({children}) => {
 
   const {pathname} = useLocation()

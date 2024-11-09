@@ -10,39 +10,34 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-bottom: 520px;
+
+
 `
 
 export const MostrarFiltros = styled(motion.button)`
 display: ${(props)=>(props.hideFilters === 'true' ? 'none' : 'flex')};
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 align-self: flex-start ;
 height: 50px;
-width: 200px;
+width: 100vw;
 gap: 20px;
-color: black;
-margin: 20px 0px 0px 0px;
-background-color: transparent;
+color: ${(props)=>(props.showFilters === true ? 'orange' : 'black')};
+margin: 20px 0px 0px 50px;
+background-color: whitesmoke;
 border: none;
-font-size: 15px;
-letter-spacing: .5px;
+font-size: 14px;
+letter-spacing: 0.6px;
 font-weight: 600;
 cursor: pointer;
 padding-bottom: 10px;
 transition: all ease .2s;
   &:hover{ 
     color: orange;
-    transform: scale(1.05);
     transition: all ease .2s;
   }
 `
 
-export const Separator = styled.hr`
-display: ${(props)=>(props.hideFilters === 'true' ? 'none' : 'flex')};
-width: 97vw;
-height: 1px;
-background-color: grey;
-`
 
 export const ArrowStyled = styled.div`
 display: flex;
@@ -59,12 +54,12 @@ align-items: center;
 gap: 60px;
 flex-flow: row wrap;
 width: 100vw;
-height: auto;
-padding: 50px 0px;
+height: ${(props)=>(props.showFilters === true ? '100%' : '100%')};
+padding: 30px 0 50px 0;
 `
 
 export const PagesContainer = styled.div`
-display: flex;
+display: ${(props)=>(props.hide === true ? 'none' : 'flex')};
 justify-content: center;
 align-items: center;
 gap: 20px;

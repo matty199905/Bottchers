@@ -7,6 +7,7 @@ import Button from '../../../UI/Button/Button'
 
 
 
+
 const ProductsContainer = ({ page }) => {
 
 
@@ -18,13 +19,36 @@ const ProductsContainer = ({ page }) => {
 
     const { productos } = useSelector(state => state.productos)
 
-    const arrayProductos = Object.entries(productos)
+    const { selectedFilter } = useSelector(state => state.filters)
+
+    const {showFilters} = useSelector(state => state.filters)
 
 
-    const paginadoTodosLosProductos = arrayProductos.map(([key, array]) => {
-        if (key === 'mesas extensibles') { return null }
+
+
+
+    const paginadoTodosLosProductos = productos.map(([key, array]) => {
+
+        if (selectedFilter) {
+             //renderizar x categorias
+             if (key === selectedFilter) {return array.map((item) => { return <ProductCard {...item} key={item.id} /> }) }
+
+             else {          //renderizar x filtros
+              return array.map((item) => {
+                    return item.filters.map((filter) => {
+                        if (filter === selectedFilter) {
+                            return <ProductCard {...item} key={item.id} />
+                        }
+                    })
+                })}
+        }
+
+        else if (key === 'mesas extensibles') { return null }
+
         else { return array.map((item) => { if (limit >= item.id) { return <ProductCard {...item} key={item.id} /> } }) }
     })
+
+
 
 
 
@@ -32,31 +56,25 @@ const ProductsContainer = ({ page }) => {
     return (
         <>
 
-            <ProductsContainerStyled>
-
-
-                    <ModalCategories
-                    />
-
-
-                
-
-
+            <ProductsContainerStyled showFilters={showFilters}>
 
                 {
 
                     page === 'todosLosProductos' ? paginadoTodosLosProductos :
 
-                        arrayProductos.map(([key, array]) => { if (key === page) { return array.map((item) => { return <ProductCard {...item} key={item.id} /> }) } })
+                        productos.map(([key, array]) => { if (key === page) { return array.map((item) => { return <ProductCard {...item} key={item.id} /> }) } })
+
 
 
                 }
 
+<ModalCategories/>
+           
             </ProductsContainerStyled>
 
             {page === 'todosLosProductos' &&
 
-                <PagesContainer >
+                <PagesContainer hide={selectedFilter !== null}>
 
                     <Button
                         onClick={() => setLimit(prevLimit => prevLimit - Initial_Limit)}

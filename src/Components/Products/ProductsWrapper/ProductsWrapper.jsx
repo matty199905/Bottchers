@@ -1,42 +1,56 @@
 import React from 'react'
-import { ProductsWrapperContainer, MostrarFiltros, ArrowStyled, Separator } from './ProductsContainerStyled'
+import { ProductsWrapperContainer, MostrarFiltros, ArrowStyled } from './ProductsContainerStyled'
 import { MdOutlineArrowForwardIos } from 'react-icons/md'
 import ProductsContainer from './ProductsContainer'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { show } from '../../../Redux/Filters/filtersSlice'
+import { showCartToggle } from '../../../Redux/Cart/CartSlice'
 
 
 const ProductsWrapper = ({ hideFilters, page }) => {
 
-const dispatch = useDispatch()
+  const dispatch = useDispatch()
+
+  const {showFilters} = useSelector(state => state.filters)
+
+  const {showCart} = useSelector(state => state.cart)
+
+
+  const closeCartOnCategory = () => {
+    if(showCart === true) {
+      return dispatch(showCartToggle())
+    }
+    else {return null}
+  }
+
+
 
   return (
 
 
     <ProductsWrapperContainer>
 
-      
-
-<MostrarFiltros
-  hideFilters={hideFilters}
-  onClick={(e)=> {e.preventDefault();
-   return dispatch(show())
-   
-    
-  }}>
-  Mostrar Filtros
-  <ArrowStyled>
-    <MdOutlineArrowForwardIos />
-  </ArrowStyled>
-</MostrarFiltros>
 
 
+      <MostrarFiltros showFilters={showFilters}
+        hideFilters={hideFilters}
+        onClick={(e) => {
+          e.preventDefault();
+          dispatch(show());
+          closeCartOnCategory();
 
-      <Separator
-        hideFilters={hideFilters} />
+
+        }}>
+       {showFilters === true ? 'Ocultar Filtros' : 'Mostrar Filtros'}
+        <ArrowStyled>
+          <MdOutlineArrowForwardIos />
+        </ArrowStyled>
+      </MostrarFiltros>
 
 
-      <ProductsContainer page={page}/>
+
+
+      <ProductsContainer page={page} />
 
 
 

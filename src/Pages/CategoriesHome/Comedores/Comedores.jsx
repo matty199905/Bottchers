@@ -18,7 +18,7 @@ title={'Comedores'}
 
 <ProductsWrapper
       hideFilters='true'
-      page='Comedores'/>
+      page='comedores'/>
 
 </ComedoresWrapper>
   )

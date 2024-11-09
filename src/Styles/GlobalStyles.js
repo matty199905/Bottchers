@@ -7,9 +7,6 @@ export const GlobalStyles = createGlobalStyle`
     position: relative;
     scroll-behavior: smooth;
     width: 100vw;
-   
-    background-color: red;
-  
   }
 
 

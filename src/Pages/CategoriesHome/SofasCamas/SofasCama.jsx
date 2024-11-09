@@ -16,7 +16,7 @@ title={'Sofás Cama'}
 
 <ProductsWrapper 
       hideFilters='true'
-      page='sofa cama'/>
+      page='sofas cama'/>
 
 
 </SofasCamaWrapper>

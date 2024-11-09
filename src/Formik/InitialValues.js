@@ -8,9 +8,9 @@ export const contactInitialValues = {
 
 export const registerInitialValues = {
     name: "",
-    surname: "",
     email: "",
     password: "",
+    password2: "",
 }
 
 

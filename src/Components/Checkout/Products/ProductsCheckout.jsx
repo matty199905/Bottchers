@@ -1,8 +1,20 @@
 import React from 'react'
 import { CardsWrapperStyled, EnvioStyled, HrStyled, PriceContainerStyled, PriceTotalStyled, ProductosContainerStyled, ProductsTitleStyled, SubtotalStyled, TotalStyled } from './ProductsCheckoutStyled'
-import CardCartProduct from '../../Navbar/Cart/ModalCart/CardCartProduct'
+import { useSelector } from 'react-redux'
+import CheckoutCardProduct from './CheckoutCardProduct'
+import { formatPrice } from '../../../Utils/formatPrice'
 
 const ProductsCheckout = () => {
+
+
+  const {cartProducts} = useSelector(state => state.cart)
+
+  const { shippingCost } = useSelector(state => state.cart)
+
+
+  const totalPrice = cartProducts.map((item) => item.quantity * item.price).reduce((acc, cur) => { return acc + cur }, 0)
+
+
   return (
     <ProductosContainerStyled>
 
@@ -11,9 +23,9 @@ const ProductsCheckout = () => {
 
     <CardsWrapperStyled>
 
- <CardCartProduct/>
- <CardCartProduct/>
- <CardCartProduct/>
+{
+  cartProducts.map((item)=>{return <CheckoutCardProduct {...item} key={item.id}/>})
+}
 
     </CardsWrapperStyled>
 
@@ -22,19 +34,19 @@ const ProductsCheckout = () => {
 
       <SubtotalStyled>
         <p>Subtotal</p>
-        <span>$5000</span>
+        <span>{formatPrice(totalPrice)}</span>
       </SubtotalStyled>
 
       <EnvioStyled>
         <p>Envío:</p>
-        <span>$2000</span>
+        <span>{formatPrice(shippingCost)}</span>
       </EnvioStyled>
 
       <HrStyled />
       
       <TotalStyled>
         <p>Total:</p>
-        <PriceTotalStyled>$20000</PriceTotalStyled>
+        <PriceTotalStyled>{formatPrice(totalPrice + shippingCost)}</PriceTotalStyled>
       </TotalStyled>
 
     </PriceContainerStyled>

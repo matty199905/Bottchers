@@ -33,7 +33,7 @@ export const LinksContainer = styled.ul`
 display: flex;
 justify-content: center;
 gap: 30px;
-margin-right: 30px;
+margin: 0px 30px 0 0;
 `
 
 
@@ -50,7 +50,7 @@ gap: 20px;
 export const NavLinkStyled = styled(NavLink)`
 background-color: transparent;
 text-decoration: none;
-font-size: 18px;
+font-size: 17px;
 font-weight:300;
 transition: all ease .3s;
 color: white;

@@ -5,6 +5,7 @@ import persistStore from 'redux-persist/es/persistStore'
 import { productosSlice } from './Productos/productosSlice';
 import { CartSlice } from './Cart/CartSlice';
 import { filtersSlice } from './Filters/filtersSlice';
+import { UserSlice } from './User/userSlice';
 
 
 
@@ -12,13 +13,14 @@ const reducers = combineReducers({
 productos: productosSlice.reducer,
 cart: CartSlice.reducer,
 filters: filtersSlice.reducer,
+user: UserSlice.reducer
 })
 
 
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: ["cart"]
+    whitelist: ["cart", "user"]
 }
 
 const persistedReducer = persistReducer(persistConfig, reducers)
