@@ -57,10 +57,13 @@ console.log(productData);
                         <img src={Visa} alt="LogoVisa" />
                     </CuotasContainer>
 
-                    <Button ProductoDinamico={true} onClick={()=>{ 
+                    <Button ProductoDinamico={true} onClick={()=>{ {
+                        if(window.confirm('¿Desea agregar este producto al carrito?')){
                         dispatch(addToCart(productData));
                         navigate('/products');
                         dispatch(showCartToggle())
+                    }
+                    }
 
                     }
                     }>

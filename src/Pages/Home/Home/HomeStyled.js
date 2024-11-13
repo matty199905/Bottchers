@@ -8,7 +8,12 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 width: 100vw;
-height: 2450px;
+height: 2400px;
+@media (max-width: 940px) {
+height: 2250px;}
+@media (max-width: 440px) {
+    height: 2300px;
+}
 `
 
 export const HeroContainer = styled.div`
@@ -40,6 +45,12 @@ h1{
     background: linear-gradient(to left, #ffffff, #adadad);
     color: transparent;
     background-clip: text;
+}
+@media (max-width: 580px) {
+h1{
+    font-size: 45px;
+    padding: 0 20px;
+}
 }
 `
 
@@ -80,14 +91,22 @@ h2{
     font-size: 49px;
     font-weight: 500;
     margin-bottom: 0px;
+    text-align: center;
    
 }
-h3{
-    width: 690px;
+p{
+    width: 50vw;
     font-size: 16px;
     font-weight: 400;
     opacity: 0.6;
     line-height: 28px;
     text-align: center;
+}
+@media (max-width: 750px) {
+h2 {
+    font-size: 40px;
+    margin-top: 10px;
+    padding: 0 20px;
+}
 }
 `

@@ -36,9 +36,6 @@ key='user-modal'
     dispatch(showModalUser());
     navigate('/')}}>Cerrar Sesión</ModalSpan>
 
-<Separator/>
-
-<ModalSpan>Mis Ordenes</ModalSpan>
 
 
 

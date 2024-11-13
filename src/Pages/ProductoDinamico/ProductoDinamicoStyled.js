@@ -14,9 +14,9 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 130px 0px;
+margin: 110px 0px;
 width: 90%;
-height: 70vh;
+height: 80vh;
 background: linear-gradient(to bottom,#c3c3c3 , #dadada, #efefef, white);
 box-shadow: 1px 2px 20px black;
 `
@@ -50,8 +50,8 @@ h1{
 }
 h2{
     font-size:20px;
-    font-weight: 300;
-    opacity: .8;
+    font-weight: 400;
+    opacity: .5;
 }
 `
 export const PriceContainerStyled = styled.div`
@@ -60,20 +60,20 @@ export const PriceContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`;
+`
 
 export const Price = styled.div`
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
- margin: 30px 0 -50px 0;
+ margin: 30px 0 -30px 0;
   span{
    
     font-weight: 700;
-    opacity: 0.4;
+    color: orange;
   }
 `;
 
@@ -82,7 +82,7 @@ export const PriceOFF = styled(Price)`
     font-weight: 700;
     font-style: oblique;
     opacity: 1;
-    text-decoration: underline;
+    color: black;
 }
 .cross{
     text-decoration: line-through 2.7px red;
@@ -100,7 +100,7 @@ export const PriceOFF = styled(Price)`
 export const CuotasContainer = styled.div`
 display: flex;
 justify-content: flex-start;
-align-items: center;
+align-self: flex-end;
 margin-top: 80px;
 span{
     font-size: 18px;

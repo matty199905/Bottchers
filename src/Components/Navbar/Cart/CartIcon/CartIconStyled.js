@@ -9,7 +9,9 @@ color: white;
     transition: all ease 0.5s;
     color: #ff7b00;
 }
-
+@media (max-width: 470px) {
+font-size: 30px;
+}
 `
 
 

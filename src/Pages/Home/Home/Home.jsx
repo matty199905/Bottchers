@@ -25,7 +25,7 @@ const Home = () => {
 
 <CategoriesSection>
 <h2>El Confort que estás buscando.</h2>
-<h3>Descubrí el producto ideal para vos en nuestras colecciones especialmente diseñadas para que vivas una experiencia única.</h3>
+<p>Descubrí el producto ideal para vos en nuestras colecciones especialmente diseñadas para que vivas una experiencia única.</p>
 
 <CategoriesGrid/>
 

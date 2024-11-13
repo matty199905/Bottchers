@@ -15,6 +15,9 @@ img{
     margin: auto;
     height: 70%;
 }
+@media (max-width: 420px) {
+    margin: 0 20px;
+}
 
 `
 

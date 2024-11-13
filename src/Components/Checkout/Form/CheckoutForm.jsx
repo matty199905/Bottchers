@@ -4,8 +4,13 @@ import Submit from '../../../UI/Submit/Submit';
 import Input from '../../../UI/Input/Input';
 import { checkoutInitialValues } from '../../../Formik/InitialValues';
 import { checkoutValidationSchema } from '../../../Formik/ValidationSchema';
+import { useNavigate } from 'react-router-dom';
+
 
 const CheckoutForm = () => {
+
+const navigate = useNavigate()
+
   return (
   <CheckoutContainer>
 <h2>Ingresa tus Datos</h2>
@@ -70,7 +75,11 @@ onSubmit={""}>
           </Input>
 
 
-<Submit enviado={isSubmitting ? true : false}>{isSubmitting ? 'Iniciando pedido' : 'Iniciar pedido'}</Submit>
+<Submit enviado={isSubmitting ? true : false}>
+
+  {isSubmitting ? 'Iniciando pedido' : 'Iniciar pedido'}
+  
+  </Submit>
 
 
 </FormContainer>

@@ -80,8 +80,7 @@ const RoutesApp = () => {
       element={
       <ProtectedRoute redirectTo='/login'>
         <Checkout/>
-        </ProtectedRoute>
-      } />
+        </ProtectedRoute>} />
 
 
 

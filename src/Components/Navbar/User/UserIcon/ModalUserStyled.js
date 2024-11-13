@@ -11,13 +11,17 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 20px;
-width: 330px;
-height: 130px;
+width: 300px;
+height: 90px;
 background: linear-gradient(rgba(255, 255, 255, 0.274), rgba(255, 255, 255, 0.301));
 backdrop-filter: blur(15px);
 border: 1px solid grey;
 border-radius: 5px;
 z-index: 400;
+@media (max-width: 470px) {
+width: 101vw;
+height: 70px;
+}
 `
 
 
@@ -33,9 +37,3 @@ transition: all ease 0.2s;
 }
 `
 
-
-export const Separator = styled.hr`
-width: 100%;
-border: 0.5px solid #ffffff94;
-margin: 0px;
-`

@@ -1,12 +1,24 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
 
-export const FooterContainer = styled.footer`
+export const FooterWrapper = styled.footer`
 position: absolute;
-bottom: -100px;
+bottom: 0px;
 width: 100vw;
-height: 510px;
-background-color:#2c2c2c;
+@media (max-width: 940px) {
+bottom: -300px;
+}
+@media (max-width: 640px) {
+bottom: -500px;
+}
+@media (max-width: 576px) {
+bottom: -550px;
+}
+`
+
+export const FooterContainer = styled.div`
+background-color: #2c2c2c;
+height: 100%;
 `
 
 export const ColumnsContainer = styled.div`
@@ -14,8 +26,8 @@ display: flex;
 justify-content: center;
 align-content: center;
 flex-flow: row wrap;
-gap: 100px;
-padding: 0px 170px;
+gap: 0px;
+padding: 0px 20px;
 `
 
 
@@ -29,7 +41,6 @@ gap:20px;
 width: 300px;
 h3{
     color: orange;
-    
 font-size: 17px;
 font-weight: 400;
 font-style: italic;
@@ -57,7 +68,7 @@ ul{
 export const LinkStyled = styled(Link)`
 
 color: rgba(255, 255, 255, 0.85);
-border-bottom: ${(props)=>(props.icon ? 'none' : '1px solid rgba(255, 255, 255, 0.55)')};
+border-bottom: ${(props) => (props.icon ? 'none' : '1px solid rgba(255, 255, 255, 0.55)')};
 padding-bottom: 15px;
 margin-left: 27px ;
 width: 200px;
@@ -65,7 +76,7 @@ text-align: center;
 letter-spacing: 1px;
 font-weight: 300;
 font-style: oblique;
-font-size: ${(props)=>(props.icon ? '40px' : '14px')};
+font-size: ${(props) => (props.icon ? '35px' : '14px')};
 transition: all ease 0.3s;
 &:hover{
     cursor: pointer;
@@ -96,17 +107,24 @@ p{
     color: rgba(255, 255, 255, 0.75);
     font-style:oblique;
     font-size: 17px;
+    text-align: center;
+    padding: 0 20px;
+}
+@media (max-width: 460px) {
+    p{font-size: 14px}
 }
 `
 
 export const IconsContainer = styled.div`
 display: flex;
+flex-flow: row wrap;
 justify-content: center;
 align-items: center;
 gap: 50px;
 margin-top: 10px;
 font-size: 40px;
-
+padding-bottom: 40px;
+padding: 0 20px;
 `
 
 export const IconStyled = styled.div`
@@ -116,5 +134,8 @@ color: rgba(255, 255, 255, 0.85);
     cursor: pointer;
     transition: all ease 0.3s;
     transform: scale(1.1);
+}
+@media (max-width: 460px) {
+    font-size: 30px;
 }
 `

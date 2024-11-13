@@ -11,16 +11,19 @@ justify-content: center;
 align-items: center;
 margin-bottom: 520px;
 
-
+`
+export const ButtonFiltersContainer = styled.div`
+display: flex;
+justify-content: flex-start;
+align-items: center;
+height: 70px;
+width: 100vw;
 `
 
 export const MostrarFiltros = styled(motion.button)`
 display: ${(props)=>(props.hideFilters === 'true' ? 'none' : 'flex')};
-justify-content: flex-start;
+justify-content:center;
 align-items: center;
-align-self: flex-start ;
-height: 50px;
-width: 100vw;
 gap: 20px;
 color: ${(props)=>(props.showFilters === true ? 'orange' : 'black')};
 margin: 20px 0px 0px 50px;
@@ -43,7 +46,7 @@ export const ArrowStyled = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 5px 0px 0px -10px;
+margin: 0px 0px 0px -10px;
 `
 
 
@@ -54,7 +57,6 @@ align-items: center;
 gap: 60px;
 flex-flow: row wrap;
 width: 100vw;
-height: ${(props)=>(props.showFilters === true ? '100%' : '100%')};
 padding: 30px 0 50px 0;
 `
 
@@ -63,7 +65,7 @@ display: ${(props)=>(props.hide === true ? 'none' : 'flex')};
 justify-content: center;
 align-items: center;
 gap: 20px;
-margin: 40px 0 -40px 0 ;
+margin: 40px 0 0 0 ;
 `
 
 

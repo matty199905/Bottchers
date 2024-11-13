@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProductsWrapperContainer, MostrarFiltros, ArrowStyled } from './ProductsContainerStyled'
+import { ProductsWrapperContainer, MostrarFiltros, ArrowStyled, ButtonFiltersContainer } from './ProductsContainerStyled'
 import { MdOutlineArrowForwardIos } from 'react-icons/md'
 import ProductsContainer from './ProductsContainer'
 import { useDispatch, useSelector } from 'react-redux'
@@ -30,7 +30,7 @@ const ProductsWrapper = ({ hideFilters, page }) => {
 
     <ProductsWrapperContainer>
 
-
+<ButtonFiltersContainer>
 
       <MostrarFiltros showFilters={showFilters}
         hideFilters={hideFilters}
@@ -47,6 +47,7 @@ const ProductsWrapper = ({ hideFilters, page }) => {
         </ArrowStyled>
       </MostrarFiltros>
 
+      </ButtonFiltersContainer>
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterColumn, FooterContainer, ColumnsContainer, LinkStyled, SiguenosContainer, IconsContainer, IconStyled } from './FooterStyled'
+import { FooterColumn, FooterWrapper, ColumnsContainer, LinkStyled, SiguenosContainer, IconsContainer, IconStyled, FooterContainer } from './FooterStyled'
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { BsTwitterX } from "react-icons/bs";
@@ -12,82 +12,86 @@ const Footer = () => {
 
 
     return (
-        <FooterContainer>
+        <FooterWrapper>
 
-            <ColumnsContainer>
+            <FooterContainer>
 
-
-                <FooterColumn>
-                    <h3>Sobre Nosotros</h3>
-
-                    <ul>
-
-                        <LinkStyled to=''>Hechos</LinkStyled>
-                        <LinkStyled to=''>Sostenibilidad</LinkStyled>
-                        <LinkStyled to=''>Prensa</LinkStyled>
-
-                    </ul>
-                </FooterColumn>
-
-                <FooterColumn>
-                    <h3>Contacto</h3>
-
-                    <ul>
-
-                        <LinkStyled to="/contacto">Contacto</LinkStyled>
-                        <LinkStyled to=''>Encuentranos</LinkStyled>
-                        <LinkStyled to=''>Mas Info</LinkStyled>
-
-                    </ul>
-                </FooterColumn>
+                <ColumnsContainer>
 
 
-                <FooterColumn>
-                    <h3>Legal</h3>
+                    <FooterColumn>
+                        <h3>Sobre Nosotros</h3>
 
-                    <ul>
+                        <ul>
 
-                        <LinkStyled to=''>Derechos de Distribución</LinkStyled>
-                        <LinkStyled to=''>Protrección de Datos</LinkStyled>
-                        <LinkStyled to=''>Pie de Imprenta</LinkStyled>
+                            <LinkStyled to=''>Hechos</LinkStyled>
+                            <LinkStyled to=''>Sostenibilidad</LinkStyled>
+                            <LinkStyled to=''>Prensa</LinkStyled>
 
-                    </ul>
-                </FooterColumn>
+                        </ul>
+                    </FooterColumn>
 
+                    <FooterColumn>
+                        <h3>Contacto</h3>
 
-            </ColumnsContainer>
+                        <ul>
 
-            <SiguenosContainer>
+                            <LinkStyled to="/contacto">Contacto</LinkStyled>
+                            <LinkStyled to=''>Encuentranos</LinkStyled>
+                            <LinkStyled to=''>Mas Info</LinkStyled>
 
-                <span>SEGUINOS</span>
-
-                <p>Enterate de las últimas novedades en las redes que más te gusten.</p>
-
-
-                <IconsContainer>
-
-                    <IconStyled>
-                        <LinkStyled to='https://www.facebook.com/' target='_blank' icon="true"><FaFacebookF/></LinkStyled>
-                    </IconStyled>
-
-                    <IconStyled>
-                        <LinkStyled to='https://www.instagram.com/' target='_blank' icon="true"><IoLogoInstagram/></LinkStyled>   
-                    </IconStyled>
-
-                    <IconStyled>
-                        <LinkStyled to='https://www.youtube.com/' target='_blank' icon="true"> <ImYoutube2/></LinkStyled>
-                    </IconStyled>
-
-                    <IconStyled>
-                        <LinkStyled to='https://x.com/?lang=es' target='_blank' icon><BsTwitterX/></LinkStyled>
-                    </IconStyled>
-
-                </IconsContainer>
+                        </ul>
+                    </FooterColumn>
 
 
-            </SiguenosContainer>
+                    <FooterColumn>
+                        <h3>Legal</h3>
 
-        </FooterContainer>
+                        <ul>
+
+                            <LinkStyled to=''>Derechos de Distribución</LinkStyled>
+                            <LinkStyled to=''>Protrección de Datos</LinkStyled>
+                            <LinkStyled to=''>Pie de Imprenta</LinkStyled>
+
+                        </ul>
+                    </FooterColumn>
+
+
+                </ColumnsContainer>
+
+                <SiguenosContainer>
+
+                    <span>SEGUINOS</span>
+
+                    <p>Enterate de las últimas novedades en las redes que más te gusten.</p>
+
+
+                    <IconsContainer>
+
+                        <IconStyled>
+                            <LinkStyled to='https://www.facebook.com/' target='_blank' icon="true"><FaFacebookF /></LinkStyled>
+                        </IconStyled>
+
+                        <IconStyled>
+                            <LinkStyled to='https://www.instagram.com/' target='_blank' icon="true"><IoLogoInstagram /></LinkStyled>
+                        </IconStyled>
+
+                        <IconStyled>
+                            <LinkStyled to='https://www.youtube.com/' target='_blank' icon="true"> <ImYoutube2 /></LinkStyled>
+                        </IconStyled>
+
+                        <IconStyled>
+                            <LinkStyled to='https://x.com/?lang=es' target='_blank' icon><BsTwitterX /></LinkStyled>
+                        </IconStyled>
+
+                    </IconsContainer>
+
+
+                </SiguenosContainer>
+
+            </FooterContainer>
+
+        </FooterWrapper>
     )
 }
 

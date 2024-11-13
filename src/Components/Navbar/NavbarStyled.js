@@ -11,7 +11,8 @@ top: 0;
 padding-bottom: 10px;
 width: 100vw;
 height: 70px;
-z-index: 200;
+z-index: 500;
+
 `
 
 export const Logo = styled.button`
@@ -27,25 +28,23 @@ margin-left: 30px;
     color: #ff7b00;
      transition: all ease 0.3s;
 }
+@media (max-width: 470px) {
+font-size: 30px;
+margin-left: 10px;
+}
 `
 
 export const LinksContainer = styled.ul`
 display: flex;
 justify-content: center;
+align-items: center;
+text-align: center;
 gap: 30px;
 margin: 0px 30px 0 0;
+@media (max-width: 820px) {
+    display: none;
+}
 `
-
-
-export const IconsContainer = styled.div`
-margin-right: 50px;
-display: flex;
-justify-content: center;
-align-items: baseline;
-gap: 20px;
-
-`
-
 
 export const NavLinkStyled = styled(NavLink)`
 background-color: transparent;
@@ -53,11 +52,43 @@ text-decoration: none;
 font-size: 17px;
 font-weight:300;
 transition: all ease .3s;
-color: white;
 &:hover{
     cursor: pointer;
     transition: all ease 0.3s;
     color: #ff7b00;
    
 }
+@media (max-width: 820px) {
+margin-left: 40px;
+font-size: 18px;
+color: black;
+}
+
 `
+
+export const IconsContainer = styled.div`
+margin-right: 30px;
+display: flex;
+justify-content: center;
+align-items: baseline;
+gap: 20px;
+@media (max-width: 470px) {
+margin-right: 10px;
+gap: 10px;
+}
+`
+export const ToggleMenuIcon = styled.div`
+display: none;
+@media (max-width: 820px) {
+    display: flex;
+    font-size: 33px;
+    color: white;
+}
+@media (max-width: 470px) {
+font-size: 30px;
+}
+`
+
+
+
+

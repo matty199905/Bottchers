@@ -17,7 +17,7 @@ const dispatch = useDispatch()
     return (
         <CardProductStyled>
 
-            <TrashIcon card={true}  onClick={() => dispatch(removeFromCart(id)) }>
+            <TrashIcon card={true}  onClick={() =>{ if(window.confirm('¿Desea borrar este producto del carrito?')) {return dispatch(removeFromCart(id))}}}>
                 <GoTrash />
             </TrashIcon>
 

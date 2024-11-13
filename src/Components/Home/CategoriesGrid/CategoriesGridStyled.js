@@ -8,7 +8,17 @@ width: 92%;
 height: 700px;
 grid-template-columns: 33% 33% 33% ;
 grid-template-rows: 20% 20% 20% 20% 20% 20%;
-grid-gap: 20px;
+grid-gap: 15px;
+@media (max-width: 650px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0;
+margin: 10px 0 10px 0;
+height: 900px;
+}
+
 `
 
 export const Relax = styled.div`
@@ -16,30 +26,41 @@ display: grid;
 justify-content: center;
 align-items: center;
 width: 100%;
-height: 100%;
 grid-column: 1/2;
 grid-row: 1/4;
 background-position: center;
-background-size: 210%;
-transition: all ease .7s;
+background-size: cover;
+transition: all ease .5s;
 cursor: pointer;
 z-index: 100;
+
 &:hover{
-    background-size: 240%;
-    transition: all ease .7s;
-    filter: brightness(.8);
-  
+    transform: scale(1.06);
+    transition: all ease .5s;
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px black;
+    z-index: 400;
+
 }
 h3{
 
+    text-align: center;
     color: white;
     opacity: 1;
     font-size: 45px;
     font-weight: 500;
-    width: 300px;
     line-height: 50px;
-   
 }
+
+@media (max-width: 1000px) {
+    h3{
+        font-size: 30px;
+    }
+}
+@media (max-width: 650px) {
+height: 200px;
+}
+
 `
 
 export const CamasMultiposicion = styled(Relax)`
