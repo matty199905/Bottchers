@@ -15,6 +15,10 @@ height: 2250px;}
     height: 2300px;
     margin-bottom: 60px;
 }
+@media (max-width: 292px) {
+    height: 2400px;
+
+}
 `
 
 export const HeroContainer = styled.div`
