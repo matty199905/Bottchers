@@ -77,12 +77,14 @@ const Footer = () => {
                         </IconStyled>
 
                         <IconStyled>
-                            <LinkStyled to='https://www.youtube.com/' target='_blank' icon="true"> <ImYoutube2 /></LinkStyled>
+                            <LinkStyled to='https://x.com/?lang=es' target='_blank' icon><BsTwitterX /></LinkStyled>
                         </IconStyled>
 
                         <IconStyled>
-                            <LinkStyled to='https://x.com/?lang=es' target='_blank' icon><BsTwitterX /></LinkStyled>
+                            <LinkStyled to='https://www.youtube.com/' target='_blank' icon="true"> <ImYoutube2 /></LinkStyled>
                         </IconStyled>
+
+                 
 
                     </IconsContainer>
 

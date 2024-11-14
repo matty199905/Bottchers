@@ -19,6 +19,9 @@ span{font-size:17px;
 font-weight: 400;
 opacity: .8;
 }
+@media (max-width: 1133px) {
+    height: 1350px;
+}
 `
 
 export const FormContainer = styled(Form)`
@@ -29,7 +32,10 @@ align-items: center;
 width: 60vw;
 gap: 40px;
 margin-top: 100px;
-margin-left: 60px;
+
+@media (max-width: 1133px) {
+ flex-flow: column nowrap;
+}
 `
 
 export const YaEstoyRegistrado = styled(Link)`
@@ -40,5 +46,7 @@ color: white;
 &:visited{
     color: #ff8f1f;
 }
-;
+@media (max-width: 1133px) {
+
+}
 `

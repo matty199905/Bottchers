@@ -13,6 +13,7 @@ height: 2400px;
 height: 2250px;}
 @media (max-width: 440px) {
     height: 2300px;
+    margin-bottom: 60px;
 }
 `
 

@@ -84,7 +84,11 @@ transition: all ease 0.3s;
     font-weight: 500;
      transition: all ease 0.3s;
      transform: scale(1.05);
-}`
+}
+@media ( max-width:404px) {
+    font-size: ${(props) => (props.icon ? '25px' : '14px')};
+}
+`
 
 export const SiguenosContainer = styled.div`
 display: flex;
@@ -120,8 +124,9 @@ display: flex;
 flex-flow: row wrap;
 justify-content: center;
 align-items: center;
-gap: 50px;
+gap: 30px;
 margin-top: 10px;
+margin-right: 25px;
 font-size: 40px;
 padding-bottom: 40px;
 padding: 0 20px;

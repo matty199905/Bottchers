@@ -8,7 +8,7 @@ import { loginInitialValues } from '../../Formik/InitialValues';
 import { loginValidationSchema } from '../../Formik/ValidationSchema';
 import { loginUser } from '../../Axios/axiosUser';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { setCurrentUser } from '../../Redux/User/userSlice'
 
 
@@ -44,7 +44,6 @@ const Login = () => {
 
           }}>
 
-          {({ isSubmitting }) =>
 
             <LoginFormContainer>
 
@@ -73,7 +72,7 @@ const Login = () => {
 
             </LoginFormContainer>
 
-          }
+          
 
         </Formik>
 

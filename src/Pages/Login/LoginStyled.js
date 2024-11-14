@@ -37,6 +37,7 @@ align-items: center;
 width: 500px;
 gap: 40px;
 margin-top: 70px;
+padding: 0 30px;
 `
 
 export const NoTengoCuenta = styled(Link)`

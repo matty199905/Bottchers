@@ -25,4 +25,7 @@ transition: all ease .3s;
     background-color: grey;
     cursor: not-allowed;
 }
+@media (max-width: 1020px) {
+width: ${(props)=>(props.page ? '80px' : '100%')}
+}
 `

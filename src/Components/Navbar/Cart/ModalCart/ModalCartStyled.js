@@ -12,6 +12,11 @@ padding: 0px 40px ;
 height: 100vh;
 width: 360px;
 z-index: 500;
+@media (max-width: 420px) {
+    width: 90vw;
+    padding: 0 20px;
+    height: 100vh;
+}
 `
 
 export const CartHeader = styled.div`

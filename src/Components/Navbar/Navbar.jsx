@@ -20,24 +20,24 @@ import { showMenu } from '../../Redux/ToggleMenu/toggleMenuSlice';
 const Navbar = () => {
 
 
+const [changeColor, setchangeColor] = useState("transparent")
 
 
-    const [changeColor, setchangeColor] = useState("transparent")
 
-    const ChangeColorOnScroll = () => {
 
-        if (window.scrollY >= 1) {
+    const changeColorOnScroll = () => {
+
+        if (window.scrollY >= 0.5) {
             setchangeColor('#292929')
         }
         else { setchangeColor('transparent') }
     }
 
-    useEffect(() => {
-        window.addEventListener('scroll', ChangeColorOnScroll);
-        return () => {
-            window.removeEventListener('scroll', ChangeColorOnScroll)
-        }
 
+
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeColorOnScroll);
     }, [])
 
 
@@ -89,7 +89,9 @@ const Navbar = () => {
 
                     <UserIcon />
 
-                    <ToggleMenuIcon onClick={()=>{dispatch(showMenu())}}>
+                    <ToggleMenuIcon onClick={()=>{dispatch(showMenu()); 
+                        window.scrollTo({top: 1})
+                    }}>
                         <LuMenu />
                     </ToggleMenuIcon>
 

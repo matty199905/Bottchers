@@ -58,6 +58,9 @@ gap: 60px;
 flex-flow: row wrap;
 width: 100vw;
 padding: 30px 0 50px 0;
+@media (max-width: 720px) {
+gap: 35px;
+}
 `
 
 export const PagesContainer = styled.div`

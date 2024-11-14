@@ -9,6 +9,9 @@ justify-content: flex-start;
 align-items: center;
 width: 100vw;
 height: 100%;
+@media (max-width: 941px) {
+
+}
 `
 
 
