@@ -10,6 +10,7 @@ import { loginUser } from '../../Axios/axiosUser';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
 import { setCurrentUser } from '../../Redux/User/userSlice'
+import Loader from '../../Components/Loader/Loader'
 
 
 const Login = () => {
@@ -45,32 +46,37 @@ const Login = () => {
           }}>
 
 
-            <LoginFormContainer>
+{ ({isSubmitting}) =>
 
 
-              <Input
-                name='email'
-                id='email'
-                htmlFor='email'
-                placeholder='Ingrese su Email aqui...'
-                label='Email'
-                type='email'
-                login='true' />
-
-              <Input
-                name='password'
-                id='contraseña'
-                htmlFor='contraseña'
-                placeholder='Ingrese su Contraseña aqui...'
-                label='Contraseña'
-                type='password'
-                login='true' />
+  <LoginFormContainer>
 
 
-              <Submit>Iniciar Sesión</Submit>
+  <Input
+    name='email'
+    id='email'
+    htmlFor='email'
+    placeholder='Ingrese su Email aqui...'
+    label='Email'
+    type='email'
+    login='true' />
+
+  <Input
+    name='password'
+    id='contraseña'
+    htmlFor='contraseña'
+    placeholder='Ingrese su Contraseña aqui...'
+    label='Contraseña'
+    type='password'
+    login='true' />
 
 
-            </LoginFormContainer>
+  <Submit>{isSubmitting ? <Loader/> : 'Iniciar Sesión'}</Submit>
+
+
+</LoginFormContainer>
+}
+          
 
           
 

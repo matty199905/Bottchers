@@ -21,7 +21,7 @@ const ProductsContainer = ({ page }) => {
 
     const { selectedFilter } = useSelector(state => state.filters)
 
-    const {showFilters} = useSelector(state => state.filters)
+    const { showFilters } = useSelector(state => state.filters)
 
 
 
@@ -30,17 +30,18 @@ const ProductsContainer = ({ page }) => {
     const paginadoTodosLosProductos = productos.map(([key, array]) => {
 
         if (selectedFilter) {
-             //renderizar x categorias
-             if (key === selectedFilter) {return array.map((item) => { return <ProductCard {...item} key={item.id} /> }) }
+            //renderizar x categorias
+            if (key === selectedFilter) { return array.map((item) => { return <ProductCard {...item} key={item.id} /> }) }
 
-             else {          //renderizar x filtros
-              return array.map((item) => {
+            else {          //renderizar x filtros
+                return array.map((item) => {
                     return item.filters.map((filter) => {
                         if (filter === selectedFilter) {
                             return <ProductCard {...item} key={item.id} />
                         }
                     })
-                })}
+                })
+            }
         }
 
         else if (key === 'mesas extensibles') { return null }
@@ -68,8 +69,8 @@ const ProductsContainer = ({ page }) => {
 
                 }
 
-<ModalCategories/>
-           
+                <ModalCategories />
+
             </ProductsContainerStyled>
 
             {page === 'todosLosProductos' &&

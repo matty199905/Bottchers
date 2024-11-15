@@ -9,6 +9,7 @@ width: 50%;
 }
   @media (max-width: 867px) {
 width: 90vw;
+align-self: flex-start;
 }
 `;
 
@@ -27,7 +28,8 @@ export const CardsWrapperStyled = styled.div`
   padding: 20px;
   height: 240px;
   margin: 0 auto;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   &::-webkit-scrollbar {
     background: transparent;
     width: 6px;

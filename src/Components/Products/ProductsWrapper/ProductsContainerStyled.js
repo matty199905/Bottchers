@@ -26,7 +26,7 @@ justify-content:center;
 align-items: center;
 gap: 20px;
 color: ${(props)=>(props.showFilters === true ? 'orange' : 'black')};
-margin: 20px 0px 0px 50px;
+margin: 20px 0px 0px 10px;
 background-color: whitesmoke;
 border: none;
 font-size: 14px;
