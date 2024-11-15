@@ -20,7 +20,7 @@ const Contact = () => {
         <ContactTitleContainer>
 
           <h1>Contactanos</h1>
-          <ContactIconStyled>
+          <ContactIconStyled onClick={()=> window.scrollTo({top: 700})}>
             <FaArrowDown />
           </ContactIconStyled>
 

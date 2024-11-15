@@ -3,15 +3,25 @@ import styled from 'styled-components';
 
 
 export const CheckoutContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 20px;
   width: 35%;
   margin: 110px 0px 0px 100px;
   padding: 0;
-
   h2{
     margin-bottom: 30px;
   }
   @media (max-width: 867px) {
     margin-left: 0px;
+    width: 80vw;
+  
+
+  }
+  @media (max-width: 520px) {
+   
   }
 `;
 
@@ -24,7 +34,9 @@ export const FormikContainer = styled(Formik)`
 
 export const FormContainer = styled(Form)`
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
   gap: 20px;
 `;

@@ -20,7 +20,6 @@ export const AboutUsVideoContainer = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: red;
 `
 
 export const AboutUsVideo = styled.video`
@@ -44,9 +43,11 @@ h1{
     font-style: oblique;
     font-weight: 500;
     letter-spacing: 2px;
+    text-align: center;
     color:white;
     opacity: 0.9;
-    margin-top: -100px;}
+    margin-top: -100px;
+    }
 `
 
 export const IconStyled = styled.div`

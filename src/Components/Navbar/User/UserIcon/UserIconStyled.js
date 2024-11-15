@@ -20,8 +20,8 @@ font-size: 30px;
 export const IniciaSesion = styled.span`
 font-size: 16px;
 font-weight: 300;
-padding: 10px;
-@media (max-width: 400px) {
+padding: 0 0 0 5px;
+@media (max-width: 360px) {
 display: none;
 }
 `

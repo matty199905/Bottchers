@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router-dom';
 
 const CheckoutForm = () => {
 
-const navigate = useNavigate()
 
   return (
   <CheckoutContainer>

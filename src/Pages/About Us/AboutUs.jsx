@@ -20,7 +20,7 @@ const AboutUs = () => {
                 
                 <TitleContainer>
                     <h1>Sobre Nosotros</h1>
-                    <IconStyled><FaArrowDown /></IconStyled>
+                    <IconStyled onClick={()=> window.scrollTo({top:650})}><FaArrowDown /></IconStyled>
 
                 </TitleContainer>
                 <FaArrowDown />
