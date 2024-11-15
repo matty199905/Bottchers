@@ -32,6 +32,10 @@ margin-left: 30px;
 font-size: 30px;
 margin-left: 10px;
 }
+@media (max-width: 350px) {
+font-size: 25px;
+
+}
 `
 
 export const LinksContainer = styled.ul`
