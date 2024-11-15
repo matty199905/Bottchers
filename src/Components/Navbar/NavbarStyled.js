@@ -32,10 +32,7 @@ margin-left: 30px;
 font-size: 30px;
 margin-left: 10px;
 }
-@media (max-width: 350px) {
-font-size: 25px;
 
-}
 `
 
 export const LinksContainer = styled.ul`
@@ -87,6 +84,7 @@ display: none;
     display: flex;
     font-size: 33px;
     color: white;
+    margin-left: 0;
 }
 @media (max-width: 470px) {
 font-size: 30px;
