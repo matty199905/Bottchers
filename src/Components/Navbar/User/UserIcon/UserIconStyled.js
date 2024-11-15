@@ -23,7 +23,7 @@ font-weight: 300;
 padding: 0 0 0 5px;
 @media (max-width:507px) {
     width: 50px;
-    margin-right: -10px;
+   
 }
 @media (max-width:340px) {
   display: none;
