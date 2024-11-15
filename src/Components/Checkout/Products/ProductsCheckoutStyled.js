@@ -3,12 +3,19 @@ import styled from "styled-components";
 export const ProductosContainerStyled = styled.div`
   width: 40%;
   margin-top: 110px;
+  margin-left: 30px;
+  @media (max-width: 930px) {
+width: 50%;
+}
+  @media (max-width: 867px) {
+width: 90vw;
+}
 `;
 
 export const ProductsTitleStyled = styled.h2`
-  font-weight: 500;
   font-size: 22px;
-  margin: 20px 0px 20px 60px;
+  margin: 20px 0px 20px 0px;
+  padding-left: 40px;
 `;
 
 export const CardsWrapperStyled = styled.div`
@@ -16,18 +23,15 @@ export const CardsWrapperStyled = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  width: 60%;
+  width: 80%;
   padding: 20px;
   height: 240px;
   margin: 0 auto;
-
   overflow: scroll;
-
   &::-webkit-scrollbar {
     background: transparent;
     width: 6px;
   }
-
   &::-webkit-scrollbar:horizontal {
     display: none;
   }

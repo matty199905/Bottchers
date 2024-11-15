@@ -17,6 +17,7 @@ const AboutUs = () => {
 
             <AboutUsVideoContainer>
                 <AboutUsVideo src={Video} autoPlay loop muted />
+                
                 <TitleContainer>
                     <h1>Sobre Nosotros</h1>
                     <IconStyled><FaArrowDown /></IconStyled>

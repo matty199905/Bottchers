@@ -10,8 +10,10 @@ const Checkout = () => {
 
   return (
     <ContainerCheckoutStyled>
+
     <CheckoutForm/>
     <ProductsCheckout/>
+    
   </ContainerCheckoutStyled>
   )
 }

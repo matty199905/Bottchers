@@ -18,7 +18,7 @@ margin-top: ${(props)=>(props.asunto === true ? '40px' : '0px')};
 
 export const InputStyled = styled.input`
 position: relative;
-width: 300px;
+max-width: 300px;
 height: 20px;
 padding: 10px;
 border: none;
@@ -48,6 +48,10 @@ font-family: system-ui;
     position: absolute;
     top: 13px;
     font-family: system-ui;
+}
+@media (max-width: 1090px) {
+ width: 300px;
+ height: 100px;
 }
 `
 

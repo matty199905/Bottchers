@@ -8,4 +8,10 @@ width: 100vw;
 height: 1250px;
 background-color: #292929;
 color: white;
+@media (max-width: 867px) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 1800px;
+}
 `;

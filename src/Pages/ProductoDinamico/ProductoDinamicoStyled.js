@@ -6,35 +6,42 @@ justify-content: center;
 align-items: flex-start;
 width: 100vw;
 height: 1300px;
-background-color: #292929; ;
+background-color: #292929; 
+@media (max-width: 1060px) {
+    
+    height: 1600px;
+}
 `
 
 export const ProductCardContainer = styled.div`
-position: relative;
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 margin: 110px 0px;
 width: 90%;
 height: 80vh;
 background: linear-gradient(to bottom,#c3c3c3 , #dadada, #efefef, white);
 box-shadow: 1px 2px 20px black;
+@media (max-width: 1060px) {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 1000px;
+    width: 90vw;
+}
 `
 
 export const ProductImgContainer = styled.div`
-position: absolute;
-top: 21px;
-left: 30px;
-width: 55%;
-height: 91%;
+width: 60%;
+height: 100%;
+margin: 0px;
 background-size: cover;  
 background-position: center;
+@media (max-width: 1060px) {
+    width: 100%;
+}
 ` 
 
 export const ProductDetailsContainer = styled.div`
-position: absolute;
-top: 0px;
-right: 0px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -53,6 +60,17 @@ h2{
     font-weight: 400;
     opacity: .5;
 }
+@media (max-width: 1060px) {
+    align-items: flex-start;
+    align-self: center;
+    border: none;
+    padding: 40px 0px;
+    width: 90%;
+    }
+    @media (max-width: 790px) {
+   transform: scale(0.9);
+   padding: 0px;
+    }
 `
 export const PriceContainerStyled = styled.div`
   margin: 0 auto;
@@ -97,11 +115,17 @@ export const PriceOFF = styled(Price)`
 }
 `
 
+export const PricesOffContainer = styled.div`
+display: flex;
+flex-direction: column;
+padding-left: 20px;
+`
+
 export const CuotasContainer = styled.div`
 display: flex;
 justify-content: flex-start;
 align-self: flex-end;
-margin-top: 80px;
+margin: 80px 0 40px 0;
 span{
     font-size: 18px;
     font-weight: 500;
@@ -109,7 +133,8 @@ span{
     opacity: 0.5;
 }
 img{
-    width: 80px;
+    max-width: 80px;
+   max-height: 25px;
     margin: 0px 0 0 25px;
 }
 `

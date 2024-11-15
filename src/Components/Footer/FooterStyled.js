@@ -5,6 +5,7 @@ export const FooterWrapper = styled.footer`
 position: absolute;
 bottom: 0px;
 width: 100vw;
+z-index: 100;
 @media (max-width: 940px) {
 bottom: -300px;
 }

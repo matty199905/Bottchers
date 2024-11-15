@@ -7,7 +7,6 @@ align-items: center;
 align-self: ${(props) => (props.contacto === true ? 'last baseline' : 'center')};
 width: ${(props) => (props.cart === true ? '100% ' : '180px')};
 height: ${(props) => (props.cart === true ? '45px ' : '60px')};
-
 background-color: 
 ${({enviado, contacto, cart}) => (enviado === true ? '#00af00' : contacto || cart === true ? 'darkblue' : 'orange')};  
 
@@ -32,5 +31,7 @@ transition: all ease .1s;
     background-color: grey;
     cursor: not-allowed;
 }
-
+@media (max-width: 1090px) {
+    align-self: ${(props) => (props.contacto === true ? 'center' : 'center')};
+}
 `

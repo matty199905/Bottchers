@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
-import { CuotasContainer, Price, PriceOFF, ProductCardContainer, ProductDetailsContainer, ProductImgContainer, ProductWrapper } from './ProductoDinamicoStyled'
+import { CuotasContainer, Price, PriceOFF, PricesOffContainer, ProductCardContainer, ProductDetailsContainer, ProductImgContainer, ProductWrapper } from './ProductoDinamicoStyled'
 import Visa from '../../img/Visa.png'
 import Button from '../../UI/Button/Button'
 import { formatPrice } from '../../Utils/formatPrice'
@@ -15,15 +15,13 @@ const ProductoDinamico = () => {
 
     const dispatch = useDispatch()
 
- const{product} = useParams()
-    
- const location = useLocation()
- 
- const productData = location.state?.selectedProduct
+    const { product } = useParams()
 
- const descuento = productData.price * 0.20
+    const location = useLocation()
 
-console.log(productData);
+    const productData = location.state?.selectedProduct
+
+    const descuento = productData.price * 0.20
 
 
 
@@ -32,7 +30,7 @@ console.log(productData);
 
             <ProductCardContainer>
 
-                <ProductImgContainer style={{ backgroundImage:`url(${productData.img})`}} />
+                <ProductImgContainer style={{ backgroundImage: `url(${productData.img})` }} />
 
                 <ProductDetailsContainer>
 
@@ -46,9 +44,12 @@ console.log(productData);
 
                     <PriceOFF>
                         <p>Abonando en Efectivo <span className='off'>20% OFF :</span></p>
-                        <span className='cross'>{formatPrice(productData.price)}</span>
-                        <span className='orange'>{formatPrice(productData.price - descuento)}</span>
-                        <span></span>
+
+                        <PricesOffContainer>
+                            <span className='cross'>{formatPrice(productData.price)}</span>
+                            <span className='orange'>{formatPrice(productData.price - descuento)}</span>
+                            <span></span>
+                        </PricesOffContainer>
                     </PriceOFF>
 
 
@@ -57,18 +58,20 @@ console.log(productData);
                         <img src={Visa} alt="LogoVisa" />
                     </CuotasContainer>
 
-                    <Button ProductoDinamico={true} onClick={()=>{ {
-                        if(window.confirm('¿Desea agregar este producto al carrito?')){
-                        dispatch(addToCart(productData));
-                        navigate('/products');
-                        dispatch(showCartToggle())
-                    }
-                    }
+                    <Button ProductoDinamico={true} onClick={() => {
+                        {
+                            if (window.confirm('¿Desea agregar este producto al carrito?')) {
+                                dispatch(addToCart(productData));
+                                navigate('/products');
+                                dispatch(showCartToggle())
+                            }
+                        }
 
                     }
                     }>
                         Agregar al Carrito
                     </Button>
+                    
                 </ProductDetailsContainer>
 
 

@@ -8,7 +8,9 @@ justify-content: flex-start;
 align-items: center;
 width: 100vw;
 height: 1950px;
-
+@media (max-width: 1090px) {
+ height: 2100px;
+}
 `
 
 
@@ -67,18 +69,29 @@ h2{
     opacity: 0.9;
     border-bottom: 1px solid white;
     padding-bottom: 30px;
+    @media (max-width: 1090px) {
+font-size: 40px;
+padding: 0 20px;
+text-align: center;
+}
 }
 `
 
 export const FormContainer = styled(Form)`
 display: flex;
 justify-content: center;
-align-items: center;
+align-items:flex-end;
 flex-flow: row wrap;
 gap: 20px;
 width: 80vw;
 height: 300px;
-
+@media (max-width: 1090px) {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    height: 800px;
+    margin-top: -30px;
+}
 `
-
 

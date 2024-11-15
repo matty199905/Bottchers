@@ -8,22 +8,29 @@ justify-content: flex-start;
 align-items: center;
 width: 100vw;
 height: 2000px;
+@media (max-width: 760px){
+    height: 2400px;
+}
+@media (max-width: 367px) {
+height: 2700px;
+}
 `
 
 export const AboutUsVideoContainer = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: red;
 `
 
 export const AboutUsVideo = styled.video`
 display: flex;
 align-items: center;
 justify-content: center;
-    height: 100vh;
-    width: 100%;
-    margin-top: -25px;
-    z-index: 0;
+height: 100vh;
+width: 100%;
+object-fit: cover;
+z-index: 0;
 `
 
 export const TitleContainer = styled.h1`
@@ -70,11 +77,14 @@ justify-content: flex-start;
 padding-left: 50px;
 width: 30%;
 margin-bottom: 80px;
-
 span{
 font-size:20px;
 width: 100px;
-font-style:oblique;}
+font-style:oblique;
+}
+@media (max-width: 700px) {
+    display: none;
+}
 `
 
 export const SubtitleContainer = styled.div`
@@ -89,9 +99,11 @@ h2{ margin: 50px 0px 0px ;
     font-weight: 400;
     font-style: oblique;
     letter-spacing: 2px;
+    text-align: center;
     opacity: 0.9;
     border-bottom: 1px solid black;
     padding-bottom: 30px;
+    margin-right: 30px;
     }
 `
 
@@ -113,8 +125,15 @@ p{
     font-size:16px;
     font-style: oblique;
     font-weight: 500;
-    
     width: 50%;
+}
+@media (max-width: 500px) {
+flex-direction: column;
+align-items: center;
+gap: 0px;
+p{
+    width: 100%;
+}
 }
 `
 
@@ -122,8 +141,19 @@ export const IconsContainer = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
+text-align: center;
 width: 83vw;
 margin-top: 120px;
+@media (max-width: 1050px) {
+transform: scale(0.9);
+gap: 30px;
+}
+@media (max-width: 760px) {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
 `
 
 export const IconContainer = styled.div`
@@ -133,7 +163,11 @@ justify-content: center;
 align-items: center;
 h3{margin: 0px;
     }
-
+    span {
+    text-align: center;
+    margin-top: 5px;
+    opacity: 0.7;
+}
 `
 
 export const AboutIconStyled = styled.div`
