@@ -17,7 +17,9 @@ height: 2250px;}
 }
 @media (max-width: 292px) {
     height: 2400px;
-
+}
+@media (min-height: 610px) {
+    height: 2420px;
 }
 `
 
