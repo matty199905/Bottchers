@@ -39,7 +39,7 @@ const Contact = () => {
           validationSchema={contactValidationSchema}
           onSubmit={(values) => {
             console.log(values)
-            
+       
           }}>
 
 
