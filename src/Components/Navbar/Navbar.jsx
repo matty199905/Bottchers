@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { showCartToggle } from '../../Redux/Cart/CartSlice';
 import { show } from '../../Redux/Filters/filtersSlice'
 import { showMenu } from '../../Redux/ToggleMenu/toggleMenuSlice';
+import { showModalUser } from '../../Redux/User/userSlice';
 
 
 
@@ -48,11 +49,21 @@ const [changeColor, setchangeColor] = useState("transparent")
 
     const { showFilters } = useSelector(state => state.filters)
 
+    const {modalUser} = useSelector(state => state.user)
+
+
     const closeCategoryOnCart = () => {
-        if (showFilters === true) {
+        if (showFilters) {
             return dispatch(show())
         }
         else { return null }
+    }
+
+    const closeModalUserOnToggleMenu = () => {
+        if (modalUser) {
+          return dispatch(showModalUser());
+        }
+        else {return null}
     }
 
 
@@ -87,10 +98,11 @@ const [changeColor, setchangeColor] = useState("transparent")
 
                     <CartIcon onClick={() => { dispatch(showCartToggle()); closeCategoryOnCart() }} />
 
-                    <UserIcon />
+                    <UserIcon/>
 
                     <ToggleMenuIcon onClick={()=>{dispatch(showMenu()); 
-                        window.scrollTo({top: 1})
+                    closeModalUserOnToggleMenu();
+                    window.scrollBy(0,1)
                     }}>
                         <LuMenu />
                     </ToggleMenuIcon>

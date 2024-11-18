@@ -20,7 +20,8 @@ const CategoriesGrid = () => {
         <CategoriesContainer>
 
 
-            <Relax onClick={() => navigate('/relax')} style={{ backgroundImage: `url(${RelaxImg})` }} ><h3>Relax</h3>
+            <Relax onClick={() => {navigate('/relax');
+            }} style={{ backgroundImage: `url(${RelaxImg})` }} ><h3>Relax</h3>
             </Relax>
 
 
@@ -40,7 +41,7 @@ const CategoriesGrid = () => {
             </SofásCama>
 
 
-            <Living onClick={() => navigate('/living')} style={{ backgroundImage: `url(${LivingImg})` }}><h3>Living</h3>
+            <Living onClick={() => navigate('/living', {})} style={{ backgroundImage: `url(${LivingImg})` }}><h3>Living</h3>
             </Living>
 
         </CategoriesContainer>

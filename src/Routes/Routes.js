@@ -20,7 +20,11 @@ import ProtectedRoute from './ProtectedRoute/ProtectedRoute.js'
 
 
 
+
+
 const RoutesApp = () => {
+
+
   return (
     <Routes>
 
@@ -81,7 +85,6 @@ const RoutesApp = () => {
       <ProtectedRoute redirectTo='/login'>
         <Checkout/>
         </ProtectedRoute>} />
-
 
 
     </Routes>

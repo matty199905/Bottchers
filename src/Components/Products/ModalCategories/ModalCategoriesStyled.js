@@ -13,7 +13,7 @@ gap: 70px;
 width: 100vw;
 height: 180px;
 background-color: whitesmoke;
-border-bottom: 0.5px solid black;
+box-shadow: 1px 10px 10px grey;
 padding: 20px 0px;
 z-index: 90;
 @media ( max-width: 1360px) {

@@ -13,7 +13,7 @@ display: none;
     gap: 30px;
  width: 100vw;
  height: 350px;
- background: linear-gradient(rgba(255, 255, 255, 0.274), rgba(255, 255, 255, 0.301));
+ background:  linear-gradient(rgba(23, 23, 23, 0.274), rgba(26, 26, 26, 0.301));
 backdrop-filter: blur(30px);
 z-index: 400;
 }

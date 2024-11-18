@@ -59,6 +59,8 @@ const ProductsContainer = ({ page }) => {
 
             <ProductsContainerStyled showFilters={showFilters}>
 
+                <ModalCategories />
+                
                 {
 
                     page === 'todosLosProductos' ? paginadoTodosLosProductos :
@@ -69,7 +71,6 @@ const ProductsContainer = ({ page }) => {
 
                 }
 
-                <ModalCategories />
 
             </ProductsContainerStyled>
 

@@ -13,9 +13,8 @@ align-items: center;
 gap: 20px;
 width: 300px;
 height: 90px;
-background: linear-gradient(rgba(255, 255, 255, 0.274), rgba(255, 255, 255, 0.301));
+background:  linear-gradient(rgba(23, 23, 23, 0.274), rgba(26, 26, 26, 0.301));
 backdrop-filter: blur(15px);
-border: 1px solid grey;
 border-radius: 5px;
 z-index: 400;
 @media (max-width: 470px) {
