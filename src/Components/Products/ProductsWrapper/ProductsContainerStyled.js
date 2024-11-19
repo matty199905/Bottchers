@@ -56,7 +56,7 @@ margin: 0px 0px 0px -10px;
 export const ProductsContainerStyled = styled.div`
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 gap: 60px;
 flex-flow: row wrap;
 width: 100vw;
