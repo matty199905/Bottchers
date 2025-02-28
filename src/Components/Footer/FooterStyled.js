@@ -5,16 +5,8 @@ export const FooterWrapper = styled.footer`
 position: absolute;
 bottom: 0px;
 width: 100vw;
-z-index: 40;
-@media (max-width: 940px) {
-bottom: -300px;
-}
-@media (max-width: 640px) {
-bottom: -500px;
-}
-@media (max-width: 576px) {
-bottom: -550px;
-}
+z-index: 200;
+height: 350px;
 `
 
 export const FooterContainer = styled.div`

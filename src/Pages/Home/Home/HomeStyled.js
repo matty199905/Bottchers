@@ -8,7 +8,7 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 width: 100vw;
-height: 2400px;
+height: 100%;
 @media (max-width: 940px) {
 height: 2250px;}
 @media (max-width: 440px) {
