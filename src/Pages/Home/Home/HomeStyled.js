@@ -32,7 +32,10 @@ align-items: flex-start;
     background-attachment: fixed;
     height: 100vh;
     width: 100vw;
-    
+    margin-bottom: -50px;
+    @media (max-width: 750px) {
+    margin-bottom: -30px;
+}
 `
 
 
@@ -99,7 +102,14 @@ h2{
     font-weight: 500;
     margin-bottom: 0px;
     text-align: center;
-   
+    @media (max-width: 750px) {
+    font-size: 40px;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+    @media (max-width: 400px) {
+    font-size: 29px;
+}
 }
 p{
     width: 50vw;
@@ -108,12 +118,10 @@ p{
     opacity: 0.6;
     line-height: 28px;
     text-align: center;
-}
-@media (max-width: 750px) {
-h2 {
-    font-size: 40px;
-    margin-top: 10px;
-    padding: 0 20px;
+    @media (max-width: 500px) {
+    font-size: 16px;
+    width: 80vw;
 }
 }
+
 `

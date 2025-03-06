@@ -18,7 +18,7 @@ backdrop-filter: blur(15px);
 border-radius: 5px;
 z-index: 400;
 @media (max-width: 470px) {
-width: 101vw;
+width: 103.5%;
 height: 70px;
 }
 `

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ModalSpan, ModalUserContainer, Separator } from './ModalUserStyled'
+import { ModalSpan, ModalUserContainer } from './ModalUserStyled'
 import { useDispatch, useSelector } from 'react-redux'
 import { AnimatePresence } from 'framer-motion'
 import { logout, showModalUser } from '../../../../Redux/User/userSlice'

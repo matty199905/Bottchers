@@ -21,8 +21,10 @@ height: 1150px;
 h1{
     font-size: 40px;
     font-weight: 800;
-
+    @media (max-width: 440px) {
+    font-size: 30px}
 }
+
 span{font-size:17px;
 font-weight: 400;
 opacity: .8;

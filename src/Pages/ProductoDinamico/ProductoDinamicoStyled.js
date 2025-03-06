@@ -89,8 +89,6 @@ export const Price = styled.div`
   gap: 10px;
  margin: 30px 0 -30px 0;
   span{
-   
-    font-weight: 700;
     color: orange;
   }
 `;

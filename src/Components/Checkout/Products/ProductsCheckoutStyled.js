@@ -9,7 +9,7 @@ width: 50%;
 }
   @media (max-width: 867px) {
 width: 90vw;
-align-self: flex-start;
+margin-left: 0px;
 }
 `;
 

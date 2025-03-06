@@ -10,7 +10,7 @@ height: ${(props) => (props.cart === true ? '45px ' : '60px')};
 background-color: 
 ${({enviado, contacto, cart}) => (enviado === true ? '#00af00' : contacto || cart === true ? 'darkblue' : 'orange')};  
 
-margin-top: ${(props) => (props.cart === true ? '20px ' : '0px')};
+margin-top: ${(props) => (props.cart === true ? '20px ' : '0px' || props.checkout === true ? '25px' : undefined)};
 margin-bottom: ${(props) => (props.cart === true ? '-12px ' : '0px')};
 border: none;
 border-radius: ${(props) => (props.cart === true ? '5px' : '10px')};

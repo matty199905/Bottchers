@@ -18,7 +18,7 @@ margin-top: ${(props)=>(props.asunto === true ? '40px' : '0px')};
 
 export const InputStyled = styled.input`
 position: relative;
-width: ${(props)=>(props.contact === true ? '500px' : '300px')};
+width: ${(props)=>(props.contact === true ? '500px' : '270px')};
 height: 20px;
 padding: 10px;
 border: none;

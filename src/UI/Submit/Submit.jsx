@@ -1,7 +1,7 @@
 import React from 'react'
 import { BtnContainer } from './SubmitStyled'
 
-const Submit = ({children, register, login, contacto, cart, onClick, disabled}) => {
+const Submit = ({children, register, login, contacto, cart, onClick, disabled,checkout}) => {
   return (
  <BtnContainer type='submit'
  register={register}
@@ -9,7 +9,8 @@ const Submit = ({children, register, login, contacto, cart, onClick, disabled}) 
  contacto={contacto}
  cart={cart}
  onClick={onClick}
- disabled={disabled}>
+ disabled={disabled}
+ checkout={checkout}>
 
  {children}
 

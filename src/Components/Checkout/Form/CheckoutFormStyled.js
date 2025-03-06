@@ -20,14 +20,12 @@ gap: 20px;
   
 
   }
-  @media (max-width: 520px) {
-   
-  }
 `;
 
 export const FormikContainer = styled(Formik)`
   display: flex;
   flex-direction: column;
+
 `
 
 
@@ -39,4 +37,5 @@ export const FormContainer = styled(Form)`
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
+
 `;
