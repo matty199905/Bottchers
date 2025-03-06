@@ -8,10 +8,12 @@ import Input from '../../UI/Input/Input';
 import Submit from '../../UI/Submit/Submit';
 import { contactValidationSchema } from '../../Formik/ValidationSchema';
 import Textarea from '../../UI/Input/Textarea';
-
-
+import { emailJsApi } from '../../Axios/emailJs';
 
 const Contact = () => {
+
+
+
   return (
     <ContactWrapper>
 
@@ -20,7 +22,7 @@ const Contact = () => {
         <ContactTitleContainer>
 
           <h1>Contactanos</h1>
-          <ContactIconStyled onClick={()=> window.scrollTo({top: 700})}>
+          <ContactIconStyled onClick={() => window.scrollTo({ top: 700 })}>
             <FaArrowDown />
           </ContactIconStyled>
 
@@ -37,55 +39,57 @@ const Contact = () => {
         <Formik
           initialValues={contactInitialValues}
           validationSchema={contactValidationSchema}
-          onSubmit={(values) => {
-            console.log(values)
-       
-          }}>
+          onSubmit={(value) =>
+            emailJsApi(
+              value.user_name,
+              value.email,
+              value.message)}>
 
 
-          {({ isSubmitting }) =>
 
 
-            <FormContainer>
 
-              <Input
-                name="name"
-                id="nombre"
-                htmlFor="nombre"
-                type="text"
-                placeholder="Ingrese su nombre"
-                label="Nombre" />
+          {
 
-              <Input
-                name="surname"
-                id="apellido"
-                htmlFor="apellido"
-                type="text"
-                placeholder="Ingrese su apellido"
-                label="Apellido" />
-
-              <Input
-                name="email"
-                id="email"
-                htmlFor="email"
-                type="email"
-                placeholder="Ingrese su Email"
-                label="Email" />
-
-              <Textarea
-                name="asunto"
-                id="asunto"
-                htmlFor="asunto"
-                placeholder="Ingrese su asunto"
-                label="Asunto"
-                asunto={true} />
+            ({ isSubmitting }) =>
 
 
-              <Submit contacto={true}
-                enviado={isSubmitting ? true : false}
-              >{isSubmitting ? 'Mensaje Enviado' : 'Enviar'}</Submit>
+              <FormContainer>
 
-            </FormContainer>
+                <Input
+                  name="user_name"
+                  id="nombre"
+                  htmlFor="nombre"
+                  type="text"
+                  placeholder="Ingrese su nombre..."
+                  label="Nombre"
+                  contact={true} />
+
+
+                <Input
+                  name="email"
+                  id="email"
+                  htmlFor="email"
+                  type="email"
+                  placeholder="Ingrese su Email..."
+                  label="Email"
+                  contact={true} />
+
+                <Textarea
+                  name="message"
+                  id="message"
+                  htmlFor="message"
+                  placeholder="Ingrese su asunto..."
+                  label="Asunto"
+                  asunto={true} />
+
+
+                <Submit
+                  contacto={true}
+                  enviado={isSubmitting ? true : false}
+                >{isSubmitting ? 'Mensaje Enviado' : 'Enviar'}</Submit>
+
+              </FormContainer>
           }
 
 

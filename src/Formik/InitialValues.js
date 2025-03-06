@@ -1,8 +1,7 @@
 export const contactInitialValues = {
-    name: "",
-    surname: "",
+    user_name: "",
     email: "",
-    asunto: "",
+    message: "",
 }
 
 

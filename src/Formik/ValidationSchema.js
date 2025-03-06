@@ -2,11 +2,7 @@ import * as Yup from 'yup'
 import { regEmail } from '../Utils/regExp'
 
 export const contactValidationSchema = Yup.object({
-    name: Yup
-        .string()
-        .required('Campo Requerido'),
-
-    surname: Yup
+    user_name: Yup
         .string()
         .required('Campo Requerido'),
 
@@ -15,7 +11,7 @@ export const contactValidationSchema = Yup.object({
         .required('Campo Requerido')
         .matches(regEmail, 'Mail no válido'),
 
-    asunto: Yup
+    message: Yup
         .string()
         .required('Campo Requerido')
         .max(200, 'Máximo 200 caracteres')

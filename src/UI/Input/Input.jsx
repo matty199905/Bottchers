@@ -11,7 +11,8 @@ const Input = ({
   id, 
   isError, 
   label,
-  register, 
+  register,
+  contact, 
   login, 
   checkout, 
   onCopy, }) => {
@@ -34,6 +35,7 @@ const Input = ({
  register={register}
  login={login}
  checkout={checkout}
+ contact={contact}
  />
  
  <ErrorMessage name={name} component={ErrorMessageStyled}/>
