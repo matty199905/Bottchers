@@ -49,6 +49,7 @@ margin: 0px 30px 0 0;
 
 export const NavLinkStyled = styled(NavLink)`
 background-color: transparent;
+color: red;
 text-decoration: none;
 font-size: 17px;
 font-weight:300;
@@ -63,7 +64,6 @@ color: white;
 @media (max-width: 820px) {
 margin-left: 40px;
 font-size: 18px;
-color: black;
 }
 
 `
