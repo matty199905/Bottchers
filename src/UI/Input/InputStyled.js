@@ -18,18 +18,25 @@ margin-top: ${(props)=>(props.asunto === true ? '40px' : '0px')};
 
 export const InputStyled = styled.input`
 position: relative;
-width: ${(props)=>(props.contact === true ? '30vw' : '300px')};
+width: ${(props)=>(props.contact === true ? '500px' : '300px')};
 height: 20px;
 padding: 10px;
 border: none;
 border-bottom: ${(props)=>(props.register || props.login || props.checkout === 'true' ? '1px solid #c3c3c3' : '1px solid black')}; 
 background-color: transparent;
+margin-bottom: ${(props)=>(props.contact === true ? '50px' : '')};
 color: ${(props)=>(props.register || props.login || props.checkout ? 'white' : 'black')};
 &::placeholder{
     color: grey;
     position: absolute;
     top: 13px;
     font-family: system-ui;
+}
+@media (max-width: 1090px) {
+ max-width: ${(props)=>(props.contact === true ? '300px' : undefined)};
+}
+@media (max-width: 380px) {
+ width: ${(props)=>(props.contact === true ? '250px' : undefined)};
 }
 `
 
@@ -52,6 +59,9 @@ font-family: system-ui;
 @media (max-width: 1090px) {
  height: 100px;
  max-width: 300px;
+}
+@media (max-width: 380px) {
+ width: 250px;
 }
 `
 

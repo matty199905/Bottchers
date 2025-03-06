@@ -53,6 +53,7 @@ text-decoration: none;
 font-size: 17px;
 font-weight:300;
 transition: all ease .3s;
+color: white;
 &:hover{
     cursor: pointer;
     transition: all ease 0.3s;

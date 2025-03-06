@@ -39,11 +39,14 @@ const Contact = () => {
         <Formik
           initialValues={contactInitialValues}
           validationSchema={contactValidationSchema}
-          onSubmit={(value) =>
+          onSubmit={(value, {resetForm}) => { 
             emailJsApi(
-              value.user_name,
-              value.email,
-              value.message)}>
+            value.user_name,
+            value.email,
+            value.message);
+            resetForm()
+          }
+     }>
 
 
 
@@ -86,7 +89,6 @@ const Contact = () => {
 
                 <Submit
                   contacto={true}
-                  enviado={isSubmitting ? true : false}
                 >{isSubmitting ? 'Mensaje Enviado' : 'Enviar'}</Submit>
 
               </FormContainer>

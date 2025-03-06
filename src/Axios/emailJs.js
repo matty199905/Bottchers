@@ -22,7 +22,7 @@ export const emailJsApi = async(user_name, email, message) => {
         const response = await axios.post('https://api.emailjs.com/api/v1.0/email/send', data);
         return {
             success: true,
-            message: 'Email enviado correctamente',
+            message: alert('Mensaje enviado correctamente') ,
             data: response.data
         };
     } catch (error) {
