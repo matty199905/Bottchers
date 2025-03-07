@@ -3,13 +3,11 @@ import styled from "styled-components";
 export const ProductosContainerStyled = styled.div`
   width: 40%;
   margin-top: 110px;
-  margin-left: 30px;
-  @media (max-width: 930px) {
-width: 50%;
-}
+  margin-right: 40px;
+  
   @media (max-width: 867px) {
 width: 90vw;
-margin-left: 0px;
+margin-right: 0px;
 }
 `;
 

@@ -3,7 +3,8 @@ import { BtnContainer } from './SubmitStyled'
 
 const Submit = ({children, register, login, contacto, cart, onClick, disabled,checkout}) => {
   return (
- <BtnContainer type='submit'
+ <BtnContainer 
+ type='submit'
  register={register}
  login={login}
  contacto={contacto}

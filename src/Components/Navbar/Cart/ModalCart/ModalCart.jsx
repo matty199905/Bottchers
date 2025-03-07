@@ -20,38 +20,38 @@ import { TrashIcon } from './CardCartProductStyled';
 
 
 const ModalCart = () => {
-    
+
     const dispatch = useDispatch()
-    
+
     const { cartProducts } = useSelector(state => state.cart)
-    
+
     const { shippingCost } = useSelector(state => state.cart)
-    
+
     const { showCart } = useSelector(state => state.cart)
 
-    
+
     const navigate = useNavigate()
-    
-    
-   
-    
-    
+
+
+
+
+
     const totalPrice = cartProducts.map((item) => item.quantity * item.price).reduce((acc, cur) => { return acc + cur }, 0)
-    
-    
-    
+
+
+
 
     return (
 
         <AnimatePresence>
 
-            { showCart && 
+            {showCart &&
 
                 <ModalCartContainer
                     initial={{ translateX: 600 }}
                     animate={{ translateX: 0 }}
                     exit={{ translateX: 600 }}
-                    transition={{ type: 'spring', damping: 25}}
+                    transition={{ type: 'spring', damping: 25 }}
                     key='cart-modal'>
 
                     <CartHeader>
@@ -106,17 +106,21 @@ const ModalCart = () => {
                     </ProductInfoContainer>
 
 
-                    <SubmitsContainer>
 
-                        <Submit onClick={() => {navigate('/checkout'); dispatch(showCartToggle())}} cart={true} disabled={!cartProducts.length}>Iniciar Pedido</Submit>
+                    <Submit
+                        onClick={() => { navigate('/checkout'); dispatch(showCartToggle()) }}
+                        cart={true}
+                        disabled={!cartProducts.length}>
+                        Iniciar Pedido
+                    </Submit>
 
 
-                    </SubmitsContainer>
+
                 </ModalCartContainer>
 
 
             }
-            </AnimatePresence>
+        </AnimatePresence>
     )
 }
 

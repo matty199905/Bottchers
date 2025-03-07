@@ -8,7 +8,7 @@ right: 0px;
 display: flex;
 flex-direction: column;
 background-color: white;
-padding: 0px 40px ;
+padding: 0px 40px;
 height: 100vh;
 width: 360px;
 z-index: 500;
@@ -122,13 +122,3 @@ padding: 10px 0px;
 
 
 
-
-
-export const SubmitsContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 0px;
-
-`
