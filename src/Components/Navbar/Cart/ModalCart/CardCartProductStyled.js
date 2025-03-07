@@ -5,6 +5,7 @@ position: relative;
 display: flex;
 justify-content: space-between;
 align-items: center;
+margin-left: 20px;
 width: 100%;
 height: 110px;
 border: 1px solid #b5b5b5;

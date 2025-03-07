@@ -11,7 +11,7 @@ background-color:
 ${({enviado, contacto, cart}) => (enviado === true ? '#00af00' : contacto || cart === true ? 'darkblue' : 'orange')};  
 
 margin-top: ${(props) => (props.cart === true ? '20px ' : '0px' || props.checkout === true ? '25px' : undefined)};
-margin-bottom: ${(props) => (props.cart === true ? '25px ' : '0px')};
+margin-bottom: ${(props) => (props.cart === true ? '10px ' : '0px')};
 border: none;
 border-radius: ${(props) => (props.cart === true ? '5px' : '10px')};
 color: white;

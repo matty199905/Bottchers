@@ -103,16 +103,18 @@ const ModalCart = () => {
                             <span>{formatPrice(totalPrice + shippingCost)}</span>
                         </PriceContainer>
 
+                        <Submit
+                            onClick={() => { navigate('/checkout'); dispatch(showCartToggle()) }}
+                            cart={true}
+                            disabled={!cartProducts.length}>
+                            Iniciar Pedido
+                        </Submit>
+
                     </ProductInfoContainer>
 
 
 
-                    <Submit
-                        onClick={() => { navigate('/checkout'); dispatch(showCartToggle()) }}
-                        cart={true}
-                        disabled={!cartProducts.length}>
-                        Iniciar Pedido
-                    </Submit>
+
 
 
 

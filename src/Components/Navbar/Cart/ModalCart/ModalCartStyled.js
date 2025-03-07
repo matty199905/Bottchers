@@ -7,6 +7,8 @@ top: 0px;
 right: 0px;
 display: flex;
 flex-direction: column;
+justify-content: flex-start;
+align-items: center;
 background-color: white;
 padding: 0px 40px;
 height: 100vh;
@@ -14,7 +16,7 @@ width: 360px;
 z-index: 500;
 @media (max-width: 420px) {
     width: 90vw;
-    padding: 0 20px;
+    padding: 0px 20px ;
     height: 100vh;
 }
 `
@@ -92,7 +94,7 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 gap: 20px;
-padding: 10px 20px;
+padding: 10px 30px;
 width: 100%;
 height: 410px;
 margin: 15px 0px 0px -10px;
@@ -115,6 +117,9 @@ overflow-x: hidden;
 
 
 export const ProductInfoContainer = styled.div`
+position: absolute;
+bottom: 0;
+width: 83%;
 display: flex;
 flex-direction: column;
 padding: 10px 0px;
