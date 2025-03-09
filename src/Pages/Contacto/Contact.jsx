@@ -1,4 +1,5 @@
-import React from 'react'
+
+import React, { useRef } from 'react';
 import { ContactIconStyled, ContactImg, ContactTitleContainer, ContactWrapper, FormContainer, FormikContainer } from './ContactoStyled'
 import ContactImage from '../../img/contact-img.jpg'
 import { FaArrowDown } from "react-icons/fa";
@@ -8,11 +9,30 @@ import Input from '../../UI/Input/Input';
 import Submit from '../../UI/Submit/Submit';
 import { contactValidationSchema } from '../../Formik/ValidationSchema';
 import Textarea from '../../UI/Input/Textarea';
-import { emailJsApi } from '../../Axios/emailJs';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  
 
+    const form = useRef();
+  
+    const sendEmail = () => {
 
+  
+      emailjs
+        .sendForm('service_4nr7uhx', 'contact_form', form.current, {
+          publicKey: 'HFL8hxEgVMEM8UKla',
+        })
+        .then(
+          () => {
+            alert('Mensaje enviado correctamente!')
+          },
+          (error) => {
+            console.log(error);
+          },
+        );}
+   
+  
 
   return (
     <ContactWrapper>
@@ -40,11 +60,8 @@ const Contact = () => {
           initialValues={contactInitialValues}
           validationSchema={contactValidationSchema}
           onSubmit={(value, {resetForm}) => { 
-            emailJsApi(
-            value.user_name,
-            value.email,
-            value.message);
-            resetForm()
+            sendEmail();
+            resetForm();
           }
      }>
 
@@ -57,7 +74,7 @@ const Contact = () => {
             ({ isSubmitting }) =>
 
 
-              <FormContainer>
+              <FormContainer ref={form}>
 
                 <Input
                   name="user_name"
@@ -70,7 +87,7 @@ const Contact = () => {
 
 
                 <Input
-                  name="email"
+                  name="user_email"
                   id="email"
                   htmlFor="email"
                   type="email"
@@ -88,7 +105,7 @@ const Contact = () => {
 
 
                 <Submit
-                  contacto={true}
+                  contact={true}
                 >{isSubmitting ? 'Mensaje Enviado' : 'Enviar'}</Submit>
 
               </FormContainer>

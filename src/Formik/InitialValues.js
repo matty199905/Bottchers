@@ -1,6 +1,6 @@
 export const contactInitialValues = {
     user_name: "",
-    email: "",
+    user_email: "",
     message: "",
 }
 

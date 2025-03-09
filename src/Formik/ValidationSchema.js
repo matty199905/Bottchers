@@ -6,7 +6,7 @@ export const contactValidationSchema = Yup.object({
         .string()
         .required('Campo Requerido'),
 
-    email: Yup
+    user_email: Yup
         .string()
         .required('Campo Requerido')
         .matches(regEmail, 'Mail no válido'),

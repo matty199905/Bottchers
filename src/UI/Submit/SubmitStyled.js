@@ -4,11 +4,11 @@ export const BtnContainer = styled.button`
 display: flex;
 justify-content: center;
 align-items: center;
-align-self: ${(props) => (props.contacto === true ? 'last baseline' : 'center')};
+align-self: ${(props) => (props.contact === true ? 'last baseline' : 'center')};
 width: ${(props) => (props.cart === true ? '100% ' : '180px')};
 height: ${(props) => (props.cart === true ? '50px ' : '60px')};
 background-color: 
-${({enviado, contacto, cart}) => (enviado === true ? '#00af00' : contacto || cart === true ? 'darkblue' : 'orange')};  
+${({enviado, contact, cart}) => (enviado === true ? '#00af00' : contact || cart === true ? 'darkblue' : 'orange')};  
 
 margin-top: ${(props) => (props.cart === true ? '20px ' : '0px' || props.checkout === true ? '25px' : undefined)};
 margin-bottom: ${(props) => (props.cart === true ? '10px ' : '0px')};
@@ -32,6 +32,6 @@ transition: all ease .1s;
     cursor: not-allowed;
 }
 @media (max-width: 1090px) {
-    align-self: ${(props) => (props.contacto === true ? 'center' : 'center')};
+    align-self: ${(props) => (props.contact === true ? 'center' : 'center')};
 }
 `
