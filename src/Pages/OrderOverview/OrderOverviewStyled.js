@@ -14,7 +14,11 @@ h1{
     color: white;
     font-size: 25px;
     margin-left:50px;
-   
+    @media (max-width: 420px) {
+text-align: center;
+      padding: 0 20px;
+}
+
 
 } 
 @media (max-width: 1300px) {

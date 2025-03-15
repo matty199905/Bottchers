@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { IconTimer, OrderCard, OrdersContainer, OrdersWrapper } from './OrdersStyled'
 import { RiTimer2Fill } from "react-icons/ri";
 import { useDispatch, useSelector } from 'react-redux'
-import Button from '../../UI/Button/Button'
 import { clearError, fetchOrdersStart, OrderFail } from '../../Redux/Orders/ordersSlice';
 import { getOrders } from '../../Axios/axiosOrders';
 import { fetchOrdersEnd } from '../../Redux/Orders/ordersSlice';
@@ -15,7 +14,7 @@ import { fetchOrdersEnd } from '../../Redux/Orders/ordersSlice';
 const Orders = () => {
 
 
-    const { orders, error, loading } = useSelector(state => state.orders)
+    const { orders, error } = useSelector(state => state.orders)
     const {currentUser} = useSelector(state=>state.user)
     const dispatch = useDispatch()
 
@@ -77,8 +76,6 @@ const Orders = () => {
 
 
             </OrdersContainer>
-
-<Button onClick={()=> window.location.reload()}>Refrescar Órdonenes</Button>
 
         </OrdersWrapper>
     )
