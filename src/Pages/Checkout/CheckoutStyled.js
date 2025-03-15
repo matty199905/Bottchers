@@ -9,9 +9,10 @@ height: 1250px;
 background-color: #292929;
 color: white;
 @media (max-width: 867px) {
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
   align-items: center;
   height: 1800px;
+  
 }
 `;

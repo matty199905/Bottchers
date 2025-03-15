@@ -9,42 +9,48 @@ import { useNavigate } from 'react-router-dom'
 
 const ModalUser = () => {
 
-    const {modalUser} = useSelector(state => state.user)
+  const { modalUser } = useSelector(state => state.user)
 
-    const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-    const navigate = useNavigate()
+  const navigate = useNavigate()
 
   return (
-<AnimatePresence>
+    <AnimatePresence>
 
 
-{modalUser &&
+      {modalUser &&
 
 
-<ModalUserContainer
-initial={{translateX: 600}}
-animate={{translateX: 0}}
-exit={{translateX: 600}}
-transition={{ type: 'spring', damping: 25 }}
-key='user-modal'
->
+        <ModalUserContainer
+          initial={{ translateX: 600 }}
+          animate={{ translateX: 0 }}
+          exit={{ translateX: 600 }}
+          transition={{ type: 'spring', damping: 25 }}
+          key='user-modal'
+        >
+
+          <ModalSpan onClick={()=> {navigate('/orders'); window.location.reload()}}>
+            Mis Ordenes
+          </ModalSpan>
+<hr />
+
+          <ModalSpan onClick={() => {
+            dispatch(logout());
+            dispatch(showModalUser());
+            navigate('/')
+          }}>Cerrar Sesión</ModalSpan>
 
 
-<ModalSpan onClick={()=> {
-    dispatch(logout()); 
-    dispatch(showModalUser());
-    navigate('/')}}>Cerrar Sesión</ModalSpan>
 
 
 
+        </ModalUserContainer>
 
-</ModalUserContainer>
 
-    
 
-}
-</AnimatePresence>
+      }
+    </AnimatePresence>
 
   )
 }

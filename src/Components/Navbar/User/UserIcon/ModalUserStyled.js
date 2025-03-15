@@ -12,11 +12,16 @@ justify-content: center;
 align-items: center;
 gap: 20px;
 width: 300px;
-height: 90px;
+height: 110px;
 background:  linear-gradient(rgba(23, 23, 23, 0.274), rgba(26, 26, 26, 0.301));
 backdrop-filter: blur(15px);
 border-radius: 5px;
 z-index: 400;
+hr{
+    width: 100%;
+    padding: 0;
+    margin: -5px;
+}
 @media (max-width: 470px) {
 width: 103.5%;
 height: 70px;

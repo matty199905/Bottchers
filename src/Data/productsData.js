@@ -60,7 +60,7 @@ import ImgId56 from '../img/ProductsImg/Product-Id-56.jpg'
 export const productsData = [
     {
         id: 1,
-        name: 'Olimpo',
+        title: 'Olimpo',
         desc: 'Silla de Relax',
         img: ImgId1,
         price: 120000,
@@ -69,7 +69,7 @@ export const productsData = [
     },
     {
         id: 2,
-        name: 'Munich',
+        title: 'Munich',
         desc: 'Sillón de Relax',
         img: ImgId2,
         price: 400000,
@@ -78,7 +78,7 @@ export const productsData = [
     },
     {
         id: 3,
-        name: 'Grand-M',
+        title: 'Grand-M',
         desc: 'Sillón Masajeador',
         img: ImgId3,
         price: 350000,
@@ -87,7 +87,7 @@ export const productsData = [
     },
     {
         id: 4,
-        name: 'La Rome',
+        title: 'La Rome',
         desc: 'Sillón de Relax',
         img: ImgId4,
         price: 320000,
@@ -96,7 +96,7 @@ export const productsData = [
     },
     {
         id: 5,
-        name: 'Stability',
+        title: 'Stability',
         desc: 'Silla de Relax',
         img: ImgId5,
         price: 150000,
@@ -105,7 +105,7 @@ export const productsData = [
     },
     {
         id: 6,
-        name: 'Rest-3000',
+        title: 'Rest-3000',
         desc: 'Silla de Relax',
         img: ImgId6,
         price: 200000,
@@ -114,7 +114,7 @@ export const productsData = [
     },
     {
         id: 7,
-        name: 'Vintage',
+        title: 'Vintage',
         desc: 'Silla de Relax',
         img: ImgId7,
         price: 170000,
@@ -123,7 +123,7 @@ export const productsData = [
     },
     {
         id: 8,
-        name: 'Blacker',
+        title: 'Blacker',
         desc: 'Silla de Relax',
         img: ImgId8,
         price: 165000,
@@ -132,7 +132,7 @@ export const productsData = [
     },
     {
         id: 9,
-        name: 'Oklahoma',
+        title: 'Oklahoma',
         desc: 'Silla de Relax',
         img: ImgId9,
         price: 180000,
@@ -141,7 +141,7 @@ export const productsData = [
     },
     {
         id: 10,
-        name: 'Tucson',
+        title: 'Tucson',
         desc: 'Sillón  de Relax',
         img: ImgId10,
         price: 220000,
@@ -150,7 +150,7 @@ export const productsData = [
     },
     {
         id: 11,
-        name: 'Dakota',
+        title: 'Dakota',
         desc: 'Silla de Relax',
         img: ImgId11,
         price: 150000,
@@ -159,7 +159,7 @@ export const productsData = [
     },
     {
         id: 12,
-        name: 'Barbados',
+        title: 'Barbados',
         desc: 'Sillon de Relax',
         img: ImgId12,
         price: 240000,
@@ -168,7 +168,7 @@ export const productsData = [
     },
     {
         id: 13,
-        name: 'Onix',
+        title: 'Onix',
         desc: 'Silla de Relax',
         img: ImgId13,
         price: 120000,
@@ -177,7 +177,7 @@ export const productsData = [
     },
     {
         id: 14,
-        name: 'Scarlet',
+        title: 'Scarlet',
         desc: 'Sillon de Relax',
         img: ImgId14,
         price: 190000,
@@ -186,7 +186,7 @@ export const productsData = [
     },
     {
         id: 15,
-        name: 'Lipari',
+        title: 'Lipari',
         desc: 'Sillon de Relax',
         img: ImgId15,
         price: 230000,
@@ -195,7 +195,7 @@ export const productsData = [
     },
     {
         id: 16,
-        name: 'Esmeralda',
+        title: 'Esmeralda',
         desc: 'Silla de Relax',
         img: ImgId16,
         price: 130000,
@@ -204,7 +204,7 @@ export const productsData = [
     },
     {
         id: 17,
-        name: 'Purple T' ,
+        title: 'Purple T' ,
         desc: 'Silla de Relax',
         img: ImgId17,
         price: 140000,
@@ -213,7 +213,7 @@ export const productsData = [
     },
     {
         id: 18,
-        name: 'Dublin',
+        title: 'Dublin',
         desc: 'Silla de Relax',
         img: ImgId18,
         price: 170000,
@@ -222,7 +222,7 @@ export const productsData = [
     },
     {
         id: 19,
-        name: 'Burgos',
+        title: 'Burgos',
         desc: 'Silla de Relax',
         img: ImgId19,
         price: 140000,
@@ -231,7 +231,7 @@ export const productsData = [
     },
     {
         id: 20,
-        name: 'Alaska',
+        title: 'Alaska',
         desc: 'Sofá cama 2 plazas',
         img: ImgId20,
         price: 320000,
@@ -240,7 +240,7 @@ export const productsData = [
     },
     {
         id: 21,
-        name: 'Olsen',
+        title: 'Olsen',
         desc: 'Sofá cama 2 plazas',
         img: ImgId21,
         price: 350000,
@@ -249,7 +249,7 @@ export const productsData = [
     },
     {
         id: 22,
-        name: 'Quick',
+        title: 'Quick',
         desc: 'Sofá cama 2 y 1/2 plazas',
         img: ImgId22,
         price: 370000,
@@ -258,7 +258,7 @@ export const productsData = [
     },
     {
         id: 23,
-        name: 'Doppio',
+        title: 'Doppio',
         desc: 'Sofá cama 1 y 1/2 plazas',
         img: ImgId23,
         price: 300000,
@@ -267,7 +267,7 @@ export const productsData = [
     },
     {
         id: 24,
-        name: 'Michigan',
+        title: 'Michigan',
         desc: 'Sofá cama 2 y 1/2 plazas',
         img: ImgId24,
         price: 330000,
@@ -276,7 +276,7 @@ export const productsData = [
     },
     {
         id: 25,
-        name: 'Suecia',
+        title: 'Suecia',
         desc: 'Sofá cama 2 y 1/2 plazas',
         img: ImgId25,
         price: 370000,
@@ -285,7 +285,7 @@ export const productsData = [
     },
     {
         id: 26,
-        name: 'Chester',
+        title: 'Chester',
         desc: 'Sofá cama 1 plaza',
         img: ImgId26,
         price: 380000,
@@ -294,7 +294,7 @@ export const productsData = [
     },
     {
         id: 27,
-        name: 'Estonia',
+        title: 'Estonia',
         desc: 'Sofá cama 2 plazas',
         img: ImgId27,
         price: 315000,
@@ -303,7 +303,7 @@ export const productsData = [
     },
     {
         id: 28,
-        name: 'Marruecos',
+        title: 'Marruecos',
         desc: 'Sofá cama 1 y 1/2 plazas',
         img: ImgId28,
         price: 330000,
@@ -312,7 +312,7 @@ export const productsData = [
     },
     {
         id: 29,
-        name: 'Granada',
+        title: 'Granada',
         desc: 'Silla de Relax',
         img: ImgId29,
         price: 340000,
@@ -321,7 +321,7 @@ export const productsData = [
     },
     {
         id: 30,
-        name: 'Valencia',
+        title: 'Valencia',
         desc: 'Sofá cama 2 plazas',
         img: ImgId30,
         price: 370000,
@@ -330,7 +330,7 @@ export const productsData = [
     },
     {
         id: 31,
-        name: 'Málaga',
+        title: 'Málaga',
         desc: 'Sofá cama 2 plazas',
         img: ImgId31,
         price: 350000,
@@ -339,7 +339,7 @@ export const productsData = [
     },
     {
         id: 32,
-        name: 'Andorra',
+        title: 'Andorra',
         desc: 'Sofá cama 2 plazas',
         img: ImgId32,
         price: 315000,
@@ -348,7 +348,7 @@ export const productsData = [
     },
     {
         id: 33,
-        name: 'París',
+        title: 'París',
         desc: 'Sofá cama 1 plaza',
         img: ImgId33,
         price: 290000,
@@ -357,7 +357,7 @@ export const productsData = [
     },
     {
         id: 34,
-        name: 'Altona',
+        title: 'Altona',
         desc: 'Sofá rinconero',
         img: ImgId34,
         price: 320000,
@@ -366,7 +366,7 @@ export const productsData = [
     },
     {
         id: 35,
-        name: 'Etherna',
+        title: 'Etherna',
         desc: 'Sofá de living',
         img: ImgId35,
         price: 330000,
@@ -375,7 +375,7 @@ export const productsData = [
     },
     {
         id: 36,
-        name: 'Laurent',
+        title: 'Laurent',
         desc: 'Sofá rinconero',
         img: ImgId36,
         price: 380000,
@@ -384,7 +384,7 @@ export const productsData = [
     },
     {
         id: 37,
-        name: 'Motion E01',
+        title: 'Motion E01',
         desc: 'Mesa baja',
         img: ImgId37,
         price: 120000,
@@ -393,7 +393,7 @@ export const productsData = [
     },
     {
         id: 38,
-        name: 'Island',
+        title: 'Island',
         desc: 'Sofá en isla',
         img: ImgId38,
         price: 420000,
@@ -402,7 +402,7 @@ export const productsData = [
     },
     {
         id: 39,
-        name: 'Motion E02',
+        title: 'Motion E02',
         desc: 'Mesa baja',
         img: ImgId39,
         price: 120000,
@@ -411,7 +411,7 @@ export const productsData = [
     },
     {
         id: 40,
-        name: 'Motion E03',
+        title: 'Motion E03',
         desc: 'Mesa Lateral',
         img: ImgId40,
         price: 100000,
@@ -420,7 +420,7 @@ export const productsData = [
     },
     {
         id: 41,
-        name: 'Motion E04',
+        title: 'Motion E04',
         desc: 'Mesa baja',
         img: ImgId41,
         price: 110000,
@@ -429,7 +429,7 @@ export const productsData = [
     },
     {
         id: 42,
-        name: 'Grand Circle Motion',
+        title: 'Grand Circle Motion',
         desc: 'Mesa Baja',
         img: ImgId42,
         price: 150000,
@@ -438,7 +438,7 @@ export const productsData = [
     },
     {
         id: 43,
-        name: 'Lerida',
+        title: 'Lerida',
         desc: 'Mesa baja plegable',
         img: ImgId43,
         price: 115000,
@@ -447,7 +447,7 @@ export const productsData = [
     },
     {
         id: 44,
-        name: 'Osaka',
+        title: 'Osaka',
         desc: 'Sofá rinconero modular',
         img: ImgId44,
         price: 370000,
@@ -456,7 +456,7 @@ export const productsData = [
     },
     {
         id: 45,
-        name: 'Loira',
+        title: 'Loira',
         desc: 'Mesa Baja',
         img: ImgId45,
         price: 130000,
@@ -465,7 +465,7 @@ export const productsData = [
     },
     {
         id: 46,
-        name: 'Texas',
+        title: 'Texas',
         desc: 'Silla de living',
         img: ImgId46,
         price: 190000,
@@ -474,7 +474,7 @@ export const productsData = [
     },
     {
         id: 47,
-        name: 'Grand Michigan',
+        title: 'Grand Michigan',
         desc: 'Sofá rinconero modular',
         img: ImgId47,
         price: 430000,
@@ -483,7 +483,7 @@ export const productsData = [
     },   
     {
         id: 48,
-        name: 'Flex 1',
+        title: 'Flex 1',
         desc: 'Cama articulada',
         img: ImgId48,
         price: 500000,
@@ -492,7 +492,7 @@ export const productsData = [
     },
     {
         id: 49,
-        name: 'Flex 2',
+        title: 'Flex 2',
         desc: 'Cama articulada',
         img: ImgId49,
         price: 570000,
@@ -501,7 +501,7 @@ export const productsData = [
     },
     {
         id: 50,
-        name: 'Extense 1',
+        title: 'Extense 1',
         desc: 'Mesa de comedor extensible',
         img: ImgId50,
         price: 230000,
@@ -510,7 +510,7 @@ export const productsData = [
     },
     {
         id: 51,
-        name: 'Extense 2',
+        title: 'Extense 2',
         desc: 'Mesa de comedor extensible',
         img: ImgId51,
         price: 240000,
@@ -519,7 +519,7 @@ export const productsData = [
     },
     {
         id: 52,
-        name: 'Extense 3',
+        title: 'Extense 3',
         desc: 'Mesa de comedor extensible',
         img: ImgId52,
         price: 260000,
@@ -528,7 +528,7 @@ export const productsData = [
     },
     {
         id: 53,
-        name: 'Vera',
+        title: 'Vera',
         desc: 'Silla de comedor',
         img: ImgId53,
         price: 80000,
@@ -537,7 +537,7 @@ export const productsData = [
     },
     {
         id: 54,
-        name: 'Metz',
+        title: 'Metz',
         desc: 'Silla de comedor',
         img: ImgId54,
         price: 70000,
@@ -546,7 +546,7 @@ export const productsData = [
     },
     {
         id: 55,
-        name: 'Agness',
+        title: 'Agness',
         desc: 'Silla de comedor',
         img: ImgId55,
         price: 57000,
@@ -554,7 +554,7 @@ export const productsData = [
         filters: ['entrega inmediata']
     },{
         id: 56,
-        name: 'Lena',
+        title: 'Lena',
         desc: 'Silla de comedor',
         img: ImgId56,
         price: 60000,
@@ -564,7 +564,7 @@ export const productsData = [
     
     {
         id: 50,
-        name: 'Extense 1',
+        title: 'Extense 1',
         desc: 'Mesa de comedor extensible',
         img: ImgId50,
         price: 230000,
@@ -573,7 +573,7 @@ export const productsData = [
     },
     {
         id: 51,
-        name: 'Extense 2',
+        title: 'Extense 2',
         desc: 'Mesa de comedor extensible',
         img: ImgId51,
         price: 240000,
@@ -582,7 +582,7 @@ export const productsData = [
     },
     {
         id: 52,
-        name: 'Extense 3',
+        title: 'Extense 3',
         desc: 'Mesa de comedor extensible',
         img: ImgId52,
         price: 260000,

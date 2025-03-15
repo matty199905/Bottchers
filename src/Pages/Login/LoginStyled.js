@@ -2,23 +2,19 @@ import { Form } from "formik";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Body = styled.body`
-background-color: #292929;
-color: white;
-display: flex;
-align-items: center;
-justify-content: center;
-`
 
-export const LoginWrapper = styled.main`
+
+export const LoginWrapper = styled.div`
 display: flex;
 justify-content: flex-start;
 align-items: center;
 flex-direction: column;
-margin-top: 100px;
+background-color: #292929;
+color: white;
 width: 100vw;
 height: 1150px;
 h1{
+    margin-top: 120px;
     font-size: 40px;
     font-weight: 800;
     @media (max-width: 440px) {

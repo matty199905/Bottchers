@@ -6,10 +6,10 @@ position: relative;
 display: flex;
 justify-content: space-between;
 align-items: center;
-width: 100%;
+width: ${(props)=>(props.orderOverview === true ? '300px' : '100%')};
 height: 110px;
 border-radius: 5px;
-background-color: #9a9a9a;
+background: ${(props)=>(props.orderOverview === true ? 'linear-gradient(to bottom, rgb(88, 88, 88), rgb(58, 58, 58))' : 'linear-gradient(to bottom, rgb(141, 141, 141), rgb(58, 58, 58));')}; 
 padding: 15px;
 `
 
@@ -21,13 +21,18 @@ justify-content: center;
 img{width: 150px;
     height: 90px;
 margin-bottom:-5px;
-border-radius:10px;}
-h2{color: black;
+border-radius:10px;
+@media (max-width: 400px) {
+    width: 100px;
+}
+}
+h2{color: rgba(255, 255, 255, 0.8);
 font-size:16px;
 font-weight:500;
 font-style: oblique;
 margin: 15px 0px 0px 5px ;
 }
+
 `
 
 export const QuantityPriceContainer = styled.div`
@@ -49,13 +54,17 @@ opacity: 0.7;
 color: white;
 padding: 15px;
 border-radius: 5px;
+@media (max-width: 400px) {
+    width: 90px;
+    text-align: center;
+}
 `
 
 export const Quantity = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-background-color:  #ffffffef;
+background-color:rgba(255, 255, 255, 0.76);
 border-radius: 50%;
 width: 40px;
 height: 40px;

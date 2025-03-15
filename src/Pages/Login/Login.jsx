@@ -1,5 +1,5 @@
 import React from 'react'
-import { Body, LoginWrapper, NoTengoCuenta } from './LoginStyled';
+import { LoginWrapper, NoTengoCuenta } from './LoginStyled';
 import { Formik } from 'formik';
 import Input from '../../UI/Input/Input';
 import { LoginFormContainer } from './LoginStyled';
@@ -10,7 +10,7 @@ import { loginUser } from '../../Axios/axiosUser';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
 import { setCurrentUser } from '../../Redux/User/userSlice'
-import Loader from '../../Components/Loader/Loader'
+import Loader from '../../UI/Loader/Loader'
 
 
 const Login = () => {
@@ -21,7 +21,7 @@ const Login = () => {
 
 
   return (
-    <Body>
+
 
       <LoginWrapper>
         <h1>Inicia Sesion.</h1>
@@ -87,7 +87,6 @@ const Login = () => {
 
       </LoginWrapper>
 
-    </Body>
   )
 }
 

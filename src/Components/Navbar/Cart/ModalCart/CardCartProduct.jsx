@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { minusBtn, plusBtn, removeFromCart } from '../../../../Redux/Cart/CartSlice';
 
 
-const CardCartProduct = ({name, img, price, quantity, id}) => {
+const CardCartProduct = ({title, img, price, quantity, id}) => {
 
 const dispatch = useDispatch()
 
@@ -24,7 +24,7 @@ const dispatch = useDispatch()
             <ImgTitleCardContainer>
 
                 <img src={img} alt="producto" />
-                <h2>{name}</h2>
+                <h2>{title}</h2>
 
             </ImgTitleCardContainer>
 

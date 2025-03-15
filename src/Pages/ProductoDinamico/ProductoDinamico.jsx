@@ -19,7 +19,7 @@ const ProductoDinamico = () => {
 
     const location = useLocation()
 
-    const productData = location.state?.selectedProduct
+    const productData = location?.state?.selectedProduct
 
     const descuento = productData.price * 0.20
 

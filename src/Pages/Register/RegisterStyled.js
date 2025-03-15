@@ -7,12 +7,14 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 flex-direction: column;
-margin-top: 100px;
+background-color: #292929;
+color: white;
 width: 100vw;
 height: 1150px;
 h1{
     font-size: 40px;
     font-weight: 800;
+    margin-top: 120px;
     @media (max-width: 1133px) {
 margin-top:20px}
 @media (max-width: 440px) {

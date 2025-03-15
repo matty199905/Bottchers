@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTime, useTransform } from 'framer-motion';
-
 import { LoaderContainer, LoaderStyled } from './LoaderStyles';
 
 const Loader = ({ styles }) => {

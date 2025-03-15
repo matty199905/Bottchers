@@ -7,6 +7,7 @@ import { CartSlice } from './Cart/CartSlice';
 import { filtersSlice } from './Filters/filtersSlice';
 import { UserSlice } from './User/userSlice';
 import { toggleMenuSlice } from './ToggleMenu/toggleMenuSlice';
+import { orderSlice } from './Orders/ordersSlice';
 
 
 
@@ -16,6 +17,7 @@ cart: CartSlice.reducer,
 filters: filtersSlice.reducer,
 user: UserSlice.reducer,
 toggleMenu: toggleMenuSlice.reducer,
+orders: orderSlice.reducer,
 })
 
 

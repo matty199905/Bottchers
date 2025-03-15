@@ -9,10 +9,10 @@ import { formatPrice } from '../../../Utils/formatPrice'
 
 
 
-const ProductCard = ({ img, name, price, desc, id }) => {
+const ProductCard = ({ img, title, price, desc, id }) => {
 
 
-  const selectedProduct = { img, name, price, desc, id }
+  const selectedProduct = { img, title, price, desc, id }
 
 
   return (
@@ -24,13 +24,13 @@ const ProductCard = ({ img, name, price, desc, id }) => {
 
 
         <ColumnContainer>
-          <h2>{name}</h2>
+          <h2>{title}</h2>
           <span>{desc}</span>
         </ColumnContainer>
 
 <ColumnContainer>
         <Price>{formatPrice(price)}</Price>
-        <Link to={name} state={{selectedProduct}}><Button>Ver Más</Button></Link>
+        <Link to={title} state={{selectedProduct}}><Button>Ver Más</Button></Link>
 </ColumnContainer>
 
       </TitlePriceContainer>

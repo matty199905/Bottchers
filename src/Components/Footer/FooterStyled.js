@@ -7,12 +7,9 @@ bottom: 0px;
 width: 100vw;
 z-index: 200;
 height: 350px;
+background-color: #2c2c2c;
 `
 
-export const FooterContainer = styled.div`
-background-color: #2c2c2c;
-height: 100%;
-`
 
 export const ColumnsContainer = styled.div`
 display: flex;

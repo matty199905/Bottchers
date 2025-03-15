@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterColumn, FooterWrapper, ColumnsContainer, LinkStyled, SiguenosContainer, IconsContainer, IconStyled, FooterContainer } from './FooterStyled'
+import { FooterColumn, FooterWrapper, ColumnsContainer, LinkStyled, SiguenosContainer, IconsContainer, IconStyled } from './FooterStyled'
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { BsTwitterX } from "react-icons/bs";
@@ -14,7 +14,6 @@ const Footer = () => {
     return (
         <FooterWrapper>
 
-            <FooterContainer>
 
                 <ColumnsContainer>
 
@@ -91,7 +90,7 @@ const Footer = () => {
 
                 </SiguenosContainer>
 
-            </FooterContainer>
+ 
 
         </FooterWrapper>
     )

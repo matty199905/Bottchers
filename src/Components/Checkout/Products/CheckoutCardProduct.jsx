@@ -1,16 +1,17 @@
 import React from 'react'
 import { CheckoutCardContainer, ImgTitleContainer, PriceContainer, Quantity, QuantityPriceContainer } from './CardStyled'
 
-const CheckoutCardProduct = ({ img, price, name, quantity }) => {
+const CheckoutCardProduct = ({ img, price, title, quantity, orderOverview }) => {
+
 
 
     return (
-        <CheckoutCardContainer>
+        <CheckoutCardContainer orderOverview={orderOverview}>
 
             <ImgTitleContainer>
 
                 <img src={img} alt="producto" />
-                <h2>{name}</h2>
+                <h2>{title}</h2>
 
             </ImgTitleContainer>
 

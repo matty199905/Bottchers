@@ -5,7 +5,6 @@ import Input from '../../UI/Input/Input'
 import { registerInitialValues } from '../../Formik/InitialValues'
 import Submit from '../../UI/Submit/Submit'
 import { registerValidationSchema } from '../../Formik/ValidationSchema'
-import { Body } from '../Login/LoginStyled'
 import { createUser} from '../../Axios/axiosUser'
 import { useNavigate } from 'react-router-dom'
 
@@ -14,7 +13,7 @@ const Register = () => {
 const navigate = useNavigate()
 
   return (
-    <Body>
+ 
    <RegisterWrapper>
 <h1>Registrate ahora.</h1>
 <span>Completa los datos para registrarte</span>
@@ -97,7 +96,7 @@ enviado={isSubmitting ? true : false}
 
 
    </RegisterWrapper>
-   </Body>
+  
   )
 }
 

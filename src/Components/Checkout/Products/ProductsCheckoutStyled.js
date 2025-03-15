@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductosContainerStyled = styled.div`
   width: 40%;
   margin-top: 110px;
-  margin-right: 40px;
+  margin-right: 80px;
   
   @media (max-width: 867px) {
 width: 90vw;
@@ -15,6 +15,11 @@ export const ProductsTitleStyled = styled.h2`
   font-size: 22px;
   margin: 20px 0px 20px 0px;
   padding-left: 40px;
+  @media (max-width: 867px) {
+text-align: center;
+font-size: 25px;
+margin-left: -30px;
+}
 `;
 
 export const CardsWrapperStyled = styled.div`

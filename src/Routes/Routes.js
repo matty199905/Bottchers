@@ -17,6 +17,8 @@ import SofasCama from '../Pages/CategoriesHome/SofasCamas/SofasCama.jsx'
 import Living from '../Pages/CategoriesHome/Living/Living.jsx'
 import ProductoDinamico from '../Pages/ProductoDinamico/ProductoDinamico.jsx'
 import ProtectedRoute from './ProtectedRoute/ProtectedRoute.js'
+import Orders from '../Pages/Orders/Orders.jsx'
+import OrderOverview from '../Pages/OrderOverview/OrderOverview.jsx'
 
 
 
@@ -69,8 +71,10 @@ const RoutesApp = () => {
       <Route path='/contacto' element={<Contact />} />
       <Route path='/register' element={<Register />} />
       <Route path='/login' element={<Login />} />
-
-
+      <Route path='/orders'>
+      <Route index element={<Orders/>} />
+      <Route path=':orderOverview' element={<OrderOverview/>} />
+      </Route>
 
       
 
