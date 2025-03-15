@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Button from '../../UI/Button/Button'
 import { clearError, fetchOrdersStart, OrderFail } from '../../Redux/Orders/ordersSlice';
 import { getOrders } from '../../Axios/axiosOrders';
+import { fetchOrdersEnd } from '../../Redux/Orders/ordersSlice';
 
 
 
@@ -29,6 +30,9 @@ const Orders = () => {
             
             getOrders(currentUser?.token, dispatch)
         }
+
+        dispatch(fetchOrdersEnd())
+
         if(!currentUser?.token) {
             dispatch(OrderFail())
         }

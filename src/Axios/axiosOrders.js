@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { APIURL } from '../Utils/constants'
 import { addOrders, fetchOrdersEnd, fetchOrdersStart, OrderFail } from '../Redux/Orders/ordersSlice';
-import { clearOrders } from '../Redux/Orders/ordersSlice';
+
 
 
 
