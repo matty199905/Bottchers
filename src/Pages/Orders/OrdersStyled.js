@@ -13,6 +13,9 @@ background-color:  #2c2c2c;
 color: white;
 h1{
 font-size: 48px;
+@media (max-width: 600px) {
+    font-size: 40px;
+}
 }
 p{
     font-size: 20px;
@@ -72,7 +75,8 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-width: 380px;
+max-width: 380px;
+padding: 20px;
 margin-top: 60px;
 h3{
     font-size: 23px;
