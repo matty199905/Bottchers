@@ -66,3 +66,26 @@ color: orange;
 font-size: 25px;
 `
 
+
+export const InstructionsContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+width: 380px;
+margin-top: 60px;
+h3{
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    font-style: oblique;
+}
+p{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 17px;
+    b {
+        color: white;
+    }
+}
+`

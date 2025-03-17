@@ -38,11 +38,11 @@ export const createOrder = async (orderData, token, dispatch) => {
       });
       if (orders) {
         
-    return dispatch(addOrders(orders.data.data))
+    dispatch(addOrders(orders.data.data))
 
       } 
 
-return dispatch(fetchOrdersEnd())
+    dispatch(fetchOrdersEnd())
 
     } catch (error) {
     return dispatch(OrderFail(error.message))

@@ -30,7 +30,7 @@ const ModalUser = () => {
           key='user-modal'
         >
 
-          <ModalSpan onClick={()=> {navigate('/orders'); dispatch(showModalUser()); window.location.reload()}}>
+          <ModalSpan onClick={()=> {navigate('/orders'); dispatch(showModalUser())}}>
             Mis Ordenes
           </ModalSpan>
 <hr />

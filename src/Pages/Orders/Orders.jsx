@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react'
-import { IconTimer, OrderCard, OrdersContainer, OrdersWrapper } from './OrdersStyled'
+import { IconTimer, InstructionsContainer, OrderCard, OrdersContainer, OrdersWrapper } from './OrdersStyled'
 import { RiTimer2Fill } from "react-icons/ri";
 import { useDispatch, useSelector } from 'react-redux'
 import { clearError, fetchOrdersStart, OrderFail } from '../../Redux/Orders/ordersSlice';
 import { getOrders } from '../../Axios/axiosOrders';
 import { fetchOrdersEnd } from '../../Redux/Orders/ordersSlice';
-
 
 
 
@@ -18,19 +17,14 @@ const Orders = () => {
     const {currentUser} = useSelector(state=>state.user)
     const dispatch = useDispatch()
 
-   
-    
     
     useEffect(()=>{
 
-        dispatch(fetchOrdersStart())
+        dispatch(fetchOrdersStart());
         
-        if(!orders){
-            
-            getOrders(currentUser?.token, dispatch)
-        }
-
-        dispatch(fetchOrdersEnd())
+        getOrders(currentUser?.token, dispatch);
+        
+        dispatch(fetchOrdersEnd());
 
         if(!currentUser?.token) {
             dispatch(OrderFail())
@@ -38,7 +32,7 @@ const Orders = () => {
         else {
             error && dispatch(clearError())
         }
-},[currentUser?.token, orders, error])
+},[currentUser?.token, orders, error, dispatch])
 
 
     return (
@@ -70,13 +64,16 @@ const Orders = () => {
 
                         :
 
-                        <p>Aún no tienes órdenes pendientes.</p>
+                        <p>Aún no tienes órdenes pendientes.</p> 
                 }
 
 
 
             </OrdersContainer>
-
+<InstructionsContainer>
+    <h3>Instrucciones a seguir:</h3>
+    <p>Contactanos desde la seccion "Contactanos", indicando el <b>ID de la orden</b> y te enviaremos todos los datos para proseguir con la compra.</p>
+</InstructionsContainer>
         </OrdersWrapper>
     )
 }
