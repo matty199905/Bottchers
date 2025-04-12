@@ -16,7 +16,8 @@ h1{
     font-weight: 800;
     margin-top: 120px;
     @media (max-width: 1133px) {
-margin-top:20px}
+     margin-top:120px}
+
 @media (max-width: 440px) {
     font-size: 30px}
 }
