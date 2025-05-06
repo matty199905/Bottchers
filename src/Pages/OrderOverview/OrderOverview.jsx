@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardsContainer, EnvioStyled, HrStyled, OverwiewWrapper, PriceContainerStyled, PriceTotalStyled, ProductosContainerStyled, ProductsTitleStyled, SubtotalStyled, TotalStyled } from './OrderOverviewStyled'
+import { CardsContainer, EnvioStyled, HrStyled, OverwiewWrapper, PriceContainerStyled, PriceTotalStyled, SubtotalStyled, TotalStyled } from './OrderOverviewStyled'
 import CheckoutCardProduct from '../../Components/Checkout/Products/CheckoutCardProduct'
 import { formatPrice } from '../../Utils/formatPrice'
 import { useLocation} from 'react-router-dom'

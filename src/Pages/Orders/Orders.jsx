@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { IconTimer, InstructionsContainer, OrderCard, OrdersContainer, OrdersWrapper } from './OrdersStyled'
 import { RiTimer2Fill } from "react-icons/ri";
 import { useDispatch, useSelector } from 'react-redux'
-import { clearError, fetchOrdersStart, OrderFail } from '../../Redux/Orders/ordersSlice';
+import { clearError, fetchOrdersStart, orderFail } from '../../Redux/Orders/ordersSlice';
 import { getOrders } from '../../Axios/axiosOrders';
 import { fetchOrdersEnd } from '../../Redux/Orders/ordersSlice';
 
@@ -27,7 +27,7 @@ const Orders = () => {
         dispatch(fetchOrdersEnd());
 
         if(!currentUser?.token) {
-            dispatch(OrderFail())
+            dispatch(orderFail())
         }
         else {
             error && dispatch(clearError())

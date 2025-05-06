@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { APIURL } from '../Utils/constants'
-import { addOrders, fetchOrdersEnd, fetchOrdersStart, OrderFail } from '../Redux/Orders/ordersSlice';
+import { addOrders, fetchOrdersEnd, fetchOrdersStart, orderFail } from '../Redux/Orders/ordersSlice';
 
 
 
@@ -20,7 +20,7 @@ export const createOrder = async (orderData, token, dispatch) => {
        
       }
     } catch (error) {
-     return dispatch(OrderFail(error.message))
+     return dispatch(orderFail(error.message))
      
     }
   };
@@ -45,7 +45,7 @@ export const createOrder = async (orderData, token, dispatch) => {
     dispatch(fetchOrdersEnd())
 
     } catch (error) {
-    return dispatch(OrderFail(error.message))
+    return dispatch(orderFail(error.message))
     
     }
   };
