@@ -7,8 +7,6 @@ import { LuMenu } from "react-icons/lu";
 import UserIcon from './User/UserIcon/UserIcon';
 import CartIcon from './Cart/CartIcon/CartIcon';
 import { useDispatch, useSelector } from 'react-redux';
-import { showCartToggle } from '../../Redux/Cart/CartSlice';
-import { show } from '../../Redux/Filters/filtersSlice'
 import { showMenu } from '../../Redux/ToggleMenu/toggleMenuSlice';
 import { showModalUser } from '../../Redux/User/userSlice';
 
@@ -23,7 +21,9 @@ const Navbar = () => {
 
 const [changeColor, setchangeColor] = useState("transparent")
 
+const dispatch = useDispatch()
 
+const {modalUser} = useSelector(state => state.user)
 
 
     const changeColorOnScroll = () => {
@@ -36,28 +36,12 @@ const [changeColor, setchangeColor] = useState("transparent")
 
 
 
-
     useEffect(() => {
         window.addEventListener('scroll', changeColorOnScroll);
     }, [])
 
 
 
-
-
-    const dispatch = useDispatch()
-
-    const { showFilters } = useSelector(state => state.filters)
-
-    const {modalUser} = useSelector(state => state.user)
-
-
-    const closeCategoryOnCart = () => {
-        if (showFilters) {
-            return dispatch(show())
-        }
-        else { return null }
-    }
 
     const closeModalUserOnToggleMenu = () => {
         if (modalUser) {
@@ -96,7 +80,7 @@ const [changeColor, setchangeColor] = useState("transparent")
                 <IconsContainer>
 
 
-                    <CartIcon onClick={() => { dispatch(showCartToggle()); closeCategoryOnCart() }} />
+                    <CartIcon />
 
                     <UserIcon/>
 

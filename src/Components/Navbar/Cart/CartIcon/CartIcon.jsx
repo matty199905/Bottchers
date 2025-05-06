@@ -5,10 +5,13 @@ import { useDispatch, useSelector } from 'react-redux'
 import { showMenu } from '../../../../Redux/ToggleMenu/toggleMenuSlice'
 import { showModalUser } from '../../../../Redux/User/userSlice'
 import { showCartToggle } from '../../../../Redux/Cart/CartSlice'
+import { show } from '../../../../Redux/Filters/filtersSlice'
 
 
 
 const CartIcon = () => {
+
+  const { showFilters } = useSelector(state => state.filters)
 
   const { cartProducts } = useSelector(state => state.cart)
 
@@ -19,6 +22,9 @@ const CartIcon = () => {
   const dispatch = useDispatch()
 
   const quantityBubble = cartProducts.map((item) => item.quantity).reduce((acc, cur) => { return acc + cur }, 0)
+
+
+  
 
 
   const closeToggleMenu_ModalUser = () => {
@@ -32,11 +38,26 @@ const CartIcon = () => {
   }
 
 
+
+
+  const closeCategoryOnCart = () => {
+    if (showFilters) {
+      return dispatch(show())
+    }
+    else { return null }
+  }
+
+
+
+
   return (
 
-    <CartIconStyled onClick={() => { 
+    <CartIconStyled onClick={() => {
       dispatch(showCartToggle());
-      closeToggleMenu_ModalUser()}}
+      closeToggleMenu_ModalUser();
+      closeCategoryOnCart()
+    }}
+
     >
       <Bubble><span>{quantityBubble}</span></Bubble>
       <PiShoppingCartLight />
