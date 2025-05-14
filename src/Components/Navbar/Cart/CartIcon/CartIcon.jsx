@@ -4,7 +4,7 @@ import { PiShoppingCartLight } from 'react-icons/pi'
 import { useDispatch, useSelector } from 'react-redux'
 import { showMenu } from '../../../../Redux/ToggleMenu/toggleMenuSlice'
 import { showModalUser } from '../../../../Redux/User/userSlice'
-import { showCartToggle } from '../../../../Redux/Cart/CartSlice'
+import { showCartToggle } from '../../../../Redux/Cart/cartSlice'
 import { show } from '../../../../Redux/Filters/filtersSlice'
 
 

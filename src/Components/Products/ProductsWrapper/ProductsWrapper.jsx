@@ -4,7 +4,7 @@ import { MdOutlineArrowForwardIos } from 'react-icons/md'
 import ProductsContainer from './ProductsContainer'
 import { useDispatch, useSelector } from 'react-redux'
 import { show } from '../../../Redux/Filters/filtersSlice'
-import { showCartToggle } from '../../../Redux/Cart/CartSlice'
+import { showCartToggle } from '../../../Redux/Cart/cartSlice'
 
 
 const ProductsWrapper = ({ hideFilters, page }) => {

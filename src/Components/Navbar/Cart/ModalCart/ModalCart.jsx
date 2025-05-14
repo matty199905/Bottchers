@@ -8,7 +8,7 @@ import CardCartProduct from './CardCartProduct';
 import { GoTrash } from "react-icons/go";
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
-import { removeAllFromCart, showCartToggle } from '../../../../Redux/Cart/CartSlice';
+import { removeAllFromCart, showCartToggle } from '../../../../Redux/Cart/cartSlice';
 import { formatPrice } from '../../../../Utils/formatPrice'
 import { AnimatePresence } from 'framer-motion';
 import { TrashIcon } from './CardCartProductStyled';

@@ -7,7 +7,7 @@ import { checkoutValidationSchema } from '../../../Formik/ValidationSchema';
 import { useSelector, useDispatch } from 'react-redux'
 import { createOrder } from '../../../Axios/axiosOrders';
 import { useNavigate } from 'react-router-dom';
-import { removeAllFromCart } from '../../../Redux/Cart/CartSlice';
+import { removeAllFromCart } from '../../../Redux/Cart/cartSlice';
 import { clearError } from '../../../Redux/Orders/ordersSlice';
 
 const CheckoutForm = () => {

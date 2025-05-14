@@ -4,7 +4,7 @@ import { FaCirclePlus } from "react-icons/fa6";
 import { FaCircleMinus } from "react-icons/fa6";
 import { GoTrash } from "react-icons/go";
 import { useDispatch } from 'react-redux';
-import { minusBtn, plusBtn, removeFromCart } from '../../../../Redux/Cart/CartSlice';
+import { minusBtn, plusBtn, removeFromCart } from '../../../../Redux/Cart/cartSlice';
 
 
 const CardCartProduct = ({title, img, price, quantity, id}) => {

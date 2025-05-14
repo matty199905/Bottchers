@@ -5,7 +5,7 @@ import Visa from '../../img/Visa.png'
 import Button from '../../UI/Button/Button'
 import { formatPrice } from '../../Utils/formatPrice'
 import { useDispatch } from 'react-redux'
-import { addToCart, showCartToggle } from '../../Redux/Cart/CartSlice'
+import { addToCart, showCartToggle } from '../../Redux/Cart/cartSlice'
 
 
 
