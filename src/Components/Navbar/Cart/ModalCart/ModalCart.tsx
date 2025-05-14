@@ -1,19 +1,18 @@
 import React from 'react'
 
 import { CartHeader, CloseIcon, IconsContainer, ModalCartContainer, PriceContainer, ProductInfoContainer, ProductsCartContainer, TitleContainer } from './ModalCartStyled'
-
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Submit from '../../../../UI/Submit/Submit'
 import CardCartProduct from './CardCartProduct';
 import { GoTrash } from "react-icons/go";
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
-import { CartProduct, removeAllFromCart, showCartToggle } from '../../../../Redux/Cart/cartSlice';
 import { formatPrice } from '../../../../Utils/formatPrice'
 import { AnimatePresence } from 'framer-motion';
 import { TrashIcon } from './CardCartProductStyled';
 import { useSelectorTS } from '../../../../Utils/constants';
 import { AppDispatch } from '../../../../Redux/store';
+import { removeAllFromCart, showCartToggle } from '../../../../Redux/Cart/cartSlice';
 
 
 
@@ -38,7 +37,7 @@ const ModalCart: React.FC = () => {
 
 
 
-    const totalPrice = (cartProducts || []).map((item: CartProduct) => item.quantity * item.price).reduce((acc, cur) => { return acc + cur }, 0)
+    const totalPrice = (cartProducts || []).map((item) => item.quantity * item.price).reduce((acc, cur) => { return acc + cur }, 0)
 
 
 
