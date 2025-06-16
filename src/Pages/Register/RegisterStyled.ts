@@ -11,6 +11,7 @@ background-color: #292929;
 color: white;
 width: 100vw;
 height: auto;
+padding-bottom: 60px;
 h1{
     font-size: 40px;
     font-weight: 800;

@@ -12,7 +12,8 @@ flex-direction: column;
 background-color: #292929;
 color: white;
 width: 100vw;
-height: 1150px;
+height: auto;
+padding-bottom: 60px;
 h1{
     margin-top: 120px;
     font-size: 40px;
