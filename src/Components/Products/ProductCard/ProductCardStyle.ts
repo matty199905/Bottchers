@@ -5,7 +5,7 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
-width: 350px;
+width: 280px;
 height: 300px;
 padding: 10px;
 background: linear-gradient(to bottom,#c3c3c3 , #dadada, #efefef) ;
@@ -14,10 +14,6 @@ img{
     width: 99%;
     margin: auto;
     height: 70%;
-}
-@media (max-width: 1230px) {
-   width: 280px;
-   height: 280px;
 }
 @media (max-width: 720px) {
     flex-direction: row;
@@ -30,16 +26,14 @@ img{
 }
 @media (max-width: 420px) {
     margin: 0 20px;
-}
-@media (max-width: 402px) {
-    width: 350px;
-    height: 300px; 
+    height: auto;
     flex-direction: column;
+    flex-wrap: wrap;
     img {
-        width: 99%;
-        height: 70%;
+        width: 100%;
     }
 }
+
 `
 
 export const TitlePriceContainer = styled.div`

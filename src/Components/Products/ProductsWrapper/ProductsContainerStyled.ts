@@ -19,7 +19,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-bottom: 520px;
+height: auto;
+width: 100%;
+padding-bottom: 100px;
 `
 
 
@@ -38,7 +40,7 @@ justify-content:center;
 align-items: center;
 gap: 20px;
 color: ${(props)=>(props.showFilters === true ? 'orange' : 'black')};
-margin: 20px 0px 0px 10px;
+margin: 20px 0px 0px 20px;
 background-color: whitesmoke;
 border: none;
 font-size: 14px;
@@ -64,16 +66,18 @@ margin: 0px 0px 0px -10px;
 
 
 export const ProductsContainerStyled = styled.div<ProductsPageProps>`
+position: relative;
 display: flex;
+flex-direction: column;
 justify-content: center;
-align-items: flex-start;
-gap: 60px;
+align-items: center;
+gap: 40px;
 flex-flow: row wrap;
-width: 100vw;
-min-height: ${(props)=>(props.showFilters === true ? '930px' : '')} ;
-padding: 30px 0 50px 0;
-@media (max-width: 720px) {
-gap: 35px;
+width: 90%;
+height: auto;
+padding: 20px;
+@media (max-width: 400px) {
+width: 80%;
 }
 `
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LivingWrapper = styled.main`
+export const LivingWrapper = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-start;

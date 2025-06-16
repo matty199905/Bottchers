@@ -5,10 +5,10 @@ export const OrdersWrapper = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-padding-top: 130px;
 align-items: center;
 width: 100vw;
-height: 1000px;
+height: auto;
+padding: 130px 0 60px 0;
 background-color:  #2c2c2c;
 color: white;
 h1{
@@ -32,7 +32,7 @@ justify-content: center;
 align-items: center;
 gap: 20px;
 width: 70%;
-margin-bottom: 50px;
+margin-bottom: 0px;
 `
 
 export const OrderCard = styled(Link)`

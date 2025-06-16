@@ -58,24 +58,24 @@ const ProductsContainer: React.FC<ProductsContainerProps> = ({ page }) => {
 
 
     return (
-        <>
-
-            <ProductsContainerStyled showFilters={showFilters}>
-
-                <ModalCategories />
-                
-                {
-
-                    page === 'todosLosProductos' ? paginadoTodosLosProductos :
-
-                        productos.map(([key, array]: [string, []]) => { if (key === page) { return array.map((item: Product) => { return <ProductCard {...item} key={item.id} /> }) } })
 
 
+        <ProductsContainerStyled showFilters={showFilters}>
 
-                }
+            <ModalCategories />
+
+            {
+
+                page === 'todosLosProductos' ? paginadoTodosLosProductos :
+
+                    productos.map(([key, array]: [string, []]) => { if (key === page) { return array.map((item: Product) => { return <ProductCard {...item} key={item.id} /> }) } })
 
 
-            </ProductsContainerStyled>
+
+            }
+
+
+
 
             {page === 'todosLosProductos' &&
 
@@ -98,8 +98,8 @@ const ProductsContainer: React.FC<ProductsContainerProps> = ({ page }) => {
 
             }
 
+        </ProductsContainerStyled>
 
-        </>
     )
 }
 

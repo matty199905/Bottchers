@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SofasCamaWrapper = styled.main`
+export const SofasCamaWrapper = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-start;

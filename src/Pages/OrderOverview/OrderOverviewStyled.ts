@@ -8,7 +8,8 @@ justify-content: flex-start;
 align-items: flex-start;
 padding: 120px 0 0 0px;
 width: 100vw;
-height: 1200px;
+height: auto;
+padding-bottom: 60px;
 background-color: #292929;
 h1{
     color: white;
@@ -21,11 +22,6 @@ text-align: center;
 
 
 } 
-@media (max-width: 1300px) {
-
-  height: 1200px;
-  
-  }
 @media (max-width: 850px) {
   align-items: center;
   padding-top: 100px;

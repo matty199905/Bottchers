@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const CategoriesContainer = styled.div`
 display: grid;
-margin: 35px 35px 0 0;
+margin: 35px 35px 300px 0;
 width: 92%;
 height: 700px;
 grid-template-columns: 33% 33% 33% ;
@@ -15,7 +15,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 0;
-margin: 10px 0 10px 0;
+margin: 10px 0 100px 0;
 height: 900px;
 }
 

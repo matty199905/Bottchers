@@ -14,7 +14,7 @@ width: ${(props)=>(props.orderOverview === true ? '300px' : '100%')};
 height: 110px;
 border-radius: 5px;
 background: ${(props)=>(props.orderOverview === true ? 'linear-gradient(to bottom, rgb(88, 88, 88), rgb(58, 58, 58))' : 'linear-gradient(to bottom, rgb(141, 141, 141), rgb(58, 58, 58));')}; 
-padding: 15px;
+padding: 15px 10px;
 `
 
 export const ImgTitleContainer = styled.div`
@@ -59,7 +59,7 @@ color: white;
 padding: 15px;
 border-radius: 5px;
 @media (max-width: 400px) {
-    width: 90px;
+    width:70px;
     text-align: center;
 }
 `

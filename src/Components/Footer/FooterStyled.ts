@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom'
 
 export const FooterWrapper = styled.footer`
-position: absolute;
-bottom: 0px;
+
+height: auto;
 width: 100vw;
+padding-bottom: 20px;
 z-index: 200;
-height: 350px;
 background-color: #2c2c2c;
 `
 

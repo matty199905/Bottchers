@@ -4,27 +4,27 @@ import styled from "styled-components"
 
 export const FiltersContainer = styled(motion.div)`
 position: absolute;
-top: 80px;
+top: 0;
 left: 0;
 display: flex;
 justify-content: center;
 align-items: flex-start;
-flex-flow: row nowrap;
-gap: 70px;
-width: 100vw;
-height: 180px;
-background-color: whitesmoke;
+flex-flow: row wrap;
+gap: 60px;
+width: 90%;
+height: auto;
+max-height: 240px;
+background: linear-gradient(to bottom, whitesmoke, rgb(209, 209, 209));
 box-shadow: 1px 10px 10px grey;
-padding: 20px 0px;
-z-index: 90;
-@media ( max-width: 1360px) {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 300px;
-    height: 1000px;
-    top: 80px;
-    padding: 0px 30px 80px 30px;
-    z-index: 50
+padding: 20px 40px 40px 40px;
+overflow-y: scroll;
+z-index: 100;
+@media (max-width:820px ){
+width: 85%;
+justify-content: space-around
+}
+@media (max-width:535px ){
+width: 77vw;
 }
 `
 
@@ -34,12 +34,9 @@ display: flex;
 align-items: flex-start;
 justify-content: center;
 h3{
-   font-weight:600px ;
+   font-weight:600 ;
    font-size: 17px;
-   margin: 15px -15px 0 0px;
-   @media ( max-width: 1360px) {
-width: 100px;
-}
+   margin: 15px 0px 0 0px;
 
 }
 ul{
@@ -49,6 +46,7 @@ ul{
     justify-content: center;
     gap: 7px;
     li{
+        list-style: disc ;
         font-size: 16px;
         border: none;
         background-color: transparent;
@@ -57,6 +55,10 @@ ul{
 
      
     }
+}
+@media (max-width:550px ){
+flex-direction: column;
+align-items: center;
 }
 `
 

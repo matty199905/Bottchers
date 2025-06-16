@@ -2,7 +2,7 @@ import { Form } from "formik";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const RegisterWrapper = styled.main`
+export const RegisterWrapper = styled.div`
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -10,7 +10,7 @@ flex-direction: column;
 background-color: #292929;
 color: white;
 width: 100vw;
-height: 1150px;
+height: auto;
 h1{
     font-size: 40px;
     font-weight: 800;
@@ -24,9 +24,6 @@ h1{
 span{font-size:17px;
 font-weight: 400;
 opacity: .8;
-}
-@media (max-width: 1133px) {
-    height: 1350px;
 }
 `
 

@@ -1,16 +1,11 @@
 import styled from "styled-components";
 
-export const ProductWrapper = styled.main`
+export const ProductWrapper = styled.div`
 display: flex;
 justify-content: center;
 align-items: flex-start;
 width: 100vw;
-height: 1300px;
 background-color: #292929; 
-@media (max-width: 1060px) {
-    
-    height: 1600px;
-}
 `
 
 export const ProductCardContainer = styled.div`
@@ -25,8 +20,7 @@ box-shadow: 1px 2px 20px black;
 @media (max-width: 1060px) {
     flex-direction: column;
     align-items: flex-start;
-    height: 1000px;
-    width: 90vw;
+
 }
 `
 

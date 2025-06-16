@@ -18,7 +18,7 @@ const App: React.FC = () => {
       <RoutesApp />
       <Footer />
     </Layout>
-  );
+  )
 }
 
 export default App

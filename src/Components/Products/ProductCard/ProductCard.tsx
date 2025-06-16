@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom'
 import { formatPrice } from '../../../Utils/formatPrice'
 
 
- export type ProductCardProps = {
+export type ProductCardProps = {
   img: string,
-  title: string, 
+  title: string,
   price: number,
   desc: string,
   id: number,
-  
+
 }
 
 
@@ -35,12 +35,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ img, title, price, desc, id }
           <span>{desc}</span>
         </ColumnContainer>
 
-<ColumnContainer>
-        <Price>{formatPrice(price)}</Price>
-        <Link to={title} state={{selectedProduct}}><Button>Ver Más</Button></Link>
-</ColumnContainer>
+        <ColumnContainer>
+          <Price>{formatPrice(price)}</Price>
+          <Link to={title} state={{ selectedProduct }}><Button>Ver Más</Button></Link>
+        </ColumnContainer>
 
       </TitlePriceContainer>
+
     </ProductCardContainer>
   )
 }

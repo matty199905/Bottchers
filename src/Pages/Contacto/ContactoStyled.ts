@@ -1,16 +1,14 @@
 import { Form } from 'formik'
 import {styled} from 'styled-components'
 
-export const ContactWrapper = styled.main`
+export const ContactWrapper = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 width: 100vw;
-height: 1950px;
-@media (max-width: 1090px) {
- height: 2100px;
-}
+height: auto;
+padding-bottom: 50px;
 `
 
 
@@ -80,17 +78,16 @@ text-align: center;
 export const FormContainer = styled(Form)`
 display: flex;
 justify-content: center;
-align-items:flex-end;
+align-items:center;
 flex-flow: row wrap;
 gap: 20px;
 width: 80vw;
-height: 300px;
-@media (max-width: 1090px) {
+height:auto;
+@media (max-width: 1320px) {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     gap: 50px;
-    height: 800px;
     margin-top: -30px;
 }
 `

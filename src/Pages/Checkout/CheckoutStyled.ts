@@ -5,14 +5,14 @@ export const ContainerCheckoutStyled = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
 width: 100vw;
-height: 1250px;
+height: auto;
+padding-bottom: 70px;
 background-color: #292929;
 color: white;
+
 @media (max-width: 867px) {
   flex-direction: column-reverse;
   justify-content: flex-end;
   align-items: center;
-  height: 1800px;
-  
 }
-`;
+`

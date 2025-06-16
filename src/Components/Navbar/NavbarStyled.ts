@@ -29,7 +29,7 @@ margin-left: 30px;
      transition: all ease 0.3s;
 }
 @media (max-width: 470px) {
-font-size: 30px;
+font-size: 27px;
 margin-left: 10px;
 }
 
@@ -65,7 +65,6 @@ color: white;
 margin-left: 40px;
 font-size: 18px;
 }
-
 `
 
 export const ScrollLink = styled.button`
@@ -99,7 +98,8 @@ align-items: baseline;
 gap: 20px;
 @media (max-width: 470px) {
 margin-right: 10px;
-gap: 10px;
+gap: 7px;
+font-size: 10px;
 }
 `
 export const ToggleMenuIcon = styled.div`

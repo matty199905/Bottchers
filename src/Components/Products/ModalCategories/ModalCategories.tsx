@@ -42,6 +42,7 @@ const ModalCategories: React.FC = () => {
 
     return (
         <AnimatePresence>
+
             {showFilters &&
 
 
@@ -61,37 +62,37 @@ const ModalCategories: React.FC = () => {
                         <ul>
                             <LiContainer activeFilter={activeFilter('camas multiposiciones')}>
                                 <li onClick={() =>  filterSelectionAndHideModal('camas multiposiciones') }>
-                                    - Camas multiposiciones
+                                    Camas multiposiciones
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('comedores')}>
                                 <li onClick={() => filterSelectionAndHideModal('comedores')}>
-                                    - Comedores
+                                    Comedores
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('living')}>
                                 <li onClick={() => filterSelectionAndHideModal('living')}>
-                                    - Living
+                                    Living
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('mesas extensibles')}>
                                 <li onClick={() => filterSelectionAndHideModal('mesas extensibles')}>
-                                    - Mesas extensibles
+                                    Mesas extensibles
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('relax')}>
                                 <li onClick={() => filterSelectionAndHideModal('relax')}>
-                                    - Relax
+                                    Relax
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('sofas cama')}>
                                 <li onClick={() => filterSelectionAndHideModal('sofas cama')}>
-                                    - Sofas cama
+                                    Sofas cama
                                 </li>
                             </LiContainer>
 
@@ -105,25 +106,25 @@ const ModalCategories: React.FC = () => {
                         <ul>
                             <LiContainer activeFilter={activeFilter('cuero')}>
                                 <li onClick={() => filterSelectionAndHideModal('cuero')}>
-                                    - Cuero
+                                    Cuero
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('eco cuero')}>
                                 <li onClick={() => filterSelectionAndHideModal('eco cuero')}>
-                                    - EcoCuero
+                                 EcoCuero
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('tela')}>
                                 <li onClick={() => filterSelectionAndHideModal('tela')}>
-                                    - Tela
+                                     Tela
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('madera')}>
                                 <li onClick={() => filterSelectionAndHideModal('madera')}>
-                                    - Madera
+                                     Madera
                                 </li>
                             </LiContainer>
 
@@ -137,13 +138,13 @@ const ModalCategories: React.FC = () => {
                         <ul>
                             <LiContainer activeFilter={activeFilter('2 plazas')}>
                                 <li onClick={() => filterSelectionAndHideModal('2 plazas')}>
-                                    - 2 plazas
+                                     2 plazas
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('1 plaza')}>
                                 <li onClick={() => filterSelectionAndHideModal('1 plaza')}>
-                                    - 1 plaza
+                                     1 plaza
                                 </li>
                             </LiContainer>
                         </ul>
@@ -156,37 +157,37 @@ const ModalCategories: React.FC = () => {
                         <ul>
                             <LiContainer activeFilter={activeFilter('2 cuerpos')}>
                                 <li onClick={() => filterSelectionAndHideModal('2 cuerpos')}>
-                                    - 2 Cuerpos
+                                     2 Cuerpos
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('2 cuerpos modulares')}>
                                 <li onClick={() => filterSelectionAndHideModal('2 cuerpos modulares')}>
-                                    - 2 Cuerpos modulares
+                                     2 Cuerpos modulares
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('3 cuerpos')}>
                                 <li onClick={() => filterSelectionAndHideModal('3 cuerpos')}>
-                                    - 3 Cuerpos
+                                     3 Cuerpos
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('3 cuerpos modulares')}>
                                 <li onClick={() => filterSelectionAndHideModal('3 cuerpos modulares')}>
-                                    - 3 Cuerpos modulares
+                                     3 Cuerpos modulares
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('esquinero')}>
                                 <li onClick={() => filterSelectionAndHideModal('esquinero')}>
-                                    - Esquinero
+                                     Esquinero
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('sillones masajeadores')}>
                                 <li onClick={() => filterSelectionAndHideModal('sillones masajeadores')}>
-                                    - Sillones masajeadores
+                                     Sillones masajeadores
                                 </li>
                             </LiContainer>
                         </ul>
@@ -199,19 +200,19 @@ const ModalCategories: React.FC = () => {
                         <ul>
                             <LiContainer activeFilter={activeFilter('35 dias')}>
                                 <li onClick={() => filterSelectionAndHideModal('35 dias')}>
-                                    - 35 Dias
+                                     35 Dias
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('40 dias')}>
                                 <li onClick={() => filterSelectionAndHideModal('40 dias')}>
-                                    - 40 Dias
+                                     40 Dias
                                 </li>
                             </LiContainer>
 
                             <LiContainer activeFilter={activeFilter('entrega inmediata')}>
                                 <li onClick={() => filterSelectionAndHideModal('entrega inmediata')}>
-                                    - Entrega inmediata
+                                     Entrega inmediata
                                 </li>
                             </LiContainer>
                         </ul>
@@ -220,6 +221,7 @@ const ModalCategories: React.FC = () => {
                 </FiltersContainer>
 
             }
+
         </AnimatePresence>
 
     )

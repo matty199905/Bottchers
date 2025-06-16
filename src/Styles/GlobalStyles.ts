@@ -4,14 +4,11 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 
   html{
-    position: relative;
     scroll-behavior: smooth;
-    width: 100vw;
-    background-color: #2c2c2c;
   }
-
-
-    body {
+  
+  
+  body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;

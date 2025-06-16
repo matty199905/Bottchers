@@ -2,25 +2,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
-export const HomeWrapper = styled.main`
+export const HomeWrapper = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
+gap: 90px;
+height: auto;
 width: 100vw;
-height: 100%;
-@media (max-width: 940px) {
-height: 2250px;}
-@media (max-width: 440px) {
-    height: 2300px;
-    margin-bottom: 60px;
-}
-@media (max-width: 292px) {
-    height: 2400px;
-}
-@media (min-height: 610px) {
-    height: 2420px;
-}
 `
 
 export const HeroContainer = styled.div`
@@ -92,10 +81,9 @@ export const ProductsLink = styled(Link)`
 export const CategoriesSection = styled.section`
 display: flex;
 flex-direction: column;
-justify-content: flex-start;
+justify-content: center;
 align-items: center;
 width: 100vw;
-margin-top: 50px;
 h2{
     color: black;
     font-size: 49px;

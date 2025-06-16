@@ -40,7 +40,7 @@ transition: all ease .1s;
     background-color: grey;
     cursor: not-allowed;
 }
-@media (max-width: 1090px) {
+@media (max-width: 1320px) {
     align-self: ${(props) => (props.contact === true ? 'center' : 'center')};
 }
 `

@@ -1,10 +1,14 @@
 import { styled } from 'styled-components'
 
 export const LayoutWrapper = styled.div`
-height: 100%;
+position: relative;
 display: flex;
 flex-direction: column;
-position: relative;
+justify-content: space-between;
+align-items: center;
+height: auto;
+width: 100vw;
+
 `
 
 export const UpBtn = styled.div`
