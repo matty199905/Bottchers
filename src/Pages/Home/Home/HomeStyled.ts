@@ -10,6 +10,7 @@ align-items: center;
 gap: 90px;
 height: auto;
 width: 100vw;
+padding-bottom: 60px;
 `
 
 export const HeroContainer = styled.div`
