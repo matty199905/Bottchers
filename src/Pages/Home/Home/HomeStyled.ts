@@ -25,7 +25,7 @@ align-items: flex-start;
     margin-bottom: -50px;
     @media (max-width: 750px) {
     margin-bottom: -30px;
-     background-attachment: fixed;
+     background-attachment: scroll;
 }
 `
 
