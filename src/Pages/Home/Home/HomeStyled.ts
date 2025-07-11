@@ -20,8 +20,9 @@ align-items: flex-start;
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
-    height: 100vh;
+    height:100vh;
     width: 100vw;
+    object-fit: cover;
     margin-bottom: -50px;
     @media (max-width: 750px) {
     margin-bottom: -30px;

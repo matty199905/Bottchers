@@ -11,7 +11,7 @@ justify-content: center;
 align-items: flex-start;
 flex-flow: row wrap;
 gap: 60px;
-width: 90%;
+width: auto;
 height: auto;
 max-height: 240px;
 background: linear-gradient(to bottom, whitesmoke, rgb(209, 209, 209));
@@ -19,12 +19,8 @@ box-shadow: 1px 10px 10px grey;
 padding: 20px 40px 40px 40px;
 overflow-y: scroll;
 z-index: 100;
-@media (max-width:820px ){
-width: 85%;
-justify-content: space-around
-}
-@media (max-width:535px ){
-width: 77vw;
+@media (max-width: 550px) {
+    justify-content: flex-start;
 }
 `
 
@@ -37,7 +33,9 @@ h3{
    font-weight:600 ;
    font-size: 17px;
    margin: 15px 0px 0 0px;
-
+@media (max-width: 381px) {
+    align-self: flex-start;
+}
 }
 ul{
     display: flex;

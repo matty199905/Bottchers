@@ -16,17 +16,21 @@ export const GlobalStyles = createGlobalStyle`
     background-color: whitesmoke;
     color: black;
     overflow-x: hidden;
-    }
 
-    a {
+       a {
     text-decoration: none;
     color: white;
-    }
-
-    a:visited {
+    &&:visited {
     color: white;
+    }
     }
 
     li {
     list-style: none;
+    
+    }
+
+    
     }`
+
+
