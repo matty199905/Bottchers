@@ -24,69 +24,69 @@ const Login: React.FC = () => {
   return (
 
 
-      <LoginWrapper>
-        <h1>Inicia Sesion.</h1>
-        <span>Completa los datos para ingresar</span>
+    <LoginWrapper>
+      <h1>Inicia Sesion.</h1>
+      <span>Completa los datos para ingresar</span>
 
 
-        <Formik
-          initialValues={loginInitialValues}
-          validationSchema={loginValidationSchema}
-          onSubmit={async (values) => {
+      <Formik
+        initialValues={loginInitialValues}
+        validationSchema={loginValidationSchema}
+        onSubmit={async (values) => {
 
-            const userLoged = await loginUser(values.email, values.password);
+          const userLoged = await loginUser(values.email, values.password);
 
-            console.log(userLoged);
-
-
-            if (userLoged) {
-              navigate('/');
-              dispatch(setCurrentUser({ ...userLoged.usuario, token: userLoged.token }))
-            }
-
-          }}>
+          console.log(userLoged);
 
 
-{ ({isSubmitting}) =>
+          if (userLoged) {
+            navigate('/');
+            dispatch(setCurrentUser({ ...userLoged.usuario, token: userLoged.token }))
+          }
+
+        }}>
 
 
-  <LoginFormContainer>
+        {({ isSubmitting }) =>
 
 
-  <Input
-    name='email'
-    id='email'
-    htmlFor='email'
-    placeholder='Ingrese su Email aqui...'
-    label='Email'
-    type='email'
-    login={true} />
-
-  <Input
-    name='password'
-    id='contraseña'
-    htmlFor='contraseña'
-    placeholder='Ingrese su Contraseña aqui...'
-    label='Contraseña'
-    type='password'
-    login={true} />
+          <LoginFormContainer>
 
 
-  <Submit>{isSubmitting ? <Loader/> : 'Iniciar Sesión'}</Submit>
+            <Input
+              name='email'
+              id='email'
+              htmlFor='email'
+              placeholder='Ingrese su Email aqui...'
+              label='Email'
+              type='email'
+              login={true} />
+
+            <Input
+              name='password'
+              id='contraseña'
+              htmlFor='contraseña'
+              placeholder='Ingrese su Contraseña aqui...'
+              label='Contraseña'
+              type='password'
+              login={true} />
 
 
-</LoginFormContainer>
-}
-          
-
-          
-
-        </Formik>
-
-        <NoTengoCuenta to='/register'>No estas Registrado? Registrate Aquí.</NoTengoCuenta>
+            <Submit>{isSubmitting ? <Loader /> : 'Iniciar Sesión'}</Submit>
 
 
-      </LoginWrapper>
+          </LoginFormContainer>
+        }
+
+
+
+
+      </Formik>
+
+      <NoTengoCuenta to='/register'>No estas Registrado? Registrate Aquí.</NoTengoCuenta>
+
+
+    </LoginWrapper>
 
   )
 }

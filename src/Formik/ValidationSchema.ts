@@ -34,7 +34,8 @@ export const contactValidationSchema = Yup.object({
 export const registerValidationSchema = Yup.object({
     name: Yup
         .string()
-        .required('Campo Requerido'),
+        .required('Campo Requerido')
+        .max(10, 'Máximo 10 caracteres'),
 
 
     email: Yup

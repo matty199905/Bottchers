@@ -21,11 +21,8 @@ export const IniciaSesion = styled.span`
 font-size: 16px;
 font-weight: 300;
 padding: 0 0 0 5px;
-@media (max-width:507px) {
-    width: 50px;
-   
-}
-@media (max-width:340px) {
+width: auto;
+@media (max-width: 375px) {
   display: none;
 }
 `
