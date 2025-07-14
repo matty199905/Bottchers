@@ -8,8 +8,8 @@ justify-content: flex-start;
 align-items: flex-start;
 padding: 120px 0 0 0px;
 width: 100vw;
+min-height: 90vh;
 height: auto;
-padding-bottom: 60px;
 background-color: #292929;
 h1{
     color: white;

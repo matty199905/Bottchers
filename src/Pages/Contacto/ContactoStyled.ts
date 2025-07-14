@@ -82,7 +82,8 @@ align-items:center;
 flex-flow: row wrap;
 gap: 20px;
 width: 80vw;
-height:auto;
+height: auto;
+padding-bottom: 60px;
 @media (max-width: 1320px) {
     flex-flow: column nowrap;
     justify-content: flex-start;

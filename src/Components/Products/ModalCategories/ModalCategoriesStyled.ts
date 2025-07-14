@@ -18,7 +18,7 @@ background: linear-gradient(to bottom, whitesmoke, rgb(209, 209, 209));
 box-shadow: 1px 10px 10px grey;
 padding: 20px 40px 40px 40px;
 overflow-y: scroll;
-z-index: 100;
+z-index: 1;
 @media (max-width: 550px) {
     justify-content: flex-start;
 }

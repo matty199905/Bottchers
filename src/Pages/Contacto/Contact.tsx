@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
                   id="message"
                   htmlFor="message"
                   placeholder="Ingrese su asunto..."
-                  label="Asunto"
+                  label="Mensaje"
                   asunto={true} />
 
 

@@ -7,8 +7,9 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 width: 100vw;
+min-height: 80vh;
 height: auto;
-padding: 130px 0 60px 0;
+padding-top: 130px;
 background-color:  #2c2c2c;
 color: white;
 h1{

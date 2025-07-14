@@ -65,6 +65,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 width: 100vw;
+height: auto;
 `
 
 export const Aside = styled.div`
@@ -89,7 +90,7 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 width: 70%;
-
+padding-top: 30px;
 h2{ margin: 50px 0px 0px ;
     font-size: 43px;
     font-weight: 400;
@@ -140,6 +141,7 @@ align-items: center;
 text-align: center;
 width: 83vw;
 margin-top: 120px;
+padding-bottom: 60px;
 @media (max-width: 1050px) {
 transform: scale(0.9);
 gap: 30px;

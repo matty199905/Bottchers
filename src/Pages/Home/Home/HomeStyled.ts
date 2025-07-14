@@ -46,12 +46,10 @@ h1{
     background: linear-gradient(to left, #ffffff, #adadad);
     color: transparent;
     background-clip: text;
-}
-@media (max-width: 580px) {
-h1{
-    font-size: 45px;
-    padding: 0 20px;
-}
+    @media (max-width: 580px) {
+        font-size: 45px;
+        padding: 0 20px;
+    }
 }
 `
 
@@ -99,6 +97,8 @@ h2{
 }
     @media (max-width: 400px) {
     font-size: 29px;
+    margin-top: -15px;
+
 }
 }
 p{
